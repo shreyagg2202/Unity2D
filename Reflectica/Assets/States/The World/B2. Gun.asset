@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6149d94faa243f048832a999f52df817, type: 3}
+  m_Name: B2. Gun
+  m_EditorClassIdentifier: 
+  storyText: "You start inspecting the gun which seems pretty normal and you point
+    it to different parts of your room and then aim at the window and accidently
+    fire it. \r\n\r\nSomething weird happens and your whole room turns colorless
+    for a moment and then returns back to normal and the gun in your hand disappears.
+    You look around your room and notice henry in a corner of the room colorless
+    and not moving.\r\n\r\nwhat will you do now?\r\n\r\n1. Get your wheelchair and
+    run away from the room scared that you killed henry.\r\n\r\n2. Get your wheelchair
+    and check what happened to henry."
+  nextStates:
+  - {fileID: 11400000, guid: dbc181b3c4548f040b1cdd18b354e387, type: 2}
+  - {fileID: 11400000, guid: dbecba3da0e63c34ab679bb14d175456, type: 2}

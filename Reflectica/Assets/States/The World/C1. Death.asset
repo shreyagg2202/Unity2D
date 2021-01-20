@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6149d94faa243f048832a999f52df817, type: 3}
+  m_Name: C1. Death
+  m_EditorClassIdentifier: 
+  storyText: "After your friends leave you soon realize that you dog henry is in
+    the corner of the room colorless and not moving. \r\n\r\nwhat will you do now?\r\n\r\n1.
+    Get your wheelchair and run away from the room scared that you killed henry.\r\n\r\n2.
+    Get your wheelchair and check what happened to henry."
+  nextStates:
+  - {fileID: 11400000, guid: dbc181b3c4548f040b1cdd18b354e387, type: 2}
+  - {fileID: 11400000, guid: dbecba3da0e63c34ab679bb14d175456, type: 2}
