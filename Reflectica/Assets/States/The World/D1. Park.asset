@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6149d94faa243f048832a999f52df817, type: 3}
+  m_Name: D1. Park
+  m_EditorClassIdentifier: 
+  storyText: 'You get out of the house to get some fresh air and go to a park. You
+    take out your phone and start scrolling on Instagram when you realize that it
+    was awfully quite that day. You see another gun near you on the bench.
+
+    
+
+    What
+    ill you do?
+
+    
+
+    1. Pick up the gun
+
+    
+
+    2. Leave the gun and
+    run back home'
+  nextStates:
+  - {fileID: 11400000, guid: 06e0cd556ac155a4e9492399873e0590, type: 2}
+  - {fileID: 11400000, guid: bd234da6bc46f764f97b0d5d1af6b59d, type: 2}
