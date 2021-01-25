@@ -6,7 +6,7 @@ using CodeMonkey;
 
 public class Bird : MonoBehaviour
 {
-    private const float JUMP_AMOUNT = 100f;
+    private const float JUMP_AMOUNT = 90f;
 
     private static Bird instance;
 
@@ -56,6 +56,8 @@ public class Bird : MonoBehaviour
                 {
                     Jump();
                 }
+
+                transform.eulerAngles = new Vector3(0, 0, birdRigidBody2D.velocity.y * .15f);
                 break;
             case State.Dead:
                 break;

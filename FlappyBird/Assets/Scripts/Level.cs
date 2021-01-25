@@ -10,8 +10,9 @@ public class Level : MonoBehaviour
 	private const float PIPE_DESTROY_X_POSITION = -100f;
 	private const float PIPE_SPAWN_X_POSITION = 100f;
 	private const float GROUND_DESTROY_X_POSITION = -200f;
-	private const float CLOUD_DESTROY_X_POSITION = -100f;
-	private const float CLOUD_SPAWN_X_POSITION = 100f;
+	private const float CLOUD_DESTROY_X_POSITION = -160f;
+	private const float CLOUD_SPAWN_X_POSITION = 130f;
+	private const float CLOUD_SPAWN_Y_POSITION = 30f;
 	private const float BIRD_X_POSITION = 0f;
 
 	private static Level instance;
@@ -24,7 +25,7 @@ public class Level : MonoBehaviour
 	private List<Transform> groundList;
 	private List<Transform> cloudList;
 	private float cloudSpawnTimer;
-	private float cloudSpawnTImerMax = .5f;
+	private float cloudSpawnTimerMax;
 	private List<Pipe> pipeList;
 	private int pipesPassedCount;
 	private int pipesSpawned;
@@ -89,21 +90,34 @@ public class Level : MonoBehaviour
     {
 		cloudList = new List<Transform>();
 		Transform cloudTransfrom;
-		float CloudY = -47.5f;
-		cloudTransfrom = Instantiate(GameAssets.GetInstance().pfCloud_1, new Vector3(0, CloudY, 0), Quaternion.identity);
+		cloudTransfrom = Instantiate(GetCloudPrefabTransform(), new Vector3(0, CLOUD_SPAWN_Y_POSITION, 0), Quaternion.identity);
 		cloudList.Add(cloudTransfrom);
 	}
+
+	private Transform GetCloudPrefabTransform()
+    {
+        switch (Random.Range(0, 3))
+        {
+			default:
+			case 0:
+				return GameAssets.GetInstance().pfCloud_1;
+			case 1:
+				return GameAssets.GetInstance().pfCloud_2;
+			case 2:
+				return GameAssets.GetInstance().pfCloud_3;
+		}
+    }
 
 	private void HandleClouds()
 	{
 		//Handle Cloud Spawning
-		float CloudY = -47.5f;
+		cloudSpawnTimerMax = 6f;
 		cloudSpawnTimer -= Time.deltaTime;
 		if (cloudSpawnTimer < 0)
 		{
 			//time to spawn another cloud
-			cloudSpawnTimer = cloudSpawnTImerMax;
-			Transform cloudTransfrom = Instantiate(GameAssets.GetInstance().pfCloud_1, new Vector3(0, CloudY, 0), Quaternion.identity);
+			cloudSpawnTimer = cloudSpawnTimerMax;
+			Transform cloudTransfrom = Instantiate(GetCloudPrefabTransform(), new Vector3(CLOUD_SPAWN_X_POSITION, CLOUD_SPAWN_Y_POSITION, 0), Quaternion.identity);
 			cloudList.Add(cloudTransfrom);
 		}
 
@@ -113,7 +127,7 @@ public class Level : MonoBehaviour
 			Transform cloudTransform = cloudList[i];
 			{
 				//Move clouds by less speed than pipes for parallax
-				cloudTransform.position += new Vector3(-1, 0, 0) * PIPE_MOVE_SPEED * Time.deltaTime * .5f;
+				cloudTransform.position += new Vector3(-1, 0, 0) * PIPE_MOVE_SPEED * Time.deltaTime * .7f;
 
 				if (cloudTransform.position.x < CLOUD_DESTROY_X_POSITION)
 				{

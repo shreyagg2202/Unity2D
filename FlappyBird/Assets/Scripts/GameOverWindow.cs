@@ -15,6 +15,8 @@ public class GameOverWindow : MonoBehaviour
     {
         scoreText = transform.Find("scoreText").GetComponent<Text>();
         highscoreText = transform.Find("highscoreText").GetComponent<Text>();
+
+        transform.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
     }
 
     public void Start()
