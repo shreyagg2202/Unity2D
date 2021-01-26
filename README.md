@@ -13,3 +13,5 @@ Currently Completed Games :-
 [Pong](https://simmer.io/@Anomator/pong), Pong Game having different controls for both players
 
 [Laser Defender](https://simmer.io/@Anomator/laser-defender), 2D Starship Shooting game 
+
+[Flappy Bird](https://simmer.io/@Anomator/flappy-bird), Basic Flappy Bird Game
