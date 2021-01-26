@@ -1,6 +1,6 @@
 # Unity2D
 
-<h2> Currently Completed Games :-
+<h2> Currently Completed Games :- <h2>
 
 * [Number Wizard UI](https://simmer.io/@Anomator/number-wizard), Game of guessing using Simple Mathematics
 
