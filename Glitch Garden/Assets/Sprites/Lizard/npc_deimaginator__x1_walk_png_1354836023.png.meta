@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: fbab3697177c184429983cacafd1d501
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7042790708981085834
+    second: npc_deimaginator__x1_walk_png_1354836023_0
+  - first:
+      213: 2760875452998166607
+    second: npc_deimaginator__x1_walk_png_1354836023_1
+  - first:
+      213: -4988610291722661990
+    second: npc_deimaginator__x1_walk_png_1354836023_2
+  - first:
+      213: 2193734995937690109
+    second: npc_deimaginator__x1_walk_png_1354836023_3
+  - first:
+      213: -1689835479538421222
+    second: npc_deimaginator__x1_walk_png_1354836023_4
+  - first:
+      213: -7848792003768527681
+    second: npc_deimaginator__x1_walk_png_1354836023_5
+  - first:
+      213: 8208663541784306624
+    second: npc_deimaginator__x1_walk_png_1354836023_6
+  - first:
+      213: -2304088941713479929
+    second: npc_deimaginator__x1_walk_png_1354836023_7
+  - first:
+      213: -1505093956908217880
+    second: npc_deimaginator__x1_walk_png_1354836023_8
+  - first:
+      213: 460143461462535627
+    second: npc_deimaginator__x1_walk_png_1354836023_9
+  - first:
+      213: 7044019659592037833
+    second: npc_deimaginator__x1_walk_png_1354836023_10
+  - first:
+      213: -6416219804664924440
+    second: npc_deimaginator__x1_walk_png_1354836023_11
+  - first:
+      213: 1364627188023961926
+    second: npc_deimaginator__x1_walk_png_1354836023_12
+  - first:
+      213: 6885337071520948176
+    second: npc_deimaginator__x1_walk_png_1354836023_13
+  - first:
+      213: 8838721523751439096
+    second: npc_deimaginator__x1_walk_png_1354836023_14
+  - first:
+      213: -2387190593897431559
+    second: npc_deimaginator__x1_walk_png_1354836023_15
+  - first:
+      213: 1287649049125516517
+    second: npc_deimaginator__x1_walk_png_1354836023_0
+  - first:
+      213: 2562892635376179611
+    second: npc_deimaginator__x1_walk_png_1354836023_1
+  - first:
+      213: 5485281607598379582
+    second: npc_deimaginator__x1_walk_png_1354836023_2
+  - first:
+      213: -1670186751091428806
+    second: npc_deimaginator__x1_walk_png_1354836023_3
+  - first:
+      213: 49407822768235460
+    second: npc_deimaginator__x1_walk_png_1354836023_4
+  - first:
+      213: -7412838065709637346
+    second: npc_deimaginator__x1_walk_png_1354836023_5
+  - first:
+      213: 1689822442190058979
+    second: npc_deimaginator__x1_walk_png_1354836023_6
+  - first:
+      213: -477956641836522777
+    second: npc_deimaginator__x1_walk_png_1354836023_7
+  - first:
+      213: 2362249976596848796
+    second: npc_deimaginator__x1_walk_png_1354836023_8
+  - first:
+      213: 9009852441638139332
+    second: npc_deimaginator__x1_walk_png_1354836023_9
+  - first:
+      213: -5230277161086541630
+    second: npc_deimaginator__x1_walk_png_1354836023_10
+  - first:
+      213: 8544306046584840096
+    second: npc_deimaginator__x1_walk_png_1354836023_11
+  - first:
+      213: 7914173778556213173
+    second: npc_deimaginator__x1_walk_png_1354836023_12
+  - first:
+      213: -2645878459617392148
+    second: npc_deimaginator__x1_walk_png_1354836023_13
+  - first:
+      213: 7407840650535736167
+    second: npc_deimaginator__x1_walk_png_1354836023_14
+  - first:
+      213: 240548869593718043
+    second: npc_deimaginator__x1_walk_png_1354836023_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4fe78ecf5aed110800000000000000
+      internalID: 1287649049125516517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 930
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99df09e549319320800000000000000
+      internalID: 2562892635376179611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_2
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 930
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3292e15f82af1c40800000000000000
+      internalID: 5485281607598379582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 744
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32b1a8bffd42d8e0800000000000000
+      internalID: -1670186751091428806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_4
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 744
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3e93d27288fa000800000000000000
+      internalID: 49407822768235460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_5
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 744
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1122ebdd0f402990800000000000000
+      internalID: -7412838065709637346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5b830ee84737710800000000000000
+      internalID: 1689822442190058979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 558
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2ab4177f4fd59f0800000000000000
+      internalID: -477956641836522777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_8
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 558
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90eab586d568c020800000000000000
+      internalID: 2362249976596848796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5f6863f0d690d70800000000000000
+      internalID: 9009852441638139332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 372
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0299812a25a67b0800000000000000
+      internalID: -5230277161086541630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_11
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 372
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af59e66419739670800000000000000
+      internalID: 8544306046584840096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7dd89de1bc4dd60800000000000000
+      internalID: 7914173778556213173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_13
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 186
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9c5a73f83f74bd0800000000000000
+      internalID: -2645878459617392148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_14
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 186
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76391efb2dfedc660800000000000000
+      internalID: 7407840650535736167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_deimaginator__x1_walk_png_1354836023_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 251
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d51432ce9965300800000000000000
+      internalID: 240548869593718043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
