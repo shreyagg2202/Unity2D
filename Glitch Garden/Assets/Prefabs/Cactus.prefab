@@ -39,7 +39,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726145733669546464}
-  - component: {fileID: 1726145733669546467}
   - component: {fileID: 1726145733669546466}
   m_Layer: 0
   m_Name: Body
@@ -63,25 +62,6 @@ Transform:
   m_Father: {fileID: 3552143847803228937}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1726145733669546467
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726145733669546477}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3239932f0f5f683438b368a267ac60c0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &1726145733669546466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -144,6 +124,7 @@ GameObject:
   - component: {fileID: 3552143847803228937}
   - component: {fileID: 7642073228087494666}
   - component: {fileID: 2380791590220499001}
+  - component: {fileID: 1371485915}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -193,3 +174,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 8417001876697004389, guid: aea367652d83e984085e79c5cb2a4406, type: 3}
   gun: {fileID: 1726145733001914387}
+--- !u!95 &1371485915
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8405719805360874289}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3239932f0f5f683438b368a267ac60c0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
