@@ -28,7 +28,7 @@ public class HealthPoints : MonoBehaviour
 
         if (healthPoints <= 0)
         {
-            FindObjectOfType<LevelLoad>().LoadYouLose();
+            FindObjectOfType<LevelLoader>().LoadYouLose();
         }
     }
 }
