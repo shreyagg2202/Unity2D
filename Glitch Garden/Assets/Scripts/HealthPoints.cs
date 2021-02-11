@@ -5,15 +5,18 @@ using UnityEngine.UI;
 
 public class HealthPoints : MonoBehaviour
 {
-    [SerializeField] int healthPoints = 100;
-    [SerializeField] int amount = 5;
+    [SerializeField] float baseLives = 3;
+    [SerializeField] int damage = 1;
+    float healthPoints;
     Text healthPointsText;
 
     // Start is called before the first frame update
     void Start()
     {
+        healthPoints = baseLives - PlayerPrefsController.GetDifficulty();
         healthPointsText = GetComponent<Text>();
         UpdateDisplay();
+        Debug.Log("difficulty setting currently is " + PlayerPrefsController.GetDifficulty());
     }
 
     private void UpdateDisplay()
