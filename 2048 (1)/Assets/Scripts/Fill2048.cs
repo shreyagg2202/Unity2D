@@ -37,6 +37,7 @@ public class Fill2048 : MonoBehaviour
     public void Doubled()
     {
         value *= 2;
+        GameController.instance.ScoreUpdate(value);
         valueDisplay.text = value.ToString();
     }
 
