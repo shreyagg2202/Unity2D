@@ -10,11 +10,30 @@ public class Fill2048 : MonoBehaviour
     [SerializeField] float speed;
 
     bool hasCombine;
-    
+
+    Image myImage;
+
     public void FillValueUpdate(int valueIn)
     {
         value = valueIn;
         valueDisplay.text = value.ToString();
+
+        int colorIndex = GetColorIndex(value);
+        myImage = GetComponent<Image>();
+        myImage.color = GameController.instance.fillColors[colorIndex];
+    }
+
+    int GetColorIndex(int valueIn)
+    {
+        int index = 0;
+        while(valueIn != 1)
+        {
+            index++;
+            valueIn /= 2;
+        }
+
+        index--;
+        return index;
     }
 
     private void Update()
@@ -39,6 +58,12 @@ public class Fill2048 : MonoBehaviour
         value *= 2;
         GameController.instance.ScoreUpdate(value);
         valueDisplay.text = value.ToString();
+
+        int colorIndex = GetColorIndex(value);
+        myImage = GetComponent<Image>();
+        myImage.color = GameController.instance.fillColors[colorIndex];
+
+        GameController.instance.WinningCheck(value);
     }
 
 }

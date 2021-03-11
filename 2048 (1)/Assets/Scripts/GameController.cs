@@ -20,6 +20,13 @@ public class GameController : MonoBehaviour
     int isGameOver;
     [SerializeField] GameObject gameOverPanel;
 
+    public Color[] fillColors;
+
+    [SerializeField] int winningScore;
+
+    [SerializeField] GameObject winningPanel;
+    bool hasWon;
+
     private void OnEnable()
     {
         if(instance == null)
@@ -75,9 +82,9 @@ public class GameController : MonoBehaviour
     public void SpawnFill()
     {
         bool isFull = true;
-        for(int i = 0; i<allCells.Length; i++)
+        for (int i = 0; i < allCells.Length; i++) 
         {
-            if(allCells[i].fill = null)
+            if(allCells[i].fill == null)
             {
                 isFull = false;
             }
@@ -145,7 +152,7 @@ public class GameController : MonoBehaviour
     public void GameOverCheck()
     {
         isGameOver++;
-        if(isGameOver>=16)
+        if (isGameOver >= 16) 
         {
             gameOverPanel.SetActive(true);
         }
@@ -154,5 +161,24 @@ public class GameController : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void WinningCheck(int highestfill)
+    {
+        if(hasWon)
+        {
+            return;
+        }
+
+        if(highestfill ==  winningScore)
+        {
+            winningPanel.SetActive(true);
+            hasWon = true;
+        }
+    }
+
+    public void KeepPlaying()
+    {
+        winningPanel.SetActive(false);
     }
 }
