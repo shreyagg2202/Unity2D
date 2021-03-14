@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ground
+  - Ladder
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 347923385
+    locked: 0
+  - name: Climbing
+    uniqueID: 2135016291
     locked: 0

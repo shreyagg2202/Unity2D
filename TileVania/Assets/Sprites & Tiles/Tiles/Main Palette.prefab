@@ -381,6 +381,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 2, y: -7, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 46
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -1, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -645,9 +655,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 2cc29f2803b49b2478545ff045b30af4, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d6b3c9134ba4f5b468d4f14d7c86e24a, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 7eb773626599c5642a8dbdd068b05d09, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: adfc4c94b8f29904aae1e48607029786, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -2276109588449258574, guid: 516cf4bd23217534ba7ca61dea3541ef, type: 3}
   - m_RefCount: 1
@@ -739,7 +751,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -4897907173415269231, guid: 99d9bacaf416fad4b8dbe22c002130ec, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 47
+  - m_RefCount: 48
     m_Data:
       e00: 1
       e01: 0
@@ -776,7 +788,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 51
+  - m_RefCount: 52
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -861,7 +873,7 @@ GameObject:
   - component: {fileID: 3477576373030715347}
   - component: {fileID: 7067889586367702694}
   m_Layer: 31
-  m_Name: Manual Tiles
+  m_Name: Main Palette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -894,7 +906,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &1380055842785627140
+--- !u!114 &1020359402795810335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
