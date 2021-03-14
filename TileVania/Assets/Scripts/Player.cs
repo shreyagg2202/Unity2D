@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
+    [SerializeField] Vector2 deathKick = new Vector2(250f, 250f);
 
     //State
     bool isAlive = true;
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     CapsuleCollider2D myBodyCollider2D;
     BoxCollider2D myFeet;
     float graviteScaleAtStart;
+
     //Messages then methods
     void Start()
     {
@@ -30,10 +32,16 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isAlive)
+        {
+            return;
+        }
+
         Run();
         ClimbLadder();
         Jump();
         FlipSprite();
+        Die();
     }
 
     private void Run()
@@ -75,6 +83,16 @@ public class Player : MonoBehaviour
         {
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocity;
+        }
+    }
+
+    private void Die()
+    {
+        if(myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask(("Enemy"))))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Dying");
+            GetComponent<Rigidbody2D>().velocity = deathKick;
         }
     }
 

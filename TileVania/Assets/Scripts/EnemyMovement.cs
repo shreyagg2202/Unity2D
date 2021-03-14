@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isFacingRight())
+        if (IsFacingRight())
         {
             myRigidBody.velocity = new Vector2(moveSpeed, 0);
         }
@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    bool isFacingRight()
+    bool IsFacingRight()
     {
         return transform.localScale.x > 0;
     }
