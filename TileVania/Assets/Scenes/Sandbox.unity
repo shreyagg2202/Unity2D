@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 596365767}
   - component: {fileID: 596365766}
   - component: {fileID: 596365765}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Climbing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
