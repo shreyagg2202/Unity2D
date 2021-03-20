@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winLabel: {fileID: 0}
-  winDelay: 4
   loseLabel: {fileID: 0}
 --- !u!114 &1309011615
 MonoBehaviour:

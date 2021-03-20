@@ -5,31 +5,31 @@ using UnityEngine.UI;
 
 public class HealthPoints : MonoBehaviour
 {
-    [SerializeField] float baseLives = 3;
+    [SerializeField] float baseLives = 6;
     [SerializeField] int damage = 1;
-    float healthPoints;
-    Text healthPointsText;
+    float lives;
+    Text livesText;
 
     // Start is called before the first frame update
     void Start()
     {
-        healthPoints = baseLives - PlayerPrefsController.GetDifficulty();
-        healthPointsText = GetComponent<Text>();
+        lives = baseLives - PlayerPrefsController.GetDifficulty();
+        livesText = GetComponent<Text>();
         UpdateDisplay();
         Debug.Log("difficulty setting currently is " + PlayerPrefsController.GetDifficulty());
     }
 
     private void UpdateDisplay()
     {
-        healthPointsText.text = healthPoints.ToString();
+        livesText.text = lives.ToString();
     }
 
-    public void DecreaseHP(int amount)
+    public void DecreaseHP()
     {
-        healthPoints -= amount;
+        lives -= damage;
         UpdateDisplay();
 
-        if (healthPoints <= 0)
+        if (lives <= 0)
         {
             FindObjectOfType<LevelController>().HandleLoseCondition();
         }
