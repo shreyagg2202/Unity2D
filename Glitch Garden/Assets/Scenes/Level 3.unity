@@ -1803,6 +1803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Complete Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6799949554916295752, guid: 2457e489df48ea44395443d5d70fb682, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2457e489df48ea44395443d5d70fb682, type: 3}
 --- !u!224 &4786943443332748702
@@ -2128,6 +2132,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 153667245}
+    - target: {fileID: 6764622395434826845, guid: bcaf2198b505cd849a3e7470b795eab5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcaf2198b505cd849a3e7470b795eab5, type: 3}
 --- !u!1 &6819123291503893509
