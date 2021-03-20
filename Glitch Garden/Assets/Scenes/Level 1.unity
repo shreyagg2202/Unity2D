@@ -766,11 +766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1614427718, guid: 11b614e8fdeecc54c9b88b1b127131e5, type: 3}
       propertyPath: minSpawnDelay
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1614427718, guid: 11b614e8fdeecc54c9b88b1b127131e5, type: 3}
       propertyPath: maxSpawnDelay
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1614427718, guid: 11b614e8fdeecc54c9b88b1b127131e5, type: 3}
       propertyPath: attackerPrefabArray.Array.data[0]
@@ -1154,11 +1154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1614427718, guid: 11b614e8fdeecc54c9b88b1b127131e5, type: 3}
       propertyPath: minSpawnDelay
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1614427718, guid: 11b614e8fdeecc54c9b88b1b127131e5, type: 3}
       propertyPath: maxSpawnDelay
-      value: 4
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1614427718, guid: 11b614e8fdeecc54c9b88b1b127131e5, type: 3}
       propertyPath: attackerPrefabArray.Array.data[0]
@@ -1433,6 +1433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377957730}
     m_Modifications:
+    - target: {fileID: 1309011615, guid: 4b4e7bdc999024a4b87320ea64bca8a2, type: 3}
+      propertyPath: timeToWait
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3130799479718504897, guid: 4b4e7bdc999024a4b87320ea64bca8a2, type: 3}
       propertyPath: m_Name
       value: LevelController
@@ -1844,6 +1848,14 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6094265601505154611, guid: a92662e85590a1e4a8bbc2bee62ec91f, type: 3}
+      propertyPath: baseLives
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094265601505154611, guid: a92662e85590a1e4a8bbc2bee62ec91f, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6231862438246328305, guid: a92662e85590a1e4a8bbc2bee62ec91f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1862,7 +1874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231862438628471926, guid: a92662e85590a1e4a8bbc2bee62ec91f, type: 3}
       propertyPath: levelTime
-      value: 6
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6231862438685330705, guid: a92662e85590a1e4a8bbc2bee62ec91f, type: 3}
       propertyPath: m_LocalPosition.x

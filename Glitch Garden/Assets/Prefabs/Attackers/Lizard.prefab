@@ -92,9 +92,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5272410464717737094}
   - component: {fileID: 5272410464717737092}
-  - component: {fileID: 5272410464717737089}
   - component: {fileID: 1151279637519515260}
   - component: {fileID: -5556651050816742227}
+  - component: {fileID: 5272410464717737089}
   - component: {fileID: -2508019799407860992}
   - component: {fileID: 6071969552149293964}
   m_Layer: 0
@@ -138,18 +138,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5272410464717737089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5272410464717737093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06ad78bdccaae7a4fb7e4789479756d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1151279637519515260
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -226,6 +214,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5272410464717737089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272410464717737093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ad78bdccaae7a4fb7e4789479756d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSpeed: 0.4
 --- !u!114 &-2508019799407860992
 MonoBehaviour:
   m_ObjectHideFlags: 0
