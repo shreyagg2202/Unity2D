@@ -15,3 +15,7 @@
 * [Laser Defender](https://simmer.io/@Anomator/laser-defender), 2D Starship Shooting game 
 
 * [Flappy Bird](https://simmer.io/@Anomator/flappy-bird), Basic Flappy Bird Game
+
+* [2048](https://simmer.io/@Anomator/2048), 2048 Clone Game
+
+* [Tilevania](https://simmer.io/@Anomator/tilevania), 2D platformer with 2 levels
