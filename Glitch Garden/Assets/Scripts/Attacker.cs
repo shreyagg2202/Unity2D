@@ -7,6 +7,7 @@ public class Attacker : MonoBehaviour
 {
     [Range(0f, 5f)]
     [SerializeField] float currentSpeed = 1f;
+    [SerializeField] int starsOnDeath = 5;
     GameObject currentTarget;
 
     private void Awake()
@@ -20,6 +21,7 @@ public class Attacker : MonoBehaviour
         if (levelController != null)
         {
             levelController.AttackerKilled();
+            FindObjectOfType<StarDisplay>().AddStars(starsOnDeath);
         }
     }
 

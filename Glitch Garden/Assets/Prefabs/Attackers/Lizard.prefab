@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0.5
+  starsOnDeath: 25
 --- !u!114 &-2508019799407860992
 MonoBehaviour:
   m_ObjectHideFlags: 0
