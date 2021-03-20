@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7862813037706015955}
   - component: {fileID: 4766391859439869632}
   - component: {fileID: 1309011615}
-  - component: {fileID: 1080544469644062821}
+  - component: {fileID: 1530455610}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 4
---- !u!82 &1080544469644062821
+--- !u!82 &1530455610
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
