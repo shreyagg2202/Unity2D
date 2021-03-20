@@ -80484,11 +80484,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3608942640485096731, guid: 5e6b23d1bf4d57a40a3e26fbbbf0fad3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.633093
+      value: -10.637419
       objectReference: {fileID: 0}
     - target: {fileID: 3608942640485096731, guid: 5e6b23d1bf4d57a40a3e26fbbbf0fad3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.890923
+      value: 14.890996
       objectReference: {fileID: 0}
     - target: {fileID: 3608942640485096932, guid: 5e6b23d1bf4d57a40a3e26fbbbf0fad3, type: 3}
       propertyPath: orthographic size
