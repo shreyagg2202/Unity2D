@@ -1,0 +1,4150 @@
+fileFormatVersion: 2
+guid: 6f27255d04b3db54cbd9ddc7fa9fdfe2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3349736439494157625
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_0
+  - first:
+      213: 5587656313540151267
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_1
+  - first:
+      213: 2769007079146201959
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_2
+  - first:
+      213: -7852474776993971320
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_3
+  - first:
+      213: -275583240764099142
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_4
+  - first:
+      213: -3535499167438194158
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_5
+  - first:
+      213: 5084291504702541139
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_6
+  - first:
+      213: -7915602643790475220
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_7
+  - first:
+      213: -6852704663477447633
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_8
+  - first:
+      213: -5073220180301107528
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_9
+  - first:
+      213: 4714830075994573356
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_10
+  - first:
+      213: -4763203111788560211
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_11
+  - first:
+      213: -3940080402924757453
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_12
+  - first:
+      213: -8472998550582969777
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_13
+  - first:
+      213: -1903792061470172528
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_14
+  - first:
+      213: -480483527441992347
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_15
+  - first:
+      213: 4467634752817748406
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_16
+  - first:
+      213: -6655978970280150496
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_17
+  - first:
+      213: -4738046227678224675
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_18
+  - first:
+      213: -3790424336696751007
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_19
+  - first:
+      213: 489894540282027497
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_20
+  - first:
+      213: -5789144830898540192
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_21
+  - first:
+      213: 3821248544022104420
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_22
+  - first:
+      213: 2930005556583533559
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_23
+  - first:
+      213: 8290054672625566474
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_24
+  - first:
+      213: -7075532457042683283
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_25
+  - first:
+      213: 7922055454906252393
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_26
+  - first:
+      213: -5541486442534476455
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_27
+  - first:
+      213: -8769727868863778293
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_28
+  - first:
+      213: 2806202219107794835
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_29
+  - first:
+      213: -3168343774689303824
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_30
+  - first:
+      213: 8726195827720907819
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_31
+  - first:
+      213: -5329313963067956499
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_32
+  - first:
+      213: 4028346469444251246
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_33
+  - first:
+      213: 7248951622951732362
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_34
+  - first:
+      213: -3539754697131956232
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_35
+  - first:
+      213: 7403095195692850828
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_36
+  - first:
+      213: 3024004343526565466
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_37
+  - first:
+      213: -2334365567393430572
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_38
+  - first:
+      213: -1785273065039265248
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_39
+  - first:
+      213: 2031056426527929618
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_40
+  - first:
+      213: -7757229131985064163
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_41
+  - first:
+      213: -2610116463638225837
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_42
+  - first:
+      213: 5891822229250793254
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_43
+  - first:
+      213: 8963019878857830895
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_44
+  - first:
+      213: -6289649559145110043
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_45
+  - first:
+      213: 1093555081248929877
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_46
+  - first:
+      213: -3412301963919544034
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_47
+  - first:
+      213: -133756242687058632
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_48
+  - first:
+      213: -8074712827055159453
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_49
+  - first:
+      213: -2825247625246374268
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_50
+  - first:
+      213: -1038872171916050533
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_51
+  - first:
+      213: 6686237928282983751
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_52
+  - first:
+      213: 3030850344665351168
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_53
+  - first:
+      213: 2144957594432309331
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_54
+  - first:
+      213: 3508918328486393282
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_55
+  - first:
+      213: -2096451262298474434
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_56
+  - first:
+      213: 6912319384781025698
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_57
+  - first:
+      213: 3248483121088466716
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_58
+  - first:
+      213: -5417589326333479827
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_59
+  - first:
+      213: -1991064874345186994
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_60
+  - first:
+      213: -8296683195027272375
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_61
+  - first:
+      213: 4324265177045692144
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_62
+  - first:
+      213: -200254291426829663
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_63
+  - first:
+      213: -5550033614591748968
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_64
+  - first:
+      213: 6895883036465362832
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_65
+  - first:
+      213: 6889158676373734623
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_66
+  - first:
+      213: -6734703764976724339
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_67
+  - first:
+      213: -5439143759202122357
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_68
+  - first:
+      213: -5560252357288361291
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_69
+  - first:
+      213: 9050845852105220700
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_70
+  - first:
+      213: 7730212802924380413
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_71
+  - first:
+      213: -6251910509770074120
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_72
+  - first:
+      213: -5399554550044978723
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_73
+  - first:
+      213: 7533519683096350403
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_74
+  - first:
+      213: 6815868656385657646
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_75
+  - first:
+      213: 3581337662912424836
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_76
+  - first:
+      213: -4567710050461900192
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_77
+  - first:
+      213: -1079641610673569466
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_78
+  - first:
+      213: 5928850212401717882
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_79
+  - first:
+      213: 5980917275447218224
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_80
+  - first:
+      213: -6231904497061155118
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_81
+  - first:
+      213: 1462750102458779357
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_82
+  - first:
+      213: -2298268694083807790
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_83
+  - first:
+      213: 4207538336799827691
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_84
+  - first:
+      213: -1944860497642368404
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_85
+  - first:
+      213: 6939929770843923650
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_86
+  - first:
+      213: 1272234140650241416
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_87
+  - first:
+      213: 862393781660162991
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_88
+  - first:
+      213: -1460557996893781788
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_89
+  - first:
+      213: 8843864085964188182
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_90
+  - first:
+      213: 3251954799851452830
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_91
+  - first:
+      213: 4530818972870053444
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_92
+  - first:
+      213: -25959771899472918
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_93
+  - first:
+      213: 3310902992709426459
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_94
+  - first:
+      213: -2774454295974631890
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_95
+  - first:
+      213: 8274295144847717512
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_96
+  - first:
+      213: -4940317897706016016
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_97
+  - first:
+      213: -5703606332449525887
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_98
+  - first:
+      213: -7308010046657071207
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_99
+  - first:
+      213: 3453527057179859751
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_100
+  - first:
+      213: -6157926142634750420
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_101
+  - first:
+      213: 6748631162486890774
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_102
+  - first:
+      213: 7552462204289819563
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_103
+  - first:
+      213: 4878850591250034296
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_104
+  - first:
+      213: -6220956354968139823
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_105
+  - first:
+      213: 7464499847392626482
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_106
+  - first:
+      213: 8646184907814688896
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_107
+  - first:
+      213: 3689386005269171936
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_108
+  - first:
+      213: -4180505413195202201
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_109
+  - first:
+      213: 962652694973431992
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_110
+  - first:
+      213: 9028631788438157273
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_111
+  - first:
+      213: 6333922955759800740
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_112
+  - first:
+      213: -970345280201192614
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_113
+  - first:
+      213: -6080031588132216354
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_114
+  - first:
+      213: -8528782336252079789
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_115
+  - first:
+      213: 3735886949837343712
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_116
+  - first:
+      213: -8189637059498870541
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_117
+  - first:
+      213: -2169554291919107598
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_118
+  - first:
+      213: -2768604027889120084
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_119
+  - first:
+      213: -3739830068892765081
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_120
+  - first:
+      213: -7921863955099882602
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_121
+  - first:
+      213: 1173791509553768519
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_122
+  - first:
+      213: 6692650778931557211
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_123
+  - first:
+      213: 5537770925714501564
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_124
+  - first:
+      213: -3104772235761774210
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_125
+  - first:
+      213: 4905614237355175774
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_126
+  - first:
+      213: 2933598795406361913
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_127
+  - first:
+      213: 285036617380776712
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_128
+  - first:
+      213: 3711727491784086861
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_129
+  - first:
+      213: -4816149079702173813
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_130
+  - first:
+      213: -7484371542225271084
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_131
+  - first:
+      213: 6295939386390555732
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_132
+  - first:
+      213: 6618479875571749667
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_133
+  - first:
+      213: -4574672152276493994
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_134
+  - first:
+      213: -4692978805772427675
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_135
+  - first:
+      213: -1213110788926580234
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_136
+  - first:
+      213: 6439725192912157554
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_137
+  - first:
+      213: -2226190089804903996
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_138
+  - first:
+      213: -1292366590014555252
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_139
+  - first:
+      213: 5345310284783231886
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_140
+  - first:
+      213: -7432569866432426388
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_141
+  - first:
+      213: -3768447172137898072
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_142
+  - first:
+      213: 4147209176256202284
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_143
+  - first:
+      213: -360809763356639344
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_144
+  - first:
+      213: -1619911742564352353
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_145
+  - first:
+      213: 6519143108865557820
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_146
+  - first:
+      213: -7537382222082287582
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_147
+  - first:
+      213: 8536065205971374701
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_148
+  - first:
+      213: -3734784618508099151
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_149
+  - first:
+      213: -8697330262025137677
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_150
+  - first:
+      213: 5716386986237223423
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_151
+  - first:
+      213: 6354765770505854203
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_152
+  - first:
+      213: 7621703445937528016
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_153
+  - first:
+      213: -6471577727124633358
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_154
+  - first:
+      213: -9112329468960444310
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_155
+  - first:
+      213: -7479455004553497743
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_156
+  - first:
+      213: 2854289363518158075
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_157
+  - first:
+      213: 8739043304943454877
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_158
+  - first:
+      213: -4108041008269352668
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_159
+  - first:
+      213: -5890481124581086052
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_160
+  - first:
+      213: 7465391056850193863
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_161
+  - first:
+      213: -3570056330130381706
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_162
+  - first:
+      213: -1085749374861598296
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_163
+  - first:
+      213: -2621279757232324573
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_164
+  - first:
+      213: 426443277516710156
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_165
+  - first:
+      213: -670368801837553792
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_166
+  - first:
+      213: -4510855015356002
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_167
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 258
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cad4c8b4785381d0800000000000000
+      internalID: -3349736439494157625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 258
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7878fffc75b8d40800000000000000
+      internalID: 5587656313540151267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 258
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7632d05844d7d6620800000000000000
+      internalID: 2769007079146201959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 257
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8834f856bc7660390800000000000000
+      internalID: -7852474776993971320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 257
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5743ca08eec2cf0800000000000000
+      internalID: -275583240764099142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 257
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a38253d326feec0800000000000000
+      internalID: -3535499167438194158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_6
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 261
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dc4509f280f8640800000000000000
+      internalID: 5084291504702541139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 261
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20d9b98551262290800000000000000
+      internalID: -7915602643790475220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_8
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 265
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2493ce6a6d46e0a0800000000000000
+      internalID: -6852704663477447633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_9
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 265
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be2fc5002d4899b0800000000000000
+      internalID: -5073220180301107528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_10
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 265
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a0cff49f07e6140800000000000000
+      internalID: 4714830075994573356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 265
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0cec0a104b5edb0800000000000000
+      internalID: -4763203111788560211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_12
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 265
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e113dbfb50259c0800000000000000
+      internalID: -3940080402924757453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_13
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 265
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a3a1ac5bcd96a80800000000000000
+      internalID: -8472998550582969777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 240
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a9cd1f43f5495e0800000000000000
+      internalID: -1903792061470172528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 238
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565b46a07caf459f0800000000000000
+      internalID: -480483527441992347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_16
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 238
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b954eb132a300e30800000000000000
+      internalID: 4467634752817748406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 237
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a3bf3346631a3a0800000000000000
+      internalID: -6655978970280150496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_18
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 237
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde1cd52f041f3eb0800000000000000
+      internalID: -4738046227678224675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 235
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cc137f525b56bc0800000000000000
+      internalID: -3790424336696751007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_20
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 241
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edd9e22d747cc600800000000000000
+      internalID: 489894540282027497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 241
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061f001d273d8afa0800000000000000
+      internalID: -5789144830898540192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_22
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 241
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4698ae01e4dc70530800000000000000
+      internalID: 3821248544022104420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 218
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb0516a78879a820800000000000000
+      internalID: 2930005556583533559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_24
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 218
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a030a6a5dc03c0370800000000000000
+      internalID: 8290054672625566474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 217
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a5935d7b8aecd90800000000000000
+      internalID: -7075532457042683283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_26
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 217
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cf1a0a67bc0fd60800000000000000
+      internalID: 7922055454906252393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_27
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 217
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955e619c07fa813b0800000000000000
+      internalID: -5541486442534476455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 221
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02f78f97faab4680800000000000000
+      internalID: -8769727868863778293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 221
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f35d5ec02a1f620800000000000000
+      internalID: 2806202219107794835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_30
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 221
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2e25f9f18c704d0800000000000000
+      internalID: -3168343774689303824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_31
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 200
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cecc73fdca91970800000000000000
+      internalID: 8726195827720907819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 199
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de22ecebf297a06b0800000000000000
+      internalID: -5329313963067956499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_33
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 203
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e6c6755cf87e730800000000000000
+      internalID: 4028346469444251246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_34
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 199
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8487003813799460800000000000000
+      internalID: 7248951622951732362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 201
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7ed6d7bd340eec0800000000000000
+      internalID: -3539754697131956232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_36
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 197
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e5ca17bd31db660800000000000000
+      internalID: 7403095195692850828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_37
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 201
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56a327bdeb67f920800000000000000
+      internalID: 3024004343526565466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_38
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 201
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d38c9b62eaaa9fd0800000000000000
+      internalID: -2334365567393430572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_39
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 201
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022034b2b9f6937e0800000000000000
+      internalID: -1785273065039265248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_40
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 195
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215b8f51f03cf2c10800000000000000
+      internalID: 2031056426527929618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_41
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 195
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fe7ba3439c85490800000000000000
+      internalID: -7757229131985064163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_42
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 195
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cd172c7e007cbd0800000000000000
+      internalID: -2610116463638225837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_43
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f5e3ee915f3c150800000000000000
+      internalID: 5891822229250793254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_44
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1f51a771b036c70800000000000000
+      internalID: 8963019878857830895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_45
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5a679cc0da6b8a0800000000000000
+      internalID: -6289649559145110043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_46
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5587a207d861d2f00800000000000000
+      internalID: 1093555081248929877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_47
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e113536617115a0d0800000000000000
+      internalID: -3412301963919544034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_48
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d952ce76dc42ef0800000000000000
+      internalID: -133756242687058632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_49
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3674618277bd0ff80800000000000000
+      internalID: -8074712827055159453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_50
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 177
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4868caee044bac8d0800000000000000
+      internalID: -2825247625246374268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_51
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 181
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fb7e9834f2591f0800000000000000
+      internalID: -1038872171916050533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_52
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 181
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d0d0778f94acc50800000000000000
+      internalID: 6686237928282983751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_53
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 181
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0040621945ebf0a20800000000000000
+      internalID: 3030850344665351168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_54
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 185
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3580a62519b64cd10800000000000000
+      internalID: 2144957594432309331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_55
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 185
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5f943f0ae22b030800000000000000
+      internalID: 3508918328486393282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_56
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 185
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38b7c53fa8e7e2e0800000000000000
+      internalID: -2096451262298474434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_57
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a17bef7bdd7def50800000000000000
+      internalID: 6912319384781025698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_58
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f845bff2ee41d20800000000000000
+      internalID: 3248483121088466716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_59
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64f1f8163bd0d4b0800000000000000
+      internalID: -5417589326333479827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_60
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49b5efbb015e54e0800000000000000
+      internalID: -1991064874345186994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_61
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d427287924cdc80800000000000000
+      internalID: -8296683195027272375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_62
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe66608440e20c30800000000000000
+      internalID: 4324265177045692144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_63
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa91ce68cd883df0800000000000000
+      internalID: -200254291426829663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_64
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89418c635d15af2b0800000000000000
+      internalID: -5550033614591748968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_65
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 157
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097f821f51913bf50800000000000000
+      internalID: 6895883036465362832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_66
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 161
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd48e8ad0553b9f50800000000000000
+      internalID: 6889158676373734623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_67
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 161
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8693159b968982a0800000000000000
+      internalID: -6734703764976724339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_68
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 161
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85897e91974484b0800000000000000
+      internalID: -5439143759202122357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_69
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 161
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b28c46c0f306d2b0800000000000000
+      internalID: -5560252357288361291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_70
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 159
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52ac8b59501b9d70800000000000000
+      internalID: 9050845852105220700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_71
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 160
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df00c7c769b374b60800000000000000
+      internalID: 7730212802924380413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_72
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 161
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f79f91f380cc39a0800000000000000
+      internalID: -6251910509770074120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_73
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1993baebde015b0800000000000000
+      internalID: -5399554550044978723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_74
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce0f5bcc307c8860800000000000000
+      internalID: 7533519683096350403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_75
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b06935e64d69e50800000000000000
+      internalID: 6815868656385657646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_76
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b6f9231a773b130800000000000000
+      internalID: 3581337662912424836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_77
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062ac3de8eb3c90c0800000000000000
+      internalID: -4567710050461900192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_78
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641421fdca75401f0800000000000000
+      internalID: -1079641610673569466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_79
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7224b41bd1874250800000000000000
+      internalID: 5928850212401717882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_80
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 137
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0305702e29c700350800000000000000
+      internalID: 5980917275447218224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_81
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 141
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dea282c0e3d389a0800000000000000
+      internalID: -6231904497061155118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_82
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 141
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6c83cd77bbc4410800000000000000
+      internalID: 1462750102458779357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_83
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 141
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5dbbaacc8ea10e0800000000000000
+      internalID: -2298268694083807790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_84
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 141
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6aac723dd246a30800000000000000
+      internalID: 4207538336799827691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_85
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6256548ea77205e0800000000000000
+      internalID: -1944860497642368404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_86
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c46f457b559f4060800000000000000
+      internalID: 6939929770843923650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_87
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88df498d532e7a110800000000000000
+      internalID: 1272234140650241416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_88
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab1c544396d7fb00800000000000000
+      internalID: 862393781660162991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_89
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e04a4d7d3e0bbbe0800000000000000
+      internalID: -1460557996893781788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_90
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61aeab58787bbba70800000000000000
+      internalID: 8843864085964188182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_91
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99b5ce29a3412d20800000000000000
+      internalID: 3251954799851452830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_92
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 117
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e058bb9d3b0ee30800000000000000
+      internalID: 4530818972870053444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_93
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 121
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae35b7999b5c3aff0800000000000000
+      internalID: -25959771899472918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_94
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 121
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d193edab0b2fd20800000000000000
+      internalID: 3310902992709426459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_95
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 121
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2620ea74882f79d0800000000000000
+      internalID: -2774454295974631890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_96
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 121
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884336b589334d270800000000000000
+      internalID: 8274295144847717512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_97
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f27ab50c07707bb0800000000000000
+      internalID: -4940317897706016016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_98
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f6da77248b8d0b0800000000000000
+      internalID: -5703606332449525887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_99
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997f402059bb49a90800000000000000
+      internalID: -7308010046657071207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_100
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bd7699f846def20800000000000000
+      internalID: 3453527057179859751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_101
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 99
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e0a23acc6aa8aa0800000000000000
+      internalID: -6157926142634750420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_102
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611a9285944f7ad50800000000000000
+      internalID: 6748631162486890774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_103
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba322423c5cbfc860800000000000000
+      internalID: 7552462204289819563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_104
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 98
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ea9a373c825b340800000000000000
+      internalID: 4878850591250034296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_105
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 97
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d74aeab729baa9a0800000000000000
+      internalID: -6220956354968139823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_106
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 84
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2378bc5001b379760800000000000000
+      internalID: 7464499847392626482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_107
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08853ac3d5b6df770800000000000000
+      internalID: 8646184907814688896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_108
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 85
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eecd5b4605533330800000000000000
+      internalID: 3689386005269171936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_109
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76107e8d97cdbf5c0800000000000000
+      internalID: -4180505413195202201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_110
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0c6f596870c5d00800000000000000
+      internalID: 962652694973431992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_111
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7f7ad96c42c4d70800000000000000
+      internalID: 9028631788438157273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_112
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a151c4ae5d96e750800000000000000
+      internalID: 6333922955759800740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_113
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b8128db14a882f0800000000000000
+      internalID: -970345280201192614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_114
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1a936eb736f9ba0800000000000000
+      internalID: -6080031588132216354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_115
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351911117ada3a980800000000000000
+      internalID: -8528782336252079789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_116
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb8216236988d330800000000000000
+      internalID: 3735886949837343712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_117
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 77
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8f1352c70985e80800000000000000
+      internalID: -8189637059498870541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_118
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 78
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9cc35cdd134e1e0800000000000000
+      internalID: -2169554291919107598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_119
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 78
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac04f92e41f399d0800000000000000
+      internalID: -2768604027889120084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_120
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 75
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7647257ed54791cc0800000000000000
+      internalID: -3739830068892765081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_121
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 75
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bec4564b2ef0290800000000000000
+      internalID: -7921863955099882602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_122
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 75
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748625fa8252a4010800000000000000
+      internalID: 1173791509553768519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_123
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 75
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53f4fb9c6211ec50800000000000000
+      internalID: 6692650778931557211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_124
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 75
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfe2ba015d1adc40800000000000000
+      internalID: 5537770925714501564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_125
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 75
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e719ce2f912a9e4d0800000000000000
+      internalID: -3104772235761774210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_126
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 75
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f67a6682e341440800000000000000
+      internalID: 4905614237355175774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_127
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 75
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935c5b1cf8c36b820800000000000000
+      internalID: 2933598795406361913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_128
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 65
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bc5f61b47a4f300800000000000000
+      internalID: 285036617380776712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_129
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 65
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4597dafc74b28330800000000000000
+      internalID: 3711727491784086861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_130
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 62
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b870707dde9992db0800000000000000
+      internalID: -4816149079702173813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_131
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 62
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6ce9a7cbb222890800000000000000
+      internalID: -7484371542225271084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_132
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 62
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c233db38baf5750800000000000000
+      internalID: 6295939386390555732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_133
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 62
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3239680716099db50800000000000000
+      internalID: 6618479875571749667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_134
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 62
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65910b74aef7380c0800000000000000
+      internalID: -4574672152276493994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_135
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 62
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e5f7ff3a03fdeb0800000000000000
+      internalID: -4692978805772427675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_136
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 57
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f956d03a2a2a2fe0800000000000000
+      internalID: -1213110788926580234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_137
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 58
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bb9ae91ff7e5950800000000000000
+      internalID: 6439725192912157554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_138
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 58
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c90fae78ebfa11e0800000000000000
+      internalID: -2226190089804903996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_139
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 41
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b79920f67901ee0800000000000000
+      internalID: -1292366590014555252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_140
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e832fb2226b5e2a40800000000000000
+      internalID: 5345310284783231886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_141
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ec50ff5153ad890800000000000000
+      internalID: -7432569866432426388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_142
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 41
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af25e55349c3bbc0800000000000000
+      internalID: -3768447172137898072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_143
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26cdffd5c8dd8930800000000000000
+      internalID: 4147209176256202284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_144
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f72af8e652efaf0800000000000000
+      internalID: -360809763356639344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_145
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 41
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9eb7f05adae489e0800000000000000
+      internalID: -1619911742564352353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_146
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c350edb1e16a87a50800000000000000
+      internalID: 6519143108865557820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_147
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228d074cdc6d56790800000000000000
+      internalID: -7537382222082287582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_148
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 41
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62de7d2412367670800000000000000
+      internalID: 8536065205971374701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_149
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b16b3d5d216b2cc0800000000000000
+      internalID: -3734784618508099151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_150
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 41
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f19cb50530ec4780800000000000000
+      internalID: -8697330262025137677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_151
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 37
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1e5516dafa45f40800000000000000
+      internalID: 5716386986237223423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_152
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 37
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc10dd9cc9a03850800000000000000
+      internalID: 6354765770505854203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_153
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 38
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc1a7e07eab5c960800000000000000
+      internalID: 7621703445937528016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_154
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 16
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8086658565036a0800000000000000
+      internalID: -6471577727124633358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_155
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 20
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60f94e80a08a8180800000000000000
+      internalID: -9112329468960444310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_156
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 20
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173321c1d43a33890800000000000000
+      internalID: -7479455004553497743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_157
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 20
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4fcaead097c9720800000000000000
+      internalID: 2854289363518158075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_158
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 20
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a09eb9591574970800000000000000
+      internalID: 8739043304943454877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_159
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 19
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4212e53e77e4df6c0800000000000000
+      internalID: -4108041008269352668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_160
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 18
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c633550aec04ea0800000000000000
+      internalID: -5890481124581086052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_161
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 17
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd0fe4ec956a9760800000000000000
+      internalID: 7465391056850193863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_162
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 17
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674a176ceac947ec0800000000000000
+      internalID: -3570056330130381706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_163
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 17
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1a54432b4aee0f0800000000000000
+      internalID: -1085749374861598296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_164
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320ce3de2f75f9bd0800000000000000
+      internalID: -2621279757232324573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_165
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01ac39c6e70be500800000000000000
+      internalID: 426443277516710156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_166
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087e7f1602f52b6f0800000000000000
+      internalID: -670368801837553792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 1_167
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e992d29b669ffeff0800000000000000
+      internalID: -4510855015356002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
