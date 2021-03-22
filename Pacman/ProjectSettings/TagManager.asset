@@ -15,7 +15,7 @@ TagManager:
   - 
   - Background
   - Foreground
-  - Pacman
+  - Characters
   - 
   - 
   - 
@@ -47,6 +47,6 @@ TagManager:
   - name: Foreground
     uniqueID: 3737679355
     locked: 0
-  - name: Pacman
+  - name: Characters
     uniqueID: 666245469
     locked: 0
