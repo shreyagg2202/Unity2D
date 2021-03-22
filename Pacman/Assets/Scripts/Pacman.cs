@@ -24,7 +24,6 @@ public class Pacman : MonoBehaviour
         PacmanXPosMove();
         PacmanYPosMove();
         LastMovement();
-       
     }
 
     private void PacmanXPosMove()                               //X moving direction of character
