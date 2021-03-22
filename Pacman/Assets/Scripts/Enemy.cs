@@ -20,24 +20,24 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Vector2 newPos = new Vector2(transform.position.x, transform.position.y);
-        if (transform.position.x >= 1)
-        {
-            anim.SetFloat("MoveX", 1f);
-        }
-        else if (transform.position.x <= -1)
+        if (newPos.x < currentPos.x)
         {
             anim.SetFloat("MoveX", -1f);
+        }
+        else if (newPos.x > currentPos.x)
+        {
+            anim.SetFloat("MoveX", 1f);
         }
         else
         {
             anim.SetFloat("MoveX", 0f);
         }
 
-        if (transform.position.y >= 1)
+        if (newPos.y > currentPos.y)
         {
             anim.SetFloat("MoveY", 1f);
         }
-        else if (transform.position.y <= -1)
+        else if (newPos.y < currentPos.y)
         {
             anim.SetFloat("MoveY", -1f);
         }
@@ -45,6 +45,5 @@ public class Enemy : MonoBehaviour
         {
             anim.SetFloat("MoveY", 0f);
         }
-        currentPos = newPos;
     }
 }
