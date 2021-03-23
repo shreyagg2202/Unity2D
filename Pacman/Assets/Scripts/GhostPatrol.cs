@@ -72,19 +72,19 @@ public class GhostPatrol : MonoBehaviour
                 }
             }
         }
-        //cannot move down
+        //cannot move down              // can move left, right or up
         //cannot move up
-        //cannot move left
+        //cannot move left              //
         //cannot move right
         //cannot move down or up
-        //cannot move down or left
-        //cannot move down or right
-        //cannot move up or left
-        //cannot move up or right
-        //cannot move left or right
-        //can only move down
-        //can only move up
-        //can only move left
-        //can only move right
+        //cannot move down or left      // can only move up or right
+        //cannot move down or right     // can only move left ot up
+        //cannot move up or left        //
+        //cannot move up or right       //
+        //cannot move left or right     //
+        //can only move down            //
+        //can only move up              //
+        //can only move left            //
+        //can only move right           //
     }
 }
