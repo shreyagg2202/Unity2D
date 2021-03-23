@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wall_Detection : MonoBehaviour
+public class WallDetection : MonoBehaviour
 {
     public Transform originPointDown, endPointDown, originPointUp, endPointUp, originPointLeft, endPointLeft, originPointRight, endPointRight;
 
