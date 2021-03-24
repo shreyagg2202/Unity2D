@@ -204,33 +204,7 @@ public class GhostPatrol : MonoBehaviour
         }
     }
 
-    void MoveDown()
-    {
-        curDir = 1;
-        //Set animation here
-        moveDirection = Vector2.down;
-    }
-
-    void MoveLeft()
-    {
-        curDir = 2;
-        //Set animation here
-        moveDirection = Vector2.left;
-    }
-
-    void MoveRight()
-    {
-        curDir = 3;
-        //Set animation here
-        moveDirection = Vector2.right;
-    }
-
-    void MoveUp()
-    {
-        curDir = 4;
-        //Set animation here
-        moveDirection = Vector2.up;
-    }
+   
     void MovementHandler()
     {
         if (moveDir == 1)

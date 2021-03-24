@@ -26,7 +26,7 @@ public class WallDetection : MonoBehaviour
 
     void WallDetector()
     {
-        wallDetectDown = Physics2D.Linecast(originPointDown.position, endPointDown.position, wallLayer);
+        wallDetectDown = Physics2D.Raycast(originPointDown.position, endPointDown.position, wallLayer);
         wallDetectDown = Physics2D.Linecast(originPointUp.position, endPointUp.position, wallLayer);
         wallDetectDown = Physics2D.Linecast(originPointLeft.position, endPointLeft.position, wallLayer);
         wallDetectDown = Physics2D.Linecast(originPointRight.position, endPointRight.position, wallLayer);
