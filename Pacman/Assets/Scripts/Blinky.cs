@@ -23,14 +23,19 @@ namespace Pathfinding
             transform.position = waypoints[waypointIndex].transform.position;
 
             scatterTime = 0f;
+
         }
 
         // Update is called once per frame
         void Update()
         {
             scatterTime += Time.deltaTime;
-            Scatter();
-            if (scatterTime >= 7)
+            if (scatterTime <= 7)
+            {
+                Scatter();
+            }
+
+            else
             {
                 chaseTime += Time.deltaTime;
                 Chase();
