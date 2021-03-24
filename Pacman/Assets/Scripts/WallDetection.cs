@@ -26,10 +26,6 @@ public class WallDetection : MonoBehaviour
 
     void WallDetector()
     {
-        Debug.DrawLine(originPointDown.position, endPointDown.position, Color.green);
-        Debug.DrawLine(originPointUp.position, endPointUp.position, Color.green);
-        Debug.DrawLine(originPointLeft.position, endPointLeft.position, Color.green);
-        Debug.DrawLine(originPointRight.position, endPointRight.position, Color.green);
         wallDetectDown = Physics2D.Linecast(originPointDown.position, endPointDown.position, wallLayer);
         wallDetectDown = Physics2D.Linecast(originPointUp.position, endPointUp.position, wallLayer);
         wallDetectDown = Physics2D.Linecast(originPointLeft.position, endPointLeft.position, wallLayer);

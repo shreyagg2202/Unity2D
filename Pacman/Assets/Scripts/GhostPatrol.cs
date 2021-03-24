@@ -71,7 +71,7 @@ public class GhostPatrol : MonoBehaviour
                 while (moveDir < 1 || moveDir > 4)
                 {
                     moveDir = Random.Range(1, 5);
-                    if (moveDir == curDir)
+                    if (moveDir == -curDir)
                     {
                         moveDir = Random.Range(1, 5);
                     }

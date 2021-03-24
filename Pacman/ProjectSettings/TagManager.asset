@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Foreground
   - Pacman
   - Enemy
-  - Nodes
+  - Path
   - 
   - 
   - 
@@ -47,7 +48,7 @@ TagManager:
   - name: Foreground
     uniqueID: 3737679355
     locked: 0
-  - name: Nodes
+  - name: Path
     uniqueID: 4111847993
     locked: 0
   - name: Pacman
