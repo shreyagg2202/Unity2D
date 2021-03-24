@@ -10,7 +10,8 @@ public class GhostPatrol : MonoBehaviour
     private bool canChangeDir;
     private int curDir;
     
-    float switchToChaseTimer = 0f;
+    float switchToChaseTimer;
+    float switchToScatterTimer;
 
     private Vector2 moveDirection;
 
@@ -26,7 +27,7 @@ public class GhostPatrol : MonoBehaviour
                 moveDir = Random.Range(1, 5);
             }
         }
-
+        switchToChaseTimer = 0f;
         canChangeDir = true;   //Allows the player to chose a random direction to move
     }
 
@@ -34,17 +35,22 @@ public class GhostPatrol : MonoBehaviour
     void Update()
     {
         switchToChaseTimer += Time.deltaTime;            //time after which the ghost goes to chase stance
-        Debug.Log(switchToChaseTimer);
+        //Debug.Log(switchToChaseTimer);
 
-        if (switchToChaseTimer == 20f)
+        if (switchToChaseTimer == 7f)
         {
-            MovementHandler();
-            switchToChaseTimer = 0f;
+            while (switchToScatterTimer <= 20f)
+            {
+                //Make ghost Chase player
+                switchToChaseTimer = 0f;
+                switchToScatterTimer += Time.deltaTime;
+            }
+            switchToScatterTimer = 0f;
         }
 
         else
         {
-            //keep patrolling
+            MovementHandler();                          //keep patrolling
         }
 
     }
@@ -281,7 +287,7 @@ public class GhostPatrol : MonoBehaviour
     IEnumerator RandomMovement()
     {
         canChangeDir = false;
-        float timer = 0.1f;
+        float timer = 0.5f;
         yield return new WaitForSeconds(timer);
         ChangeDirection();
         yield return new WaitForSeconds(timer);
