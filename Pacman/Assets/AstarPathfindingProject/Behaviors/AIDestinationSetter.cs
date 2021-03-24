@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace Pathfinding {
 	/// <summary>
@@ -16,6 +17,9 @@ namespace Pathfinding {
 	public class AIDestinationSetter : VersionedMonoBehaviour {
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
+		public Transform newTarget;
+		public Transform tempTarget;
+		[SerializeField] float changeTargetTime = 0f;
 		IAstarAI ai;
 
 		void OnEnable () {
@@ -31,9 +35,28 @@ namespace Pathfinding {
 			if (ai != null) ai.onSearchPath -= Update;
 		}
 
-		/// <summary>Updates the AI's destination every frame</summary>
-		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+        private void Start()
+        {
+			tempTarget = target;
+		}
+        /// <summary>Updates the AI's destination every frame</summary>
+        void Update () 
+		{
+			changeTargetTime += Time.deltaTime;
+			if(changeTargetTime >= 20f)
+            {
+				target = newTarget;
+				ai.destination = target.position;
+				if (ai.reachedDestination)
+                {
+					newTarget = tempTarget;
+                }
+			}
+
+			else if (target != null && ai != null || changeTargetTime < 27f)
+			{ 
+					ai.destination = target.position;
+			}
 		}
 	}
 }

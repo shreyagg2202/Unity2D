@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Pathfinding 
+namespace Pathfinding
 {
 
     public class Blinky : MonoBehaviour
@@ -30,7 +30,7 @@ namespace Pathfinding
         void Update()
         {
             scatterTime += Time.deltaTime;
-            if (scatterTime <= 7)
+            if (scatterTime <= 7f)
             {
                 Scatter();
             }
@@ -39,15 +39,18 @@ namespace Pathfinding
             {
                 chaseTime += Time.deltaTime;
                 Chase();
-                if (chaseTime >= 20)
+                if (chaseTime >= 24f)
                 {
-                    scatterTime = 0f;
+                    scatterTime = -4f;
+                    chaseTime = 0f;
                 }
             }
         }
 
         public void Scatter()
         {
+            GetComponent<AIDestinationSetter>().enabled = false;
+
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
 
             if (transform.position == waypoints[waypointIndex].transform.position)
