@@ -22,7 +22,6 @@ namespace Pathfinding
             transform.position = waypoints[waypointIndex].transform.position;
 
             scatterTime = 0f;
-            changeTargetTime = gameObject.GetComponent<AIDestinationSetter>().changeTargetTime;
 
         }
 
@@ -43,17 +42,13 @@ namespace Pathfinding
                 {
                     scatterTime = 0f;
                     chaseTime = 0f;
-                    changeTargetTime = 0;
                 }
             }
         }
 
         public void Scatter()
         {
-            if (transform.position == waypoints[waypointIndex].transform.position)
-            {
-                GetComponent<AIDestinationSetter>().enabled = false;
-            }
+            GetComponent<AIDestinationSetter>().enabled = false;
 
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
 
