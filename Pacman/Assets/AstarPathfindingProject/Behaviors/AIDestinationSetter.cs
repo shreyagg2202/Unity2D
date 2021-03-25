@@ -50,8 +50,8 @@ namespace Pathfinding {
 				ai.destination = target.position;
 				if (ai.reachedDestination)
                 {
+					changeTargetTime = -10f;
 					target = tempTarget;
-					changeTargetTime = 0;
                 }
 			}
 

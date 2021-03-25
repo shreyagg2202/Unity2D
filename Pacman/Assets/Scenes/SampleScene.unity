@@ -38265,6 +38265,14 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[44]
       value: 
       objectReference: {fileID: 1014669996}
+    - target: {fileID: 1994728765, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+      propertyPath: changeTargetTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994728765, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+      propertyPath: aiDestinationSetter
+      value: 
+      objectReference: {fileID: 1994728765}
     - target: {fileID: 1994728766, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
       propertyPath: enableRotation
       value: 0

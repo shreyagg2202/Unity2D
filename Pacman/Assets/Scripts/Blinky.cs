@@ -29,7 +29,8 @@ namespace Pathfinding
         void Update()
         {
             scatterTime += Time.deltaTime;
-            if (scatterTime <= 7f)
+
+            if (scatterTime <= 7f )
             {
                 Scatter();
             }
@@ -38,9 +39,9 @@ namespace Pathfinding
             {
                 chaseTime += Time.deltaTime;
                 Chase();
-                if (chaseTime >= 24f || transform.position == waypoints[waypointIndex].transform.position)
+                if (chaseTime >= 24f)
                 {
-                    scatterTime = 0f;
+                    scatterTime = -3f;
                     chaseTime = 0f;
                 }
             }
@@ -48,8 +49,6 @@ namespace Pathfinding
 
         public void Scatter()
         {
-            GetComponent<AIDestinationSetter>().enabled = false;
-
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
 
             if (transform.position == waypoints[waypointIndex].transform.position)
