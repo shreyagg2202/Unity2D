@@ -5,17 +5,20 @@ using UnityEngine;
 public class Pacman : MonoBehaviour
 {
     [SerializeField] float pacmanSpeed = 1f;
-    bool isFacingRight;
-    bool isFacingUp;
+
+    bool isAlive = true;
 
     Rigidbody2D myRigidBody;
-    Animator animator;
+    Animator myAnimator;
+    CircleCollider2D myBodyCollider;
+
 
     // Start is called before the first frame update
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        myAnimator = GetComponent<Animator>();
+        myBodyCollider = GetComponent<CircleCollider2D>();
     }
 
     // Update is called once per frame
@@ -24,6 +27,7 @@ public class Pacman : MonoBehaviour
         PacmanXPosMove();
         PacmanYPosMove();
         LastMovement();
+        Die();
     }
 
     private void PacmanXPosMove()                               //X moving direction of character
@@ -32,7 +36,7 @@ public class Pacman : MonoBehaviour
         Vector2 playerVelocity = new Vector2(xControlThrow * pacmanSpeed, myRigidBody.velocity.y);
         myRigidBody.velocity = playerVelocity;
 
-        animator.SetFloat("SpeedX", xControlThrow);
+        myAnimator.SetFloat("SpeedX", xControlThrow);
     }
 
     private void PacmanYPosMove()                               //Y moving direction of character
@@ -41,7 +45,7 @@ public class Pacman : MonoBehaviour
         Vector2 playerVelocity = new Vector2(myRigidBody.velocity.x, yControlThrow * pacmanSpeed);
         myRigidBody.velocity = playerVelocity;
 
-        animator.SetFloat("SpeedY", yControlThrow);
+        myAnimator.SetFloat("SpeedY", yControlThrow);
     }
 
     private void LastMovement()                                   //Holds the last moving direction of the character
@@ -53,30 +57,39 @@ public class Pacman : MonoBehaviour
         {
             if (lastInputX > 0)
             {
-                animator.SetFloat("LastMoveX", 1f);
+                myAnimator.SetFloat("LastMoveX", 1f);
             }
             else if (lastInputX < 0)
             {
-                animator.SetFloat("LastMoveX", -1f);
+                myAnimator.SetFloat("LastMoveX", -1f);
             }
             else
             {
-                animator.SetFloat("LastMoveX", 0f);
+                myAnimator.SetFloat("LastMoveX", 0f);
             }
 
             if (lastInputY > 0)
             {
-                animator.SetFloat("LastMoveY", 1f);
+                myAnimator.SetFloat("LastMoveY", 1f);
             }
             else if (lastInputY < 0)
             {
-                animator.SetFloat("LastMoveY", -1f);
+                myAnimator.SetFloat("LastMoveY", -1f);
             }
             else
             {
-                animator.SetFloat("LastMoveY", 0f);
+                myAnimator.SetFloat("LastMoveY", 0f);
             }
         }
+    }
 
+    public void Die()                                           //Pacman Death
+    {
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Dead");
+            FindObjectOfType<GameSession>().PacmanDeath();
+        }
     }
 }

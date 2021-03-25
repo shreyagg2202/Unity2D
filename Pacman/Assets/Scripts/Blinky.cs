@@ -6,22 +6,23 @@ namespace Pathfinding
 
     public class Blinky : MonoBehaviour
     {
-        [SerializeField] float blinkySpeed = 2f;
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
-        [SerializeField] float scatterTime;
-        [SerializeField] float chaseTime;
 
-        float changeTargetTime;
+        [SerializeField] float blinkySpeed = 2f;
+        [SerializeField] float timeTillScatter;
+        [SerializeField] float timeTillChase;
+        float scatterTime = 0f;
+        float chaseTime = 0f;
 
+        CircleCollider2D myBodyCollider;
         // Start is called before the first frame update
         void Start()
         {
             GetComponent<AIDestinationSetter>().enabled = false;
+            myBodyCollider = GetComponent<CircleCollider2D>();
             
             transform.position = waypoints[waypointIndex].transform.position;
-
-            scatterTime = 0f;
 
         }
 
@@ -30,7 +31,7 @@ namespace Pathfinding
         {
             scatterTime += Time.deltaTime;
 
-            if (scatterTime <= 7f )
+            if (scatterTime <= timeTillScatter )
             {
                 Scatter();
             }
@@ -39,12 +40,13 @@ namespace Pathfinding
             {
                 chaseTime += Time.deltaTime;
                 Chase();
-                if (chaseTime >= 24f)
+                if (chaseTime >= timeTillChase)
                 {
                     scatterTime = -3f;
                     chaseTime = 0f;
                 }
             }
+            DestroyOnCollision();
         }
 
         public void Scatter()
@@ -66,6 +68,14 @@ namespace Pathfinding
         {
             GetComponent<AIDestinationSetter>().enabled = true;
             waypointIndex = 0;
+        }
+
+        public void DestroyOnCollision()
+        {
+            if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

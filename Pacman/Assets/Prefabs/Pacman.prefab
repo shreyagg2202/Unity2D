@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64db04474186f77409fe6354044cae92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pacmanSpeed: 5
+  pacmanSpeed: 9
 --- !u!50 &8923886312352021436
 Rigidbody2D:
   serializedVersion: 4
@@ -133,9 +133,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.005280912}
+  m_Offset: {x: -0.03342092, y: 0.010278344}
   serializedVersion: 2
-  m_Radius: 0.47952908
+  m_Radius: 0.9636687
 --- !u!95 &8923886312352021432
 Animator:
   serializedVersion: 3
