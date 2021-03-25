@@ -19,7 +19,7 @@ namespace Pathfinding {
 		public Transform target;
 		public Transform newTarget;
 		public Transform tempTarget;
-		[SerializeField] float changeTargetTime = 0f;
+		public float changeTargetTime = 0f;
 		IAstarAI ai;
 
 		void OnEnable () {
@@ -42,6 +42,7 @@ namespace Pathfinding {
         /// <summary>Updates the AI's destination every frame</summary>
         void Update () 
 		{
+			ai.destination = target.position;
 			changeTargetTime += Time.deltaTime;
 			if(changeTargetTime >= 20f)
             {
@@ -49,11 +50,12 @@ namespace Pathfinding {
 				ai.destination = target.position;
 				if (ai.reachedDestination)
                 {
-					newTarget = tempTarget;
+					target = tempTarget;
+					changeTargetTime = 0;
                 }
 			}
 
-			else if (target != null && ai != null || changeTargetTime < 27f)
+			else if (target != null && ai != null || changeTargetTime < 20f)
 			{ 
 					ai.destination = target.position;
 			}

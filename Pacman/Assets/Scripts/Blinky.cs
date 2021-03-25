@@ -12,8 +12,7 @@ namespace Pathfinding
         [SerializeField] float scatterTime;
         [SerializeField] float chaseTime;
 
-        GameObject Enemy = GameObject.Find("Blinky");
-
+        float changeTargetTime;
 
         // Start is called before the first frame update
         void Start()
@@ -23,6 +22,7 @@ namespace Pathfinding
             transform.position = waypoints[waypointIndex].transform.position;
 
             scatterTime = 0f;
+            changeTargetTime = gameObject.GetComponent<AIDestinationSetter>().changeTargetTime;
 
         }
 
@@ -39,17 +39,21 @@ namespace Pathfinding
             {
                 chaseTime += Time.deltaTime;
                 Chase();
-                if (chaseTime >= 24f)
+                if (chaseTime >= 24f || transform.position == waypoints[waypointIndex].transform.position)
                 {
-                    scatterTime = -4f;
+                    scatterTime = 0f;
                     chaseTime = 0f;
+                    changeTargetTime = 0;
                 }
             }
         }
 
         public void Scatter()
         {
-            GetComponent<AIDestinationSetter>().enabled = false;
+            if (transform.position == waypoints[waypointIndex].transform.position)
+            {
+                GetComponent<AIDestinationSetter>().enabled = false;
+            }
 
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
 
@@ -67,6 +71,7 @@ namespace Pathfinding
         public void Chase()
         {
             GetComponent<AIDestinationSetter>().enabled = true;
+            waypointIndex = 0;
         }
     }
 }
