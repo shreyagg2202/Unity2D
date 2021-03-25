@@ -44,7 +44,7 @@ public class Pacman : MonoBehaviour
         animator.SetFloat("SpeedY", yControlThrow);
     }
 
-    private void LastMovement()                                   //Holds the last moving directioni of the character
+    private void LastMovement()                                   //Holds the last moving direction of the character
     {
         float lastInputX = Input.GetAxis("Horizontal");
         float lastInputY = Input.GetAxis("Vertical");
