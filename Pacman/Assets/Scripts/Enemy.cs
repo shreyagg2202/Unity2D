@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Pathfinding
 {
 
-    public class Blinky : MonoBehaviour
+    public class Enemy : MonoBehaviour
     {
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;

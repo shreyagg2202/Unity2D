@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
     [SerializeField] float timeToWait = 0.5f;
+    [SerializeField] int score = 0;
+
+
+    [SerializeField] Text scoreText;
 
     public void Awake()
     {
@@ -24,9 +29,14 @@ public class GameSession : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreText.text = score.ToString();
     }
 
+    public void AddScore(int pointsToAdd)
+    {
+        score += pointsToAdd;
+        scoreText.text = score.ToString();
+    }
 
     public void PacmanDeath()
     {

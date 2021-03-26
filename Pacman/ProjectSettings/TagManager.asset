@@ -18,7 +18,7 @@ TagManager:
   - Foreground
   - Pacman
   - Enemy
-  - Path
+  - Pickups
   - 
   - 
   - 
@@ -48,7 +48,7 @@ TagManager:
   - name: Foreground
     uniqueID: 3737679355
     locked: 0
-  - name: Path
+  - name: Pickups
     uniqueID: 4111847993
     locked: 0
   - name: Pacman
