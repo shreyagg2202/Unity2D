@@ -51,10 +51,6 @@ public class GameSession : MonoBehaviour
             TakeLife();
         }
 
-        else
-        {
-            ResetGameSession();
-        }
     }
 
     private void TakeLife()
@@ -67,8 +63,16 @@ public class GameSession : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(timeToWait);
 
-        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+        if (playerLives >= 1)
+        {
+            var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex);
+        }
+
+        else
+        {
+            ResetGameSession();
+        }
     }
     public void ResetGameSession()
     {
