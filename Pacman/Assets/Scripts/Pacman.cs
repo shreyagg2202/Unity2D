@@ -24,8 +24,11 @@ public class Pacman : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PacmanXPosMove();
-        PacmanYPosMove();
+        if (isAlive)
+        {
+            PacmanXPosMove();
+            PacmanYPosMove();
+        }
         LastMovement();
         Die();
     }
@@ -48,7 +51,7 @@ public class Pacman : MonoBehaviour
         myAnimator.SetFloat("SpeedY", yControlThrow);
     }
 
-    private void LastMovement()                                   //Holds the last moving direction of the character
+    private void LastMovement()                                 //Holds the last moving direction of the character
     {
         float lastInputX = Input.GetAxis("Horizontal");
         float lastInputY = Input.GetAxis("Vertical");
@@ -90,6 +93,8 @@ public class Pacman : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dead");
             FindObjectOfType<GameSession>().PacmanDeath();
+            myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+            myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
         }
     }
 }
