@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1994728765}
   - component: {fileID: 1994728766}
   - component: {fileID: 1994728772}
-  - component: {fileID: 5984584081049579753}
   - component: {fileID: 8555505789545561941}
   m_Layer: 11
   m_Name: Enemy
@@ -271,23 +270,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &5984584081049579753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3972550260946820347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  target: {fileID: 0}
-  newTarget: {fileID: 0}
-  tempTarget: {fileID: 0}
-  changeTargetTime: 0
 --- !u!114 &8555505789545561941
 MonoBehaviour:
   m_ObjectHideFlags: 0

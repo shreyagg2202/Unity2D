@@ -5,29 +5,34 @@ using UnityEngine;
 public class EnemyAnimation : MonoBehaviour
 {
     Animator myBodyAnimation;
-    float currentPosX;
-    float currentPosY;
-    float newPosX;
-    float newPosY;
+    Rigidbody2D myRigidBody;
+
+    Vector3 previousPosition;
+    private bool moving = true;
+    Vector3 moveDirection;
 
     // Start is called before the first frame update
     void Start()
     {
         myBodyAnimation = GetComponent<Animator>();
-        currentPosX = transform.position.x;
-        currentPosY = transform.position.y;
-
+        myRigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        newPosX = transform.position.x;
-        newPosY = transform.position.y;
-    }
+        if (previousPosition != transform.position)
+        {
+            moveDirection = (transform.position - previousPosition).normalized;
+            previousPosition = transform.position;
+        }
 
-    public void MovingUp()
-    {
-        if ()
+        if (moving)
+        {
+            myRigidBody.velocity = moveDirection;
+            myBodyAnimation.SetBool("isWalking", true);
+            myBodyAnimation.SetFloat("xMov", moveDirection.x);
+            myBodyAnimation.SetFloat("yMov", moveDirection.y);
+        }
     }
 }
