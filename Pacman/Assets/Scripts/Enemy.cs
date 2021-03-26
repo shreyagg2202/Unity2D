@@ -19,18 +19,15 @@ namespace Pathfinding
         // Start is called before the first frame update
         void Start()
         {
-            GetComponent<AIDestinationSetter>().enabled = false;
             myBodyCollider = GetComponent<CircleCollider2D>();
             
             transform.position = waypoints[waypointIndex].transform.position;
 
         }
 
-        // Update is called once per frame
-        void Update()
+        private void FixedUpdate()
         {
             scatterTime += Time.deltaTime;
-
             if (scatterTime <= timeTillScatter )
             {
                 Scatter();
@@ -52,15 +49,9 @@ namespace Pathfinding
         public void Scatter()
         {
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
-
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 waypointIndex += 1;
-            }
-
-            if (waypointIndex == waypoints.Length)
-            {
-                waypointIndex = 0;
             }
         }
 

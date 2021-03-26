@@ -5,10 +5,21 @@ using UnityEngine;
 public class PacDotsPickup : MonoBehaviour
 {
     [SerializeField] int pointsForPickup = 10;
+    CircleCollider2D myBodyCollider;
 
+    public void Start()
+    {
+        myBodyCollider = GetComponent<CircleCollider2D>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FindObjectOfType<GameSession>().AddScore(pointsForPickup);
-        Destroy(gameObject);
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
+        {
+            FindObjectOfType<GameSession>().AddScore(pointsForPickup);
+            Destroy(gameObject);
+        }
+
+        else { return; }
+
     }
 }
