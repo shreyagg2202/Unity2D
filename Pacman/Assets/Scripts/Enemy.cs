@@ -12,6 +12,9 @@ namespace Pathfinding
         [SerializeField] float blinkySpeed = 2f;
         [SerializeField] float timeTillScatter;
         [SerializeField] float timeTillChase;
+       
+        Vector3 prevPos;
+        Vector3 moveDirection;
 
         float scatterTime = 0f;
         float chaseTime = 0f;
@@ -27,18 +30,27 @@ namespace Pathfinding
 
         }
 
+        private void Update()
+        {
+            if (prevPos != transform.position)
+            {
+                moveDirection = (transform.position - prevPos).normalized;
+                prevPos = transform.position;
+            }
+        }
+
         private void FixedUpdate()
         {
             scatterTime += Time.deltaTime;
             if (scatterTime <= timeTillScatter )
             {
-                Scatter();
+                ScatterMode();
             }
 
             else
             {
                 chaseTime += Time.deltaTime;
-                Chase();
+                ChaseMode();
                 if (chaseTime >= timeTillChase)
                 {
                     scatterTime = -3f;
@@ -48,7 +60,7 @@ namespace Pathfinding
             DestroyOnCollision();
         }
 
-        public void Scatter()
+        public void ScatterMode()
         {
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
             if (transform.position == waypoints[waypointIndex].transform.position)
@@ -57,10 +69,15 @@ namespace Pathfinding
             }
         }
 
-        public void Chase()
+        public void ChaseMode()
         {
             GetComponent<AIDestinationSetter>().enabled = true;
             waypointIndex = 0;
+        }
+
+        public void FrightenedMode()
+        {
+            transform.position = new Vector3(-moveDirection.x, -moveDirection.y);         
         }
 
         public void DestroyOnCollision()

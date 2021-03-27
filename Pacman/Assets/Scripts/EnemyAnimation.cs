@@ -8,7 +8,6 @@ public class EnemyAnimation : MonoBehaviour
     Rigidbody2D myRigidBody;
 
     Vector3 previousPosition;
-    private bool moving = true;
     Vector3 moveDirection;
 
     // Start is called before the first frame update
@@ -27,12 +26,9 @@ public class EnemyAnimation : MonoBehaviour
             previousPosition = transform.position;
         }
 
-        if (moving)
-        {
-            myRigidBody.velocity = moveDirection;
-            myBodyAnimation.SetBool("isWalking", true);
-            myBodyAnimation.SetFloat("xMov", moveDirection.x);
-            myBodyAnimation.SetFloat("yMov", moveDirection.y);
-        }
+        myRigidBody.velocity = moveDirection;
+        myBodyAnimation.SetBool("isWalking", true);
+        myBodyAnimation.SetFloat("xMov", moveDirection.x);
+        myBodyAnimation.SetFloat("yMov", moveDirection.y);
     }
 }

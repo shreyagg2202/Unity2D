@@ -20,6 +20,7 @@ namespace Pathfinding {
 		public Transform newTarget;
 		public Transform tempTarget;
 		public float changeTargetTime = 0f;
+
 		IAstarAI ai;
 
 		void OnEnable () {
@@ -58,5 +59,6 @@ namespace Pathfinding {
 				}
 			}
 		}
+
 	}
 }
