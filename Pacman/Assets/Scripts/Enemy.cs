@@ -12,6 +12,7 @@ namespace Pathfinding
         [SerializeField] float blinkySpeed = 2f;
         [SerializeField] float timeTillScatter;
         [SerializeField] float timeTillChase;
+
         float scatterTime = 0f;
         float chaseTime = 0f;
 
@@ -20,7 +21,8 @@ namespace Pathfinding
         void Start()
         {
             myBodyCollider = GetComponent<CircleCollider2D>();
-            
+
+            GetComponent<AIDestinationSetter>().enabled = false;
             transform.position = waypoints[waypointIndex].transform.position;
 
         }

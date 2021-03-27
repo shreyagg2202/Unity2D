@@ -42,22 +42,20 @@ namespace Pathfinding {
         /// <summary>Updates the AI's destination every frame</summary>
         void Update () 
 		{
-			ai.destination = target.position;
 			changeTargetTime += Time.deltaTime;
-			if(changeTargetTime >= 20f)
-            {
-				target = newTarget;
+			if (changeTargetTime > 0)
+			{
 				ai.destination = target.position;
-				if (ai.reachedDestination)
-                {
-					changeTargetTime = -10f;
-					target = tempTarget;
-                }
-			}
-
-			else if (target != null && ai != null || changeTargetTime < 20f)
-			{ 
+				if (changeTargetTime >= 20f)
+				{
+					target = newTarget;
 					ai.destination = target.position;
+					if (ai.reachedDestination)
+					{
+						changeTargetTime = -10f;
+						target = tempTarget;
+					}
+				}
 			}
 		}
 	}
