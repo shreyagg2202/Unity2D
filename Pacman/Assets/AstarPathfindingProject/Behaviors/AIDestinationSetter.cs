@@ -60,5 +60,9 @@ namespace Pathfinding {
 			}
 		}
 
+		public void FrightenedMode()
+        {
+			if (GetComponent<Enemy>())
+        }
 	}
 }

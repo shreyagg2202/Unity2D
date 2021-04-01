@@ -20,6 +20,7 @@ namespace Pathfinding
         float chaseTime = 0f;
 
         CircleCollider2D myBodyCollider;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -75,9 +76,9 @@ namespace Pathfinding
             waypointIndex = 0;
         }
 
-        public void FrightenedMode()
+        public void FrightenedMode(bool active)
         {
-            transform.position = new Vector3(-moveDirection.x, -moveDirection.y);         
+            transform.position = new Vector3(-moveDirection.x, -moveDirection.y);       
         }
 
         public void DestroyOnCollision()

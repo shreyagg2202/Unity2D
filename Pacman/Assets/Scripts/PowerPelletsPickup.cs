@@ -17,7 +17,6 @@ public class PowerPelletsPickup : MonoBehaviour
     {
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
         {
-
             Destroy(gameObject);
         }
 
