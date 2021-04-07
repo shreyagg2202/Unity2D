@@ -5,7 +5,7 @@ using UnityEngine;
 public class PowerPelletsPickup : MonoBehaviour
 {
     CircleCollider2D myBodyCollider;
-
+    public bool isFrightened = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,13 @@ public class PowerPelletsPickup : MonoBehaviour
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
         {
             Destroy(gameObject);
+            isFrightened = true;
         }
 
-        else { return; }
+        else 
+        {
+            isFrightened = false;
+            return;
+        }
     }
 }

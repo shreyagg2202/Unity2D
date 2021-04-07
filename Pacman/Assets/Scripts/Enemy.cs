@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Pathfinding
-{
 
+namespace Pathfinding
+{ 
     public class Enemy : MonoBehaviour
     {
         [SerializeField] Transform[] waypoints;
@@ -12,7 +12,7 @@ namespace Pathfinding
         [SerializeField] float blinkySpeed = 2f;
         [SerializeField] float timeTillScatter;
         [SerializeField] float timeTillChase;
-       
+
         Vector3 prevPos;
         Vector3 moveDirection;
 
@@ -33,17 +33,24 @@ namespace Pathfinding
 
         private void Update()
         {
-            if (prevPos != transform.position)
+            if (FindObjectOfType<PowerPelletsPickup>().isFrightened == true)
             {
-                moveDirection = (transform.position - prevPos).normalized;
-                prevPos = transform.position;
+                FrightenedMode();
+            }
+            else
+            {
+                if (prevPos != transform.position)
+                {
+                    moveDirection = (transform.position - prevPos).normalized;
+                    prevPos = transform.position;
+                }
             }
         }
 
         private void FixedUpdate()
         {
             scatterTime += Time.deltaTime;
-            if (scatterTime <= timeTillScatter )
+            if (scatterTime <= timeTillScatter)
             {
                 ScatterMode();
             }
@@ -76,9 +83,9 @@ namespace Pathfinding
             waypointIndex = 0;
         }
 
-        public void FrightenedMode(bool active)
+        public void FrightenedMode()
         {
-            transform.position = new Vector3(-moveDirection.x, -moveDirection.y);       
+            transform.position = new Vector3(-moveDirection.x - 1, -moveDirection.y - 1);
         }
 
         public void DestroyOnCollision()

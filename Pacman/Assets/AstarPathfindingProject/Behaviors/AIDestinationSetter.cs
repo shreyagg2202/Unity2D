@@ -20,6 +20,8 @@ namespace Pathfinding {
 		public Transform newTarget;
 		public Transform tempTarget;
 		public float changeTargetTime = 0f;
+		bool isFrightened = false;
+
 
 		IAstarAI ai;
 
@@ -39,9 +41,10 @@ namespace Pathfinding {
         private void Start()
         {
 			tempTarget = target;
+			
 		}
         /// <summary>Updates the AI's destination every frame</summary>
-        void Update () 
+        void Update ()  
 		{
 			changeTargetTime += Time.deltaTime;
 			if (changeTargetTime > 0)
@@ -60,9 +63,9 @@ namespace Pathfinding {
 			}
 		}
 
-		public void FrightenedMode()
-        {
-			if (GetComponent<Enemy>())
-        }
+		private void FrightenedMode()
+		{
+			if (G>)
+		}
 	}
 }
