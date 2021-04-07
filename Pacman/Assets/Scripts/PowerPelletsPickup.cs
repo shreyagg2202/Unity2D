@@ -5,26 +5,32 @@ using UnityEngine;
 public class PowerPelletsPickup : MonoBehaviour
 {
     CircleCollider2D myBodyCollider;
-    public bool isFrightened = false;
+    public bool isFrightened;
+    [SerializeField] float frightenedTime = 4f;
 
     // Start is called before the first frame update
     void Start()
     {
         myBodyCollider = GetComponent<CircleCollider2D>();
+        isFrightened = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
         {
-            Destroy(gameObject);
-            isFrightened = true;
+            StartCoroutine(Frightened());
         }
+    }
 
-        else 
-        {
-            isFrightened = false;
-            return;
-        }
+    public void Update()
+    {
+        Debug.Log(isFrightened);
+    }
+    IEnumerator Frightened()
+    {
+        isFrightened = true;
+        yield return new WaitForSeconds(frightenedTime);
+        Destroy(gameObject);
     }
 }
