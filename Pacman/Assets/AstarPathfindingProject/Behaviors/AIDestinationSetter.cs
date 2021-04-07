@@ -62,10 +62,5 @@ namespace Pathfinding {
 				}
 			}
 		}
-
-		private void FrightenedMode()
-		{
-			if (G>)
-		}
 	}
 }
