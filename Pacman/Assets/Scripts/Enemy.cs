@@ -35,7 +35,8 @@ namespace Pathfinding
         {
             if (FindObjectOfType<PowerPelletsPickup>().isFrightened == true)
             {
-                FrightenedMode();
+                transform.position = new Vector3(-moveDirection.x - 1, -moveDirection.y - 1);
+                StartCoroutine(FrightenedMode());
             }
             else
             {
@@ -83,9 +84,9 @@ namespace Pathfinding
             waypointIndex = 0;
         }
 
-        public void FrightenedMode()
+        IEnumerator FrightenedMode()
         {
-            transform.position = new Vector3(-moveDirection.x - 1, -moveDirection.y - 1);
+            
         }
 
         public void DestroyOnCollision()
