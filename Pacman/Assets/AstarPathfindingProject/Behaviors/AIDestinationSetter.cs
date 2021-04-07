@@ -20,8 +20,6 @@ namespace Pathfinding {
 		public Transform newTarget;
 		public Transform tempTarget;
 		public float changeTargetTime = 0f;
-		bool isFrightened = false;
-
 
 		IAstarAI ai;
 

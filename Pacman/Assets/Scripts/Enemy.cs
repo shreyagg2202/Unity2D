@@ -12,7 +12,6 @@ namespace Pathfinding
         [SerializeField] float blinkySpeed = 2f;
         [SerializeField] float timeTillScatter;
         [SerializeField] float timeTillChase;
-        [SerializeField] float frightenedTime = 4f;
 
         Vector3 prevPos;
         Vector3 moveDirection;
@@ -38,20 +37,6 @@ namespace Pathfinding
             {
                 moveDirection = (transform.position - prevPos).normalized;
                 prevPos = transform.position;
-
-                if (FindObjectOfType<PowerPelletsPickup>().isFrightened == true)
-                {
-                    if (moveDirection.x > 0)
-                    {
-                        transform.position = new Vector3(moveDirection.x - 1, transform.position.y);
-                        StartCoroutine(FrightenedMode());
-                    }
-                    else if (moveDirection.y > 0)
-                    {
-                        transform.position = new Vector3(transform.position.x, moveDirection.y - 1);
-                        StartCoroutine(FrightenedMode());
-                    }
-                }
             }
         }
 
@@ -89,13 +74,6 @@ namespace Pathfinding
         {
             GetComponent<AIDestinationSetter>().enabled = true;
             waypointIndex = 0;
-        }
-
-        IEnumerator FrightenedMode()
-        {
-            Debug.Log("Frightened");
-            yield return new WaitForSeconds(frightenedTime);
-            
         }
 
         public void DestroyOnCollision()

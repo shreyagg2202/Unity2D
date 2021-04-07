@@ -20,6 +20,7 @@ public class PowerPelletsPickup : MonoBehaviour
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
         {
             StartCoroutine(Frightened());
+            Destroy(gameObject);
         }
     }
 
@@ -31,6 +32,5 @@ public class PowerPelletsPickup : MonoBehaviour
     {
         isFrightened = true;
         yield return new WaitForSeconds(frightenedTime);
-        Destroy(gameObject);
     }
 }
