@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8004474713756740095}
   m_Layer: 12
   m_Name: PacDots (1)
-  m_TagString: Untagged
+  m_TagString: P
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -183119303
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7464499847392626482, guid: 6f27255d04b3db54cbd9ddc7fa9fdfe2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -33,6 +33,7 @@ public class Pacman : MonoBehaviour
             PacmanYPosMove();
         }
         LastMovement();
+        Debug.Log(enemyFrightened);
         Die();
     }
 
@@ -103,7 +104,7 @@ public class Pacman : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (CompareTag("Power Pellets"))
+        if (other.CompareTag("PP"))
         {
             enemyFrightened = true;
             new WaitForSeconds(frightenedTime);
