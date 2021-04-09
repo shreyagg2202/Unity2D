@@ -106,9 +106,14 @@ public class Pacman : MonoBehaviour
     {
         if (other.CompareTag("PP"))
         {
-            enemyFrightened = true;
-            new WaitForSeconds(frightenedTime);
-            return;
+            StartCoroutine(Frightened());
         }
+    }
+
+    IEnumerator Frightened()
+    {
+        enemyFrightened = true;
+        yield return new WaitForSeconds(frightenedTime);
+        enemyFrightened = false;
     }
 }
