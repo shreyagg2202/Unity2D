@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 430824678}
   - component: {fileID: 2900449535040014750}
   - component: {fileID: 3445863732629187285}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Power Pellet (1)
-  m_TagString: Untagged
+  m_TagString: Power Pellets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -183119303
+  m_SortingLayerID: -1163080587
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7464499847392626482, guid: 6f27255d04b3db54cbd9ddc7fa9fdfe2, type: 3}
@@ -132,4 +132,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6288eaafd65e37f4bbf3514c3ab5869c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFrightened: 0

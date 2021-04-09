@@ -7,6 +7,8 @@ public class Pacman : MonoBehaviour
     [SerializeField] float pacmanSpeed = 1f;
 
     bool isAlive = true;
+    public bool enemyFrightened;
+    public float frightenedTime = 4f;
 
     Rigidbody2D myRigidBody;
     Animator myAnimator;
@@ -16,6 +18,7 @@ public class Pacman : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        enemyFrightened = false;
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CircleCollider2D>();
@@ -95,6 +98,16 @@ public class Pacman : MonoBehaviour
             FindObjectOfType<GameSession>().PacmanDeath();
             myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
             myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (CompareTag("Power Pellets"))
+        {
+            enemyFrightened = true;
+            new WaitForSeconds(frightenedTime);
+            return;
         }
     }
 }
