@@ -44,21 +44,34 @@ namespace Pathfinding {
         /// <summary>Updates the AI's destination every frame</summary>
         void Update ()  
 		{
-			changeTargetTime += Time.deltaTime;
-			if (changeTargetTime > 0)
+			if (GetComponent<Pacman>().enemyFrightened == false)
 			{
-				ai.destination = target.position;
-				if (changeTargetTime >= 20f)
+				changeTargetTime += Time.deltaTime;
+				if (changeTargetTime > 0)
 				{
-					target = newTarget;
 					ai.destination = target.position;
-					if (ai.reachedDestination)
+					if (changeTargetTime >= 20f)
 					{
-						changeTargetTime = -10f;
-						target = tempTarget;
+						target = newTarget;
+						ai.destination = target.position;
+						if (ai.reachedDestination)
+						{
+							changeTargetTime = -10f;
+							target = tempTarget;
+						}
 					}
 				}
 			}
+
+			else if (GetComponent<Pacman>().enemyFrightened == true)
+			{
+				Frightened();
+			}
 		}
+
+		public void Frightened()
+        {
+			
+        }
 	}
 }

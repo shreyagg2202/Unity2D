@@ -67,6 +67,10 @@ namespace Pathfinding
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 waypointIndex += 1;
+                if (waypointIndex >= 10)
+                {
+                    waypointIndex = 6;
+                }
             }
         }
 

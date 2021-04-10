@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - PP
+  - P
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Pacman
   - Enemy
   - Pickups
-  - 
+  - Power Pickups
   - 
   - 
   - 
@@ -47,6 +49,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3737679355
+    locked: 0
+  - name: Power Pickups
+    uniqueID: 3131886709
     locked: 0
   - name: Pickups
     uniqueID: 4111847993
