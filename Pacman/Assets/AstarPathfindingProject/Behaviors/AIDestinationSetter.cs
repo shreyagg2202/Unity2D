@@ -20,6 +20,9 @@ namespace Pathfinding {
 		public Transform newTarget;
 		public Transform tempTarget;
 		public float changeTargetTime = 0f;
+		[SerializeField] Transform[] waypoints;
+		int waypointIndex = 0;
+		public bool enemyFrightened;
 
 		IAstarAI ai;
 
@@ -44,34 +47,30 @@ namespace Pathfinding {
         /// <summary>Updates the AI's destination every frame</summary>
         void Update ()  
 		{
-			if (GetComponent<Pacman>().enemyFrightened == false)
+			changeTargetTime += Time.deltaTime;
+			if (changeTargetTime > 0)
 			{
-				changeTargetTime += Time.deltaTime;
-				if (changeTargetTime > 0)
+				ai.destination = target.position;
+				if (changeTargetTime >= 20f)
 				{
+					target = newTarget;
 					ai.destination = target.position;
-					if (changeTargetTime >= 20f)
+					if (ai.reachedDestination)
 					{
-						target = newTarget;
-						ai.destination = target.position;
-						if (ai.reachedDestination)
-						{
-							changeTargetTime = -10f;
-							target = tempTarget;
-						}
+						changeTargetTime = -10f;
+						target = tempTarget;
 					}
 				}
-			}
-
-			else if (GetComponent<Pacman>().enemyFrightened == true)
-			{
-				Frightened();
 			}
 		}
 
 		public void Frightened()
         {
-			
+			target = waypoints[Random.Range(waypointIndex, waypoints.Length)];
+			if (ai.reachedDestination)
+            {
+				Frightened();
+			}
         }
 	}
 }
