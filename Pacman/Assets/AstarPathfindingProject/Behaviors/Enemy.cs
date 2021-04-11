@@ -13,6 +13,9 @@ namespace Pathfinding
         [SerializeField] float timeTillScatter;
         [SerializeField] float timeTillChase;
 
+        bool isScattering;
+        bool isChasing;
+
         Vector3 prevPos;
         Vector3 moveDirection;
 
@@ -24,9 +27,9 @@ namespace Pathfinding
         // Start is called before the first frame update
         void Start()
         {
+            isScattering = false;
+            isChasing = false;
             myBodyCollider = GetComponent<CircleCollider2D>();
-
-            GetComponent<AIDestinationSetter>().enabled = false;
             transform.position = waypoints[waypointIndex].transform.position;
 
         }
@@ -63,6 +66,8 @@ namespace Pathfinding
 
         public void ScatterMode()
         {
+            isScattering = true;
+            isChasing = false;
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
@@ -76,6 +81,8 @@ namespace Pathfinding
 
         public void ChaseMode()
         {
+            isScattering = false;
+            isChasing = true;
             GetComponent<AIDestinationSetter>().enabled = true;
             waypointIndex = 0;
         }
