@@ -11644,10 +11644,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PacDots (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 6907531279854776628, guid: 3b13872aa4d7e41459ba514c3d86e5c5, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b13872aa4d7e41459ba514c3d86e5c5, type: 3}
 --- !u!4 &1366124151 stripped

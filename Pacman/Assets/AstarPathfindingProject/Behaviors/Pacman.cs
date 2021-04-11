@@ -104,9 +104,9 @@ namespace Pathfinding
             }
         }
 
-        public void OnTriggerEnter2D(Collider2D other)
+        public void OnTriggerEnter2D(Collider2D other)              //Checks if Pacman has eaten The Power Pellets
         {
-            if (other.CompareTag("PP"))
+            if (other.CompareTag("Power Pellet"))
             {
                 StartCoroutine(Frightened());
             }
@@ -115,11 +115,11 @@ namespace Pathfinding
         IEnumerator Frightened()
         {
             enemyFrightened = true;
-            FindObjectOfType<Enemy>().enabled = false;
-            FindObjectOfType<AIDestinationSetter>().enabled = true;
+            FindObjectOfType<Enemy>().enabled = false;              //Ememy Script Disabled
+            FindObjectOfType<AIDestinationSetter>().enabled = true; //AI Script Enabled
             yield return new WaitForSeconds(frightenedTime);
             enemyFrightened = false;
-            FindObjectOfType<Enemy>().enabled = true;
+            FindObjectOfType<Enemy>().enabled = true;               //Enemy Script Enabled
         }
     }
 }

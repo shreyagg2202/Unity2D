@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3445863732629187285}
   m_Layer: 13
   m_Name: Power Pellet (1)
-  m_TagString: PP
+  m_TagString: Power Pellet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

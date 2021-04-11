@@ -80,7 +80,7 @@ namespace Pathfinding
             waypointIndex = 0;
         }
 
-        public void DestroyOnCollision()
+        public void DestroyOnCollision()                                        //Destroy Enemy When it touches Player
         {
             if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
             {

@@ -16,13 +16,17 @@ namespace Pathfinding {
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_a_i_destination_setter.php")]
 	public class AIDestinationSetter : VersionedMonoBehaviour {
 		/// <summary>The object that the AI should move to</summary>
+		
 		public Transform target;
 		public Transform newTarget;
 		public Transform tempTarget;
 		public float changeTargetTime = 0f;
+
 		[SerializeField] Transform[] waypoints;
 		int waypointIndex = 0;
-		public bool enemyFrightened;
+
+
+
 		CircleCollider2D myBodyCollider;
 
 		IAstarAI ai;
@@ -71,17 +75,12 @@ namespace Pathfinding {
             {
 				Frightened();
             }
-
 		}
 
 		public void Frightened()
-        {
+		{
 			target = waypoints[Random.Range(waypointIndex, waypoints.Length)];
 			ai.destination = target.position;
-			if (ai.reachedDestination)
-            {
-				Frightened();
-			}
         }
 
 		public void DestroyOnCollision()
