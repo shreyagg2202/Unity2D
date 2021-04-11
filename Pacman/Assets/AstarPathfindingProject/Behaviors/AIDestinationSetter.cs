@@ -20,6 +20,7 @@ namespace Pathfinding {
 		public Transform target;
 		public Transform newTarget;
 		public Transform tempTarget;
+		public Transform frightenedTarget;
 		public float changeTargetTime = 0f;
 
 		[SerializeField] Transform[] waypoints;
@@ -46,10 +47,12 @@ namespace Pathfinding {
 
         private void Start()
         {
+			frightenedTarget = waypoints[Random.Range(waypointIndex, waypoints.Length)];
 			myBodyCollider = GetComponent<CircleCollider2D>();
 			tempTarget = target;
 			
 		}
+
         /// <summary>Updates the AI's destination every frame</summary>
         void Update ()  
 		{
@@ -73,22 +76,18 @@ namespace Pathfinding {
 			}
 			else if (FindObjectOfType<Pacman>().enemyFrightened == true)
             {
-				Frightened();
+				ai.destination = frightenedTarget.position;
+				if (ai.reachedDestination)
+				{
+					Frightened();
+				}
             }
 		}
 
 		public void Frightened()
 		{
-			target = waypoints[Random.Range(waypointIndex, waypoints.Length)];
-			ai.destination = target.position;
+			frightenedTarget = waypoints[Random.Range(waypointIndex, waypoints.Length)];
+			ai.destination = frightenedTarget.position;
         }
-
-		public void DestroyOnCollision()
-		{
-			if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
-			{
-				Destroy(gameObject);
-			}
-		}
 	}
 }
