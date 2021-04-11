@@ -9,7 +9,7 @@ namespace Pathfinding
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
 
-        [SerializeField] float blinkySpeed = 2f;
+        [SerializeField] float blinkySpeed;
         [SerializeField] float timeTillScatter;
         [SerializeField] float timeTillChase;
 

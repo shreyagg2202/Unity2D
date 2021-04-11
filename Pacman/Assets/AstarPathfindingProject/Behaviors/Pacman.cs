@@ -6,11 +6,11 @@ namespace Pathfinding
 {
     public class Pacman : MonoBehaviour
     {
-        [SerializeField] float pacmanSpeed = 1f;
+        [SerializeField] float pacmanSpeed;
 
         bool isAlive = true;
         public bool enemyFrightened;
-        public float frightenedTime = 4f;
+        public float frightenedTime = 6f;
 
         Rigidbody2D myRigidBody;
         Animator myAnimator;

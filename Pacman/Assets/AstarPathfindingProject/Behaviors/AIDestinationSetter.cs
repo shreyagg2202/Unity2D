@@ -68,8 +68,9 @@ namespace Pathfinding {
 						ai.destination = target.position;
 						if (ai.reachedDestination)
 						{
-							changeTargetTime = -10f;
+							changeTargetTime = 0f;
 							target = tempTarget;
+							Debug.Log("Disable AI");
 						}
 					}
 				}
@@ -83,7 +84,7 @@ namespace Pathfinding {
 				}
             }
 		}
-
+			
 		public void Frightened()
 		{
 			frightenedTarget = waypoints[Random.Range(waypointIndex, waypoints.Length)];
