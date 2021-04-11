@@ -115,8 +115,11 @@ namespace Pathfinding
         IEnumerator Frightened()
         {
             enemyFrightened = true;
+            FindObjectOfType<Enemy>().enabled = false;
+            FindObjectOfType<AIDestinationSetter>().enabled = true;
             yield return new WaitForSeconds(frightenedTime);
             enemyFrightened = false;
+            FindObjectOfType<Enemy>().enabled = true;
         }
     }
 }
