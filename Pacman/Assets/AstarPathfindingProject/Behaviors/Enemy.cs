@@ -13,8 +13,8 @@ namespace Pathfinding
         [SerializeField] float timeTillScatter;
         [SerializeField] float timeTillChase;
 
-        bool isScattering;
-        bool isChasing;
+        public bool isScattering;
+        public bool isChasing;
 
         Vector3 prevPos;
         Vector3 moveDirection;

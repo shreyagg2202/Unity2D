@@ -56,33 +56,36 @@ namespace Pathfinding {
         /// <summary>Updates the AI's destination every frame</summary>
         void Update ()  
 		{
-			if (FindObjectOfType<Pacman>().enemyFrightened == false)
+			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true)
 			{
-				changeTargetTime += Time.deltaTime;
-				if (changeTargetTime > 0)
+				if (FindObjectOfType<Pacman>().enemyFrightened == false)
 				{
-					ai.destination = target.position;
-					if (changeTargetTime >= 20f)
+					changeTargetTime += Time.deltaTime;
+					if (changeTargetTime > 0)
 					{
-						target = newTarget;
-						ai.destination = target.position;
-						if (ai.reachedDestination)
+						ai.destination = target.position;						//chasing Pacman
+						if (changeTargetTime >= 20f)
 						{
-							changeTargetTime = 0f;
-							target = tempTarget;
-							Debug.Log("Disable AI");
+							target = newTarget;									
+							ai.destination = target.position;					//Getting Back to initial position for next scatter
+							if (ai.reachedDestination)
+							{
+								changeTargetTime = 0f;
+								FindObjectOfType<Enemy>().isChasing = false;
+								target = tempTarget;                            //Target reset to Pacman for next chase
+							}
 						}
 					}
 				}
-			}
-			else if (FindObjectOfType<Pacman>().enemyFrightened == true)
-            {
-				ai.destination = frightenedTarget.position;
-				if (ai.reachedDestination)
+				else if (FindObjectOfType<Pacman>().enemyFrightened == true)
 				{
-					Frightened();
+					ai.destination = frightenedTarget.position;
+					if (ai.reachedDestination)
+					{
+						Frightened();
+					}
 				}
-            }
+			}
 		}
 			
 		public void Frightened()
