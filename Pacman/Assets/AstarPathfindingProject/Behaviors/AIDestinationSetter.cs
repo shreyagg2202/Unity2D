@@ -26,7 +26,7 @@ namespace Pathfinding {
 		[SerializeField] Transform[] waypoints;
 		int waypointIndex = 0;
 
-		[SerializeField] float frightenedEndTime;
+		public float frightenedEndTime;
 
 		Animator myAnimator;
 		CircleCollider2D myBodyCollider;

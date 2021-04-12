@@ -10,8 +10,10 @@ namespace Pathfinding
 
         bool isAlive = true;
         public bool enemyFrightened;
-        public float frightenedTime = 6f;
-
+        public float frightenedTime = 7f;
+        int numberOfPowerPelletsEaten;
+        public float timeElapsed;
+        
         Rigidbody2D myRigidBody;
         Animator myAnimator;
         CircleCollider2D myBodyCollider;
@@ -108,16 +110,36 @@ namespace Pathfinding
         {
             if (other.CompareTag("Power Pellet"))
             {
-                StartCoroutine(Frightened());
+                numberOfPowerPelletsEaten += 1;
+                Debug.Log(numberOfPowerPelletsEaten);
+                if (numberOfPowerPelletsEaten > 1)
+                {
+                    frightenedTime *= 2;
+                    frightenedTime -= timeElapsed;
+                    StartCoroutine(Frightened());
+                    numberOfPowerPelletsEaten = 0;
+                }
+                else
+                {
+                    StartCoroutine(Frightened());
+                }
+                FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
             }
         }
 
         IEnumerator Frightened()
         {
+            timeElapsed += Time.deltaTime;
             enemyFrightened = true;
             FindObjectOfType<Enemy>().isScattering = false;             //Ememy Script Disabled
             FindObjectOfType<Enemy>().isChasing = true;                 //AI Script Enabled
             yield return new WaitForSeconds(frightenedTime);
+            if (numberOfPowerPelletsEaten > 1)
+            {
+                numberOfPowerPelletsEaten = 1;
+                StartCoroutine(Frightened());
+            }
+            numberOfPowerPelletsEaten = 0;
             enemyFrightened = false;
             FindObjectOfType<Enemy>().isScattering = true;                   //Enemy Script Enabled
             FindObjectOfType<Enemy>().isChasing = false;
