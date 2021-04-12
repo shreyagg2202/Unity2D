@@ -26,6 +26,7 @@ namespace Pathfinding {
 		[SerializeField] Transform[] waypoints;
 		int waypointIndex = 0;
 
+		[SerializeField] float frightenedEndTime;
 
 		Animator myAnimator;
 		CircleCollider2D myBodyCollider;
@@ -59,6 +60,7 @@ namespace Pathfinding {
 		{
 			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Pacman>().enemyFrightened == false)
 			{
+				frightenedEndTime = 0f;
 				myAnimator.SetBool("isFrightened", false);
 				changeTargetTime += Time.deltaTime;
 				if (changeTargetTime > 0)
@@ -81,6 +83,9 @@ namespace Pathfinding {
 			}
 			else if (FindObjectOfType<Pacman>().enemyFrightened == true)
 			{
+				myAnimator.SetBool("isFrightened", true);
+				frightenedEndTime += Time.deltaTime;
+				myAnimator.SetFloat("frightenedEndTime", frightenedEndTime);
 				ai.destination = frightenedTarget.position;
 				if (ai.reachedDestination)
 				{
@@ -91,7 +96,6 @@ namespace Pathfinding {
 			
 		public void Frightened()
 		{
-			myAnimator.SetBool("isFrightened", true);
 			frightenedTarget = waypoints[Random.Range(waypointIndex, waypoints.Length)];
 			ai.destination = frightenedTarget.position;
         }

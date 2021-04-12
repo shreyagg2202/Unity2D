@@ -11,7 +11,6 @@ namespace Pathfinding
 
         [SerializeField] float blinkySpeed;
         [SerializeField] float timeTillScatter;
-        [SerializeField] float timeTillChase;
 
         public bool isScattering;
         public bool isChasing;
@@ -33,12 +32,10 @@ namespace Pathfinding
             myBodyCollider = GetComponent<CircleCollider2D>();
             myAnimator = GetComponent<Animator>();
             transform.position = waypoints[waypointIndex].transform.position;
-
         }
 
         private void Update()
         {
-            myAnimator.SetBool("isFrightened", false);
             if (prevPos != transform.position)
             {
                 moveDirection = (transform.position - prevPos).normalized;
@@ -66,6 +63,7 @@ namespace Pathfinding
         {
             if (FindObjectOfType<Pacman>().enemyFrightened == false)
             {
+                myAnimator.SetBool("isFrightened", false);
                 isScattering = true;
                 isChasing = false;
                 transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
@@ -82,10 +80,14 @@ namespace Pathfinding
 
         public void ChaseMode()
         {
-            isScattering = false;
-            isChasing = true;
-            GetComponent<AIDestinationSetter>().enabled = true;
-            waypointIndex = 0;
+            if (FindObjectOfType<Pacman>().enemyFrightened == false)
+            {
+                myAnimator.SetBool("isFrightened", false);
+                isScattering = false;
+                isChasing = true;
+                GetComponent<AIDestinationSetter>().enabled = true;
+                waypointIndex = 0;
+            }
         }
 
         public void DestroyOnCollision()                                        //Destroy Enemy When it touches Player
