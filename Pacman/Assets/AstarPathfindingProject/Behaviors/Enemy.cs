@@ -19,8 +19,8 @@ namespace Pathfinding
         Vector3 prevPos;
         Vector3 moveDirection;
 
-        float scatterTime = 0f;
-        float chaseTime = 0f;
+        public float scatterTime = 0f;
+        public float chaseTime = 0f;
 
         CircleCollider2D myBodyCollider;
 
@@ -55,11 +55,6 @@ namespace Pathfinding
             {
                 chaseTime += Time.deltaTime;
                 ChaseMode();
-                if (chaseTime >= timeTillChase)
-                {
-                    scatterTime = -3f;
-                    chaseTime = 0f;
-                }
             }
             DestroyOnCollision();
         }

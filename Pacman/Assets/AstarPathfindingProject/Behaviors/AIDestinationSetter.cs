@@ -56,34 +56,33 @@ namespace Pathfinding {
         /// <summary>Updates the AI's destination every frame</summary>
         void Update ()  
 		{
-			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true)
+			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Pacman>().enemyFrightened == false)
 			{
-				if (FindObjectOfType<Pacman>().enemyFrightened == false)
+				changeTargetTime += Time.deltaTime;
+				if (changeTargetTime > 0)
 				{
-					changeTargetTime += Time.deltaTime;
-					if (changeTargetTime > 0)
+					ai.destination = target.position;                       //chasing Pacman
+					if (changeTargetTime >= 20f)
 					{
-						ai.destination = target.position;						//chasing Pacman
-						if (changeTargetTime >= 20f)
+						target = newTarget;
+						ai.destination = target.position;                   //Getting Back to initial position for next scatter
+						if (ai.reachedDestination)
 						{
-							target = newTarget;									
-							ai.destination = target.position;					//Getting Back to initial position for next scatter
-							if (ai.reachedDestination)
-							{
-								changeTargetTime = 0f;
-								FindObjectOfType<Enemy>().isChasing = false;
-								target = tempTarget;                            //Target reset to Pacman for next chase
-							}
+							changeTargetTime = 0f;
+							FindObjectOfType<Enemy>().scatterTime = 0f;
+							FindObjectOfType<Enemy>().chaseTime = 0f;
+							FindObjectOfType<Enemy>().isChasing = false;
+							target = tempTarget;                            //Target reset to Pacman for next chase
 						}
 					}
 				}
-				else if (FindObjectOfType<Pacman>().enemyFrightened == true)
+			}
+			else if (FindObjectOfType<Pacman>().enemyFrightened == true)
+			{
+				ai.destination = frightenedTarget.position;
+				if (ai.reachedDestination)
 				{
-					ai.destination = frightenedTarget.position;
-					if (ai.reachedDestination)
-					{
-						Frightened();
-					}
+					Frightened();
 				}
 			}
 		}

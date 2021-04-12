@@ -171,7 +171,9 @@ MonoBehaviour:
   - {fileID: 0}
   blinkySpeed: 7
   timeTillScatter: 7
-  timeTillChase: 20
+  timeTillChase: 24
+  isScattering: 0
+  isChasing: 0
 --- !u!114 &1994728766
 MonoBehaviour:
   m_ObjectHideFlags: 0
