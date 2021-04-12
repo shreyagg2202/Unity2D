@@ -27,7 +27,7 @@ namespace Pathfinding {
 		int waypointIndex = 0;
 
 
-
+		Animator myAnimator;
 		CircleCollider2D myBodyCollider;
 
 		IAstarAI ai;
@@ -49,6 +49,7 @@ namespace Pathfinding {
         {
 			frightenedTarget = waypoints[Random.Range(waypointIndex, waypoints.Length)];
 			myBodyCollider = GetComponent<CircleCollider2D>();
+			myAnimator = GetComponent<Animator>();
 			tempTarget = target;
 			
 		}
@@ -58,6 +59,7 @@ namespace Pathfinding {
 		{
 			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Pacman>().enemyFrightened == false)
 			{
+				myAnimator.SetBool("isFrightened", false);
 				changeTargetTime += Time.deltaTime;
 				if (changeTargetTime > 0)
 				{
@@ -89,6 +91,7 @@ namespace Pathfinding {
 			
 		public void Frightened()
 		{
+			myAnimator.SetBool("isFrightened", true);
 			frightenedTarget = waypoints[Random.Range(waypointIndex, waypoints.Length)];
 			ai.destination = frightenedTarget.position;
         }

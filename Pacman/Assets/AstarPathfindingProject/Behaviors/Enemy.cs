@@ -23,6 +23,7 @@ namespace Pathfinding
         public float chaseTime = 0f;
 
         CircleCollider2D myBodyCollider;
+        Animator myAnimator;
 
         // Start is called before the first frame update
         void Start()
@@ -30,12 +31,14 @@ namespace Pathfinding
             isScattering = false;
             isChasing = false;
             myBodyCollider = GetComponent<CircleCollider2D>();
+            myAnimator = GetComponent<Animator>();
             transform.position = waypoints[waypointIndex].transform.position;
 
         }
 
         private void Update()
         {
+            myAnimator.SetBool("isFrightened", false);
             if (prevPos != transform.position)
             {
                 moveDirection = (transform.position - prevPos).normalized;
@@ -61,15 +64,18 @@ namespace Pathfinding
 
         public void ScatterMode()
         {
-            isScattering = true;
-            isChasing = false;
-            transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
-            if (transform.position == waypoints[waypointIndex].transform.position)
+            if (FindObjectOfType<Pacman>().enemyFrightened == false)
             {
-                waypointIndex += 1;
-                if (waypointIndex >= 10)
+                isScattering = true;
+                isChasing = false;
+                transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
+                if (transform.position == waypoints[waypointIndex].transform.position)
                 {
-                    waypointIndex = 6;
+                    waypointIndex += 1;
+                    if (waypointIndex >= 10)
+                    {
+                        waypointIndex = 6;
+                    }
                 }
             }
         }
