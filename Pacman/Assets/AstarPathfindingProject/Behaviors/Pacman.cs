@@ -31,6 +31,7 @@ namespace Pathfinding
         // Update is called once per frame
         void Update()
         {
+            Debug.Log(numberOfPowerPelletsEaten);
             if (enemyFrightened == true)
             {
                 timeElapsed += Time.deltaTime;
@@ -131,13 +132,29 @@ namespace Pathfinding
             if (numberOfPowerPelletsEaten > 1)
             {
                 StopCoroutine(Frightened());
-                FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
-                frightenedTime *= 2;
-                frightenedTime -= timeElapsed;
-                numberOfPowerPelletsEaten = 0;
-                StartCoroutine(Frightened());
+                StartCoroutine(TwoPelletsEaten());
             }
+            Debug.Log("hello");
             yield return new WaitForSeconds(frightenedTime);
+            if (numberOfPowerPelletsEaten <= 1)
+            {
+                numberOfPowerPelletsEaten = 0;
+                enemyFrightened = false;
+                FindObjectOfType<Enemy>().isScattering = true;                   //Enemy Script Enabled
+                FindObjectOfType<Enemy>().isChasing = false;
+                FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
+            }
+        }
+
+        IEnumerator TwoPelletsEaten()
+        {
+            FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
+            frightenedTime *= 2;
+            frightenedTime -= timeElapsed;
+            timeElapsed = 0f;
+
+            yield return new WaitForSeconds(frightenedTime);
+            
             frightenedTime = 7f;
             numberOfPowerPelletsEaten = 0;
             enemyFrightened = false;
