@@ -31,6 +31,14 @@ namespace Pathfinding
         // Update is called once per frame
         void Update()
         {
+            if (enemyFrightened == true)
+            {
+                timeElapsed += Time.deltaTime;
+            }
+            else
+            {
+                timeElapsed = 0f;
+            }
             if (isAlive)
             {
                 PacmanXPosMove();
@@ -117,14 +125,17 @@ namespace Pathfinding
 
         IEnumerator Frightened()
         {
-            timeElapsed += Time.deltaTime;
             enemyFrightened = true;
             FindObjectOfType<Enemy>().isScattering = false;             //Ememy Script Disabled
             FindObjectOfType<Enemy>().isChasing = true;                 //AI Script Enabled
             if (numberOfPowerPelletsEaten > 1)
             {
+                StopCoroutine(Frightened());
+                FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
                 frightenedTime *= 2;
                 frightenedTime -= timeElapsed;
+                numberOfPowerPelletsEaten = 0;
+                StartCoroutine(Frightened());
             }
             yield return new WaitForSeconds(frightenedTime);
             frightenedTime = 7f;
