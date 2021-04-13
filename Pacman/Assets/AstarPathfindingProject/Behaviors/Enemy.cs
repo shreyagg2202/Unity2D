@@ -15,6 +15,7 @@ namespace Pathfinding
         [Header("State")]
         public bool isScattering;
         public bool isChasing;
+        public bool isEated;
 
         Vector3 prevPos;
         Vector3 moveDirection;
@@ -47,48 +48,50 @@ namespace Pathfinding
 
         private void FixedUpdate()
         {
-            scatterTime += Time.deltaTime;
-            if (scatterTime <= timeTillScatter)
+            if (FindObjectOfType<Pacman>().enemyFrightened == false && isEated == false)
             {
-                ScatterMode();
-            }
+                scatterTime += Time.deltaTime;
+                if (scatterTime <= timeTillScatter)
+                {
+                    ScatterMode();
+                }
 
+                else
+                {
+                    chaseTime += Time.deltaTime;
+                    ChaseMode();
+                }
+            }
             else
             {
-                chaseTime += Time.deltaTime;
-                ChaseMode();
+                waypointIndex = 0;
             }
         }
 
         public void ScatterMode()
         {
-            if (FindObjectOfType<Pacman>().enemyFrightened == false)
+            myAnimator.SetBool("isFrightened", false);
+            isScattering = true;
+            isChasing = false;
+            transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
+            if (transform.position == waypoints[waypointIndex].transform.position)
             {
-                myAnimator.SetBool("isFrightened", false);
-                isScattering = true;
-                isChasing = false;
-                transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
-                if (transform.position == waypoints[waypointIndex].transform.position)
+                waypointIndex += 1;
+                if (waypointIndex >= 10)
                 {
-                    waypointIndex += 1;
-                    if (waypointIndex >= 10)
-                    {
-                        waypointIndex = 6;
-                    }
+                    waypointIndex = 6;
                 }
             }
         }
 
         public void ChaseMode()
         {
-            if (FindObjectOfType<Pacman>().enemyFrightened == false)
-            {
-                myAnimator.SetBool("isFrightened", false);
-                isScattering = false;
-                isChasing = true;
-                GetComponent<AIDestinationSetter>().enabled = true;
-                waypointIndex = 0;
-            }
+            myAnimator.SetBool("isFrightened", false);
+            isScattering = false;
+            isChasing = true;
+            GetComponent<AIDestinationSetter>().enabled = true;
+            waypointIndex = 0;
+            
         }
 
         public void OnTriggerEnter2D(Collider2D other)                          //Destroy Enemy When it touches Player

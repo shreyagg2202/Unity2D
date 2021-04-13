@@ -102,7 +102,7 @@ namespace Pathfinding
             }
         }
 
-        public void OnTriggerEnter2D(Collider2D other)              
+        public void OnTriggerEnter2D(Collider2D other)              //Power Pellets and Death         
         {
             if (other.CompareTag("Power Pellet"))                   //Checks if Pacman has eaten The Power Pellets
             {
@@ -135,6 +135,7 @@ namespace Pathfinding
             yield return new WaitForSeconds(frightenedTime);
             if (numberOfPowerPelletsEaten <= 1)                         //if only one pellet is eaten
             {
+                FindObjectOfType<Enemy>().isEated = true;
                 numberOfPowerPelletsEaten = 0;                          //reset number of pellets eaten
                 enemyFrightened = false;
                 FindObjectOfType<Enemy>().isScattering = true;          //Enemy Script Enabled
@@ -155,6 +156,7 @@ namespace Pathfinding
             frightenedTime = 7f;                                          //frightened time reset for next pellet
             numberOfPowerPelletsEaten = 0;
             enemyFrightened = false;
+            FindObjectOfType<Enemy>().isEated = true;
             FindObjectOfType<Enemy>().isScattering = true;                //Enemy Script Enabled
             FindObjectOfType<Enemy>().isChasing = false;
             FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;

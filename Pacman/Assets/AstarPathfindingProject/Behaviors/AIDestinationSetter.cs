@@ -22,6 +22,7 @@ namespace Pathfinding {
 		[SerializeField] Transform newTarget;
 		[SerializeField] Transform tempTarget;
 		[SerializeField] Transform frightenedTarget;
+		[SerializeField] Transform baseTarget;
 
 		[Header("Time Controller")]
 		public float changeTargetTime = 0f;
@@ -92,6 +93,19 @@ namespace Pathfinding {
 				if (ai.reachedDestination)
 				{
 					Frightened();
+				}
+			}
+
+			else if (FindObjectOfType<Enemy>().isEated == true && FindObjectOfType<Pacman>().enemyFrightened == false)
+            {
+				target = baseTarget;
+				ai.destination = target.transform.position;
+				if (ai.reachedDestination)
+                {
+					target = tempTarget;
+					FindObjectOfType<Enemy>().isEated = false;
+					FindObjectOfType<Enemy>().isScattering = true;
+					FindObjectOfType<Enemy>().isChasing = false;
 				}
 			}
 		}
