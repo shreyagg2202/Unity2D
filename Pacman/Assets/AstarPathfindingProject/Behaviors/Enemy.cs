@@ -6,7 +6,6 @@ namespace Pathfinding
 { 
     public class Enemy : MonoBehaviour
     {
-        [Header("Waypoints")]
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
 

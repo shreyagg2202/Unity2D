@@ -12,8 +12,8 @@ namespace Pathfinding
 
         [Header("Time Controller")]
         public bool enemyFrightened;
-        public float frightenedTime = 7f;
-        public float timeElapsed;
+        [SerializeField] float frightenedTime = 7f;
+        [SerializeField] float timeElapsed;
 
         int numberOfPowerPelletsEaten;
 

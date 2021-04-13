@@ -18,16 +18,15 @@ namespace Pathfinding {
 		/// <summary>The object that the AI should move to</summary>
 		
 		[Header("Targets")]
-		public Transform target;
-		public Transform newTarget;
-		public Transform tempTarget;
-		public Transform frightenedTarget;
+		[SerializeField] Transform target;
+		[SerializeField] Transform newTarget;
+		[SerializeField] Transform tempTarget;
+		[SerializeField] Transform frightenedTarget;
 
 		[Header("Time Controller")]
 		public float changeTargetTime = 0f;
 		public float frightenedEndTime;
 
-		[Header("Waypoints")]
 		[SerializeField] Transform[] waypoints;
 		int waypointIndex = 0;
 
