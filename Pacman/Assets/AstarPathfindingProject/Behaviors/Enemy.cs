@@ -6,18 +6,21 @@ namespace Pathfinding
 { 
     public class Enemy : MonoBehaviour
     {
+        [Header("Waypoints")]
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
 
         [SerializeField] float blinkySpeed;
         [SerializeField] float timeTillScatter;
 
+        [Header("State")]
         public bool isScattering;
         public bool isChasing;
 
         Vector3 prevPos;
         Vector3 moveDirection;
 
+        [Header("Time Controller")]
         public float scatterTime = 0f;
         public float chaseTime = 0f;
 

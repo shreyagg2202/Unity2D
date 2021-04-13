@@ -17,16 +17,19 @@ namespace Pathfinding {
 	public class AIDestinationSetter : VersionedMonoBehaviour {
 		/// <summary>The object that the AI should move to</summary>
 		
+		[Header("Targets")]
 		public Transform target;
 		public Transform newTarget;
 		public Transform tempTarget;
 		public Transform frightenedTarget;
-		public float changeTargetTime = 0f;
 
+		[Header("Time Controller")]
+		public float changeTargetTime = 0f;
+		public float frightenedEndTime;
+
+		[Header("Waypoints")]
 		[SerializeField] Transform[] waypoints;
 		int waypointIndex = 0;
-
-		public float frightenedEndTime;
 
 		Animator myAnimator;
 		CircleCollider2D myBodyCollider;
@@ -81,7 +84,7 @@ namespace Pathfinding {
 					}
 				}
 			}
-			else if (FindObjectOfType<Pacman>().enemyFrightened == true)
+			else if (FindObjectOfType<Pacman>().enemyFrightened == true)	//when enemy is in frightened mode
 			{
 				myAnimator.SetBool("isFrightened", true);
 				frightenedEndTime += Time.deltaTime;

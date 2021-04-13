@@ -6,14 +6,17 @@ namespace Pathfinding
 {
     public class Pacman : MonoBehaviour
     {
+        [Header("Pacman Settings")]
         [SerializeField] float pacmanSpeed;
         bool isAlive = true;
 
+        [Header("Time Controller")]
         public bool enemyFrightened;
         public float frightenedTime = 7f;
-        int numberOfPowerPelletsEaten;
         public float timeElapsed;
-        
+
+        int numberOfPowerPelletsEaten;
+
         Rigidbody2D myRigidBody;
         Animator myAnimator;
         CircleCollider2D myBodyCollider;
@@ -30,7 +33,6 @@ namespace Pathfinding
         // Update is called once per frame
         public void Update()
         {
-            Debug.Log(numberOfPowerPelletsEaten);
             if (enemyFrightened == true)
             {
                 timeElapsed += Time.deltaTime;
@@ -45,7 +47,6 @@ namespace Pathfinding
                 PacmanYPosMove();
             }
             LastMovement();
-            Debug.Log(enemyFrightened);
             Die();
         }
 
