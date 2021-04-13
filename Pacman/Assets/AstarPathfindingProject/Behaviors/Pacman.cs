@@ -112,12 +112,18 @@ namespace Pathfinding
 
             if (other.CompareTag("Enemy"))                          //Pacman Death
             {
-                Debug.Log("Hello");
-                isAlive = false;
-                myAnimator.SetTrigger("Dead");                      //Death Animation
-                FindObjectOfType<GameSession>().PacmanDeath();
-                myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
-                myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
+                if (enemyFrightened == true)
+                {
+                    FindObjectOfType<Enemy>().isEated = true;
+                }
+                else
+                {
+                    isAlive = false;
+                    myAnimator.SetTrigger("Dead");                      //Death Animation
+                    FindObjectOfType<GameSession>().PacmanDeath();
+                    myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+                    myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
+                }
             }
 
         }
@@ -135,11 +141,11 @@ namespace Pathfinding
             yield return new WaitForSeconds(frightenedTime);
             if (numberOfPowerPelletsEaten <= 1)                         //if only one pellet is eaten
             {
-                FindObjectOfType<Enemy>().isEated = true;
                 numberOfPowerPelletsEaten = 0;                          //reset number of pellets eaten
                 enemyFrightened = false;
-                FindObjectOfType<Enemy>().isScattering = true;          //Enemy Script Enabled
-                FindObjectOfType<Enemy>().isChasing = false;
+                FindObjectOfType<Enemy>().isScattering = false;          //starts chasing
+                FindObjectOfType<Enemy>().isChasing = true;
+                FindObjectOfType<Enemy>().scatterTime = 0f;
                 FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
             }
         }
@@ -156,9 +162,9 @@ namespace Pathfinding
             frightenedTime = 7f;                                          //frightened time reset for next pellet
             numberOfPowerPelletsEaten = 0;
             enemyFrightened = false;
-            FindObjectOfType<Enemy>().isEated = true;
-            FindObjectOfType<Enemy>().isScattering = true;                //Enemy Script Enabled
-            FindObjectOfType<Enemy>().isChasing = false;
+            FindObjectOfType<Enemy>().isScattering = false;                //starts chasing
+            FindObjectOfType<Enemy>().isChasing = true;
+            FindObjectOfType<Enemy>().scatterTime = 0f;
             FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
         }
     }

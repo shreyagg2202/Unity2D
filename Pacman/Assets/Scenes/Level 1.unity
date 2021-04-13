@@ -1882,6 +1882,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4558552141453871569, guid: 3b13872aa4d7e41459ba514c3d86e5c5, type: 3}
   m_PrefabInstance: {fileID: 386321590}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &207138810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3972550260946820347, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+  m_PrefabInstance: {fileID: 3972550260272980844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &207138820
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207138810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000023841858}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.75, y: 1.75}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6512165, y: 1.6088071}
+  m_EdgeRadius: 0
 --- !u!4 &209976862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558552141453871569, guid: 3b13872aa4d7e41459ba514c3d86e5c5, type: 3}
@@ -13633,7 +13664,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 18
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 36
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17612,8 +17643,8 @@ Tilemap:
     m_Data: {fileID: 8254780119655163446, guid: 1163ba86a213fc34e997b6b10eac7bb1, type: 3}
   - m_RefCount: 25
     m_Data: {fileID: 9173798376699230401, guid: 1163ba86a213fc34e997b6b10eac7bb1, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 4307637500650825307, guid: 1163ba86a213fc34e997b6b10eac7bb1, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 41
     m_Data: {fileID: -8934286910275790897, guid: 1163ba86a213fc34e997b6b10eac7bb1, type: 3}
   - m_RefCount: 1
@@ -17678,8 +17709,8 @@ Tilemap:
     m_Data: {fileID: -2874287484510508873, guid: 1163ba86a213fc34e997b6b10eac7bb1, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -2292404336230801699, guid: 1163ba86a213fc34e997b6b10eac7bb1, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 4307637500650825307, guid: 1163ba86a213fc34e997b6b10eac7bb1, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 476
     m_Data:
@@ -53431,6 +53462,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8923886312352021433, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923886312352021437, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8923886312352021438, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}

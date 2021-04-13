@@ -98,7 +98,10 @@ namespace Pathfinding
         {
             if (other.CompareTag("Player"))
             {
-                Destroy(gameObject);
+                if (isEated == false)
+                {
+                    Destroy(gameObject);
+                }
             }
         }
     }

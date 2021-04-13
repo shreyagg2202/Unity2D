@@ -98,10 +98,13 @@ namespace Pathfinding {
 
 			else if (FindObjectOfType<Enemy>().isEated == true && FindObjectOfType<Pacman>().enemyFrightened == false)
             {
+				myAnimator.SetBool("isFrightened", false);
+				myAnimator.SetBool("isEaten", true);
 				target = baseTarget;
 				ai.destination = target.transform.position;
 				if (ai.reachedDestination)
                 {
+					myAnimator.SetBool("isEaten", false);
 					target = tempTarget;
 					FindObjectOfType<Enemy>().isEated = false;
 					FindObjectOfType<Enemy>().isScattering = true;
