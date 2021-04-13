@@ -111,19 +111,7 @@ namespace Pathfinding
             if (other.CompareTag("Power Pellet"))
             {
                 numberOfPowerPelletsEaten += 1;
-                Debug.Log(numberOfPowerPelletsEaten);
-                if (numberOfPowerPelletsEaten > 1)
-                {
-                    frightenedTime *= 2;
-                    frightenedTime -= timeElapsed;
-                    StartCoroutine(Frightened());
-                    numberOfPowerPelletsEaten = 0;
-                }
-                else
-                {
-                    StartCoroutine(Frightened());
-                }
-                FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
+                StartCoroutine(Frightened());
             }
         }
 
@@ -133,16 +121,18 @@ namespace Pathfinding
             enemyFrightened = true;
             FindObjectOfType<Enemy>().isScattering = false;             //Ememy Script Disabled
             FindObjectOfType<Enemy>().isChasing = true;                 //AI Script Enabled
-            yield return new WaitForSeconds(frightenedTime);
             if (numberOfPowerPelletsEaten > 1)
             {
-                numberOfPowerPelletsEaten = 1;
-                StartCoroutine(Frightened());
+                frightenedTime *= 2;
+                frightenedTime -= timeElapsed;
             }
+            yield return new WaitForSeconds(frightenedTime);
+            frightenedTime = 7f;
             numberOfPowerPelletsEaten = 0;
             enemyFrightened = false;
             FindObjectOfType<Enemy>().isScattering = true;                   //Enemy Script Enabled
             FindObjectOfType<Enemy>().isChasing = false;
+            FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
         }
     }
 }
