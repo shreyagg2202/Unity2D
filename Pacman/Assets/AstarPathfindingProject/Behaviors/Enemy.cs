@@ -58,7 +58,6 @@ namespace Pathfinding
                 chaseTime += Time.deltaTime;
                 ChaseMode();
             }
-            DestroyOnCollision();
         }
 
         public void ScatterMode()
@@ -92,9 +91,9 @@ namespace Pathfinding
             }
         }
 
-        public void DestroyOnCollision()                                        //Destroy Enemy When it touches Player
+        public void OnTriggerEnter2D(Collider2D other)                          //Destroy Enemy When it touches Player
         {
-            if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
+            if (other.CompareTag("Player"))
             {
                 Destroy(gameObject);
             }

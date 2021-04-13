@@ -35,7 +35,6 @@ public class GameSession : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(playerLives);
         NumberOfLivesLeft();
     }
 
