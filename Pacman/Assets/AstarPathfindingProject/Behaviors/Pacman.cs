@@ -7,8 +7,8 @@ namespace Pathfinding
     public class Pacman : MonoBehaviour
     {
         [SerializeField] float pacmanSpeed;
-
         bool isAlive = true;
+
         public bool enemyFrightened;
         public float frightenedTime = 7f;
         int numberOfPowerPelletsEaten;
@@ -18,9 +18,8 @@ namespace Pathfinding
         Animator myAnimator;
         CircleCollider2D myBodyCollider;
 
-
         // Start is called before the first frame update
-        void Start()
+        public void Start()
         {
             enemyFrightened = false;
             myRigidBody = GetComponent<Rigidbody2D>();
@@ -29,7 +28,7 @@ namespace Pathfinding
         }
 
         // Update is called once per frame
-        void Update()
+        public void Update()
         {
             Debug.Log(numberOfPowerPelletsEaten);
             if (enemyFrightened == true)
@@ -108,7 +107,7 @@ namespace Pathfinding
             if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
             {
                 isAlive = false;
-                myAnimator.SetTrigger("Dead");
+                myAnimator.SetTrigger("Dead");                      //Death Animation
                 FindObjectOfType<GameSession>().PacmanDeath();
                 myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
                 myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
@@ -129,18 +128,17 @@ namespace Pathfinding
             enemyFrightened = true;
             FindObjectOfType<Enemy>().isScattering = false;             //Ememy Script Disabled
             FindObjectOfType<Enemy>().isChasing = true;                 //AI Script Enabled
-            if (numberOfPowerPelletsEaten > 1)
+            if (numberOfPowerPelletsEaten > 1)                          //if more than one pellet eaten at a time then frightened time is increased
             {
                 StopCoroutine(Frightened());
                 StartCoroutine(TwoPelletsEaten());
             }
-            Debug.Log("hello");
             yield return new WaitForSeconds(frightenedTime);
-            if (numberOfPowerPelletsEaten <= 1)
+            if (numberOfPowerPelletsEaten <= 1)                         //if only one pellet is eaten
             {
-                numberOfPowerPelletsEaten = 0;
+                numberOfPowerPelletsEaten = 0;                          //reset number of pellets eaten
                 enemyFrightened = false;
-                FindObjectOfType<Enemy>().isScattering = true;                   //Enemy Script Enabled
+                FindObjectOfType<Enemy>().isScattering = true;          //Enemy Script Enabled
                 FindObjectOfType<Enemy>().isChasing = false;
                 FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
             }
@@ -149,16 +147,16 @@ namespace Pathfinding
         IEnumerator TwoPelletsEaten()
         {
             FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
-            frightenedTime *= 2;
+            frightenedTime *= 2;                                          //frightened time increased
             frightenedTime -= timeElapsed;
             timeElapsed = 0f;
 
             yield return new WaitForSeconds(frightenedTime);
             
-            frightenedTime = 7f;
+            frightenedTime = 7f;                                          //frightened time reset for next pellet
             numberOfPowerPelletsEaten = 0;
             enemyFrightened = false;
-            FindObjectOfType<Enemy>().isScattering = true;                   //Enemy Script Enabled
+            FindObjectOfType<Enemy>().isScattering = true;                //Enemy Script Enabled
             FindObjectOfType<Enemy>().isChasing = false;
             FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
         }
