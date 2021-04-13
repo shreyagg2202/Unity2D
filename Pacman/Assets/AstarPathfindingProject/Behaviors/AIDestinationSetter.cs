@@ -18,7 +18,7 @@ namespace Pathfinding {
 		/// <summary>The object that the AI should move to</summary>
 		
 		[Header("Targets")]
-		[SerializeField] Transform target;
+		public Transform target;
 		[SerializeField] Transform newTarget;
 		[SerializeField] Transform tempTarget;
 		[SerializeField] Transform frightenedTarget;

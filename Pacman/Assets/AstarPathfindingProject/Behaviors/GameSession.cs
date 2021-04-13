@@ -16,8 +16,8 @@ public class GameSession : MonoBehaviour
 
     public void Awake()
     {
-        int numameSessions = FindObjectsOfType<GameSession>().Length;
-        if (numameSessions > 1)
+        int numGameSessions = FindObjectsOfType<GameSession>().Length;
+        if (numGameSessions > 1)
         {
             Destroy(gameObject);
         }
@@ -28,13 +28,14 @@ public class GameSession : MonoBehaviour
 
     }
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         scoreText.text = score.ToString();
     }
 
     public void Update()
     {
+        Debug.Log(playerLives);
         NumberOfLivesLeft();
     }
 
@@ -50,19 +51,17 @@ public class GameSession : MonoBehaviour
         {
             TakeLife();
         }
-
     }
 
     private void TakeLife()
     {
-        playerLives--;
+        playerLives -= 1;
         StartCoroutine(ReloadScene());
     }
 
     IEnumerator ReloadScene()
     {
         yield return new WaitForSecondsRealtime(timeToWait);
-
         if (playerLives >= 1)
         {
             var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -82,11 +81,6 @@ public class GameSession : MonoBehaviour
 
     public void NumberOfLivesLeft()
     {
-        if (playerLives > 5)
-        {
-            playerLives = 5;            
-        }
-
         switch (playerLives)
         {
             case 5:

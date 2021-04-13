@@ -41,13 +41,12 @@ namespace Pathfinding
             {
                 timeElapsed = 0f;
             }
-            if (isAlive)
+            if (isAlive == true)
             {
                 PacmanXPosMove();
                 PacmanYPosMove();
             }
             LastMovement();
-            Die();
         }
 
         private void PacmanXPosMove()                               //X moving direction of character
@@ -103,25 +102,24 @@ namespace Pathfinding
             }
         }
 
-        public void Die()                                           //Pacman Death
+        public void OnTriggerEnter2D(Collider2D other)              
         {
-            if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+            if (other.CompareTag("Power Pellet"))                   //Checks if Pacman has eaten The Power Pellets
             {
+                numberOfPowerPelletsEaten += 1;
+                StartCoroutine(Frightened());
+            }
+
+            if (other.CompareTag("Enemy"))                          //Pacman Death
+            {
+                Debug.Log("Hello");
                 isAlive = false;
                 myAnimator.SetTrigger("Dead");                      //Death Animation
                 FindObjectOfType<GameSession>().PacmanDeath();
                 myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
                 myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
             }
-        }
 
-        public void OnTriggerEnter2D(Collider2D other)              //Checks if Pacman has eaten The Power Pellets
-        {
-            if (other.CompareTag("Power Pellet"))
-            {
-                numberOfPowerPelletsEaten += 1;
-                StartCoroutine(Frightened());
-            }
         }
 
         IEnumerator Frightened()

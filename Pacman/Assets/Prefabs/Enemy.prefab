@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 2076650300}
   m_Layer: 11
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,9 +171,10 @@ MonoBehaviour:
   - {fileID: 0}
   blinkySpeed: 7
   timeTillScatter: 7
-  timeTillChase: 24
   isScattering: 0
   isChasing: 0
+  scatterTime: 0
+  chaseTime: 0
 --- !u!114 &1994728766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +257,7 @@ MonoBehaviour:
   tempTarget: {fileID: 0}
   frightenedTarget: {fileID: 0}
   changeTargetTime: 0
+  frightenedEndTime: 0
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
