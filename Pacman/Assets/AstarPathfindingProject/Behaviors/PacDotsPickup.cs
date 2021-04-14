@@ -2,24 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PacDotsPickup : MonoBehaviour
+namespace Pathfinding
 {
-    [SerializeField] int pointsForPickup = 10;
-    CircleCollider2D myBodyCollider;
+    public class PacDotsPickup : MonoBehaviour
+    {
+        [SerializeField] int pointsForPickup = 10;
+        CircleCollider2D myBodyCollider;
 
-    public void Start()
-    {
-        myBodyCollider = GetComponent<CircleCollider2D>();
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
+        public void Start()
         {
-            FindObjectOfType<GameSession>().AddScore(pointsForPickup);
-            Destroy(gameObject);
+            myBodyCollider = GetComponent<CircleCollider2D>();
         }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
+            {
+                FindObjectOfType<GameSession>().AddScore(pointsForPickup);
+                Destroy(gameObject);
+            }
 
-        else { return; }
+            else { return; }
 
+        }
     }
 }
