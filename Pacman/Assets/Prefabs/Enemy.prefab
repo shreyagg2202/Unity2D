@@ -173,6 +173,7 @@ MonoBehaviour:
   timeTillScatter: 7
   isScattering: 0
   isChasing: 0
+  isEaten: 0
   scatterTime: 0
   chaseTime: 0
 --- !u!114 &1994728766
@@ -256,6 +257,7 @@ MonoBehaviour:
   newTarget: {fileID: 0}
   tempTarget: {fileID: 0}
   frightenedTarget: {fileID: 0}
+  baseTarget: {fileID: 0}
   changeTargetTime: 0
   frightenedEndTime: 0
   waypoints:

@@ -39,6 +39,7 @@ namespace Pathfinding
 
         public void Update()
         {
+            FindObjectOfType<AIPath>().maxSpeed = blinkySpeed;
             if (prevPos != transform.position)
             {
                 moveDirection = (transform.position - prevPos).normalized;
@@ -66,6 +67,7 @@ namespace Pathfinding
             {
                 waypointIndex = 0;
             }
+            SpeedController();
         }
 
         public void ScatterMode()
@@ -94,6 +96,22 @@ namespace Pathfinding
             
         }
 
+        public void SpeedController()                                           //Controls Enemy Speed at different States
+        {
+            if (FindObjectOfType<Pacman>().enemyFrightened == true)
+            {
+                blinkySpeed = 4.5f;
+            }
+            else if (isEaten == true)
+            {
+                blinkySpeed = 12f;
+            }
+            else
+            {
+                blinkySpeed = 7f;
+            }
+        }                               
+        
         public void OnCollisionEnter2D(Collision2D other)                        //Destroy Enemy When it touches Player
         {
             if (other.collider.gameObject.layer == LayerMask.NameToLayer("Pacman"))

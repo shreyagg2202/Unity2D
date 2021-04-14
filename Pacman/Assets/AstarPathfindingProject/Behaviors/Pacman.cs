@@ -102,9 +102,9 @@ namespace Pathfinding
             }
         }
 
-        public void OnCollisionEnter2D(Collision2D other)            
+        public void OnCollisionEnter2D(Collision2D other)            //Pacman Death
         {
-            if (other.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))                 //Pacman Death
+            if (other.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))                 
             {
                 if (enemyFrightened == true)
                 {
@@ -121,9 +121,9 @@ namespace Pathfinding
             }
         }
 
-        public void OnTriggerEnter2D(Collider2D collision)
+        public void OnTriggerEnter2D(Collider2D collision)          //Checks if Pacman has eaten The Power Pellets
         {
-            if (collision.CompareTag("Power Pellet"))               //Checks if Pacman has eaten The Power Pellets
+            if (collision.CompareTag("Power Pellet"))               
             {
                 numberOfPowerPelletsEaten += 1;
                 if (FindObjectOfType<Enemy>().isEaten == false)

@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64db04474186f77409fe6354044cae92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pacmanSpeed: 9
+  pacmanSpeed: 7
   enemyFrightened: 0
   frightenedTime: 7
   timeElapsed: 0
