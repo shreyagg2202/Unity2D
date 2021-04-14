@@ -66,7 +66,7 @@ namespace Pathfinding
 
             myAnimator.SetFloat("SpeedY", yControlThrow);
         }
-
+        
         private void LastMovement()                                 //Holds the last moving direction of the character
         {
             float lastInputX = Input.GetAxis("Horizontal");
@@ -102,16 +102,19 @@ namespace Pathfinding
             }
         }
 
-        public void OnTriggerEnter2D(Collider2D other)              //Power Pellets and Death         
+        public void OnCollisionEnter2D(Collision2D other)            //Power Pellets and Death         
         {
-            if (other.CompareTag("Power Pellet"))                   //Checks if Pacman has eaten The Power Pellets
+            Debug.Log("Meow");
+            if (other.collider.gameObject.layer == LayerMask.NameToLayer("Power Pellet"))         //Checks if Pacman has eaten The Power Pellets
             {
+                Debug.Log("hello");
                 numberOfPowerPelletsEaten += 1;
                 StartCoroutine(Frightened());
             }
 
-            if (other.CompareTag("Enemy"))                          //Pacman Death
+            else if (other.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))                 //Pacman Death
             {
+                Debug.Log("hii");
                 if (enemyFrightened == true)
                 {
                     FindObjectOfType<Enemy>().isEated = true;

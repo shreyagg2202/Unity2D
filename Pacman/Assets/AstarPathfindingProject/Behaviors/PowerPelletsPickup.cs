@@ -12,9 +12,9 @@ public class PowerPelletsPickup : MonoBehaviour
         myBodyCollider = GetComponent<CircleCollider2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision other)
     {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
+        if (other.collider.gameObject.layer == LayerMask.NameToLayer("Pacman"))
         {
             Destroy(gameObject);
         }

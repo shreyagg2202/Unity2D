@@ -94,9 +94,9 @@ namespace Pathfinding
             
         }
 
-        public void OnTriggerEnter2D(Collider2D other)                          //Destroy Enemy When it touches Player
+        public void OnCollisionEnter2D(Collision2D other)                        //Destroy Enemy When it touches Player
         {
-            if (other.CompareTag("Player"))
+            if (other.collider.gameObject.layer == LayerMask.NameToLayer("Pacman"))
             {
                 if (isEated == false)
                 {
