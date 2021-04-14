@@ -22,8 +22,8 @@ TagManager:
   - Pacman
   - Enemy
   - Pickups
-  - PowerPellet
-  - 
+  - Power Pellet
+  - Dead
   - 
   - 
   - 
@@ -62,4 +62,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 4121756545
+    locked: 0
+  - name: Dead
+    uniqueID: 3863480855
     locked: 0

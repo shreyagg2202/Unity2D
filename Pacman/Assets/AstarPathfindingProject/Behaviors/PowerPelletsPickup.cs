@@ -7,14 +7,14 @@ public class PowerPelletsPickup : MonoBehaviour
     CircleCollider2D myBodyCollider;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         myBodyCollider = GetComponent<CircleCollider2D>();
     }
 
-    private void OnCollisionEnter2D(Collision other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.collider.gameObject.layer == LayerMask.NameToLayer("Pacman"))
+        if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

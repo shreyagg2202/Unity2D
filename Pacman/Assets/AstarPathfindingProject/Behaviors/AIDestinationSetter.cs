@@ -61,8 +61,9 @@ namespace Pathfinding {
         /// <summary>Updates the AI's destination every frame</summary>
         void Update ()  
 		{
-			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Pacman>().enemyFrightened == false)
+			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Pacman>().enemyFrightened == false && FindObjectOfType<Enemy>().isEaten == false)
 			{
+				Debug.Log("Hello");
 				frightenedEndTime = 0f;
 				myAnimator.SetBool("isFrightened", false);
 				changeTargetTime += Time.deltaTime;
@@ -96,17 +97,16 @@ namespace Pathfinding {
 				}
 			}
 
-			else if (FindObjectOfType<Enemy>().isEated == true && FindObjectOfType<Pacman>().enemyFrightened == false)
+			else if (FindObjectOfType<Enemy>().isEaten == true && FindObjectOfType<Pacman>().enemyFrightened == false)
             {
-				myAnimator.SetBool("isFrightened", false);
-				myAnimator.SetBool("isEaten", true);
 				target = baseTarget;
 				ai.destination = target.transform.position;
 				if (ai.reachedDestination)
                 {
+					gameObject.layer = 11;                                  //Layer is changed to Enemy
 					myAnimator.SetBool("isEaten", false);
 					target = tempTarget;
-					FindObjectOfType<Enemy>().isEated = false;
+					FindObjectOfType<Enemy>().isEaten = false;
 					FindObjectOfType<Enemy>().isScattering = true;
 					FindObjectOfType<Enemy>().isChasing = false;
 				}

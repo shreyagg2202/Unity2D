@@ -102,24 +102,15 @@ namespace Pathfinding
             }
         }
 
-        public void OnCollisionEnter2D(Collision2D other)            //Power Pellets and Death         
+        public void OnCollisionEnter2D(Collision2D other)            
         {
-            Debug.Log("Meow");
-            if (other.collider.gameObject.layer == LayerMask.NameToLayer("Power Pellet"))         //Checks if Pacman has eaten The Power Pellets
+            if (other.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))                 //Pacman Death
             {
-                Debug.Log("hello");
-                numberOfPowerPelletsEaten += 1;
-                StartCoroutine(Frightened());
-            }
-
-            else if (other.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))                 //Pacman Death
-            {
-                Debug.Log("hii");
                 if (enemyFrightened == true)
                 {
-                    FindObjectOfType<Enemy>().isEated = true;
+                    FindObjectOfType<Enemy>().isEaten = true;
                 }
-                else
+                else if (FindObjectOfType<Enemy>().isEaten == false)
                 {
                     isAlive = false;
                     myAnimator.SetTrigger("Dead");                      //Death Animation
@@ -128,7 +119,15 @@ namespace Pathfinding
                     myRigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
                 }
             }
+        }
 
+        public void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Power Pellet"))               //Checks if Pacman has eaten The Power Pellets
+            {
+                numberOfPowerPelletsEaten += 1;
+                StartCoroutine(Frightened());
+            }
         }
 
         IEnumerator Frightened()
@@ -141,7 +140,9 @@ namespace Pathfinding
                 StopCoroutine(Frightened());
                 StartCoroutine(TwoPelletsEaten());
             }
+
             yield return new WaitForSeconds(frightenedTime);
+
             if (numberOfPowerPelletsEaten <= 1)                         //if only one pellet is eaten
             {
                 numberOfPowerPelletsEaten = 0;                          //reset number of pellets eaten
