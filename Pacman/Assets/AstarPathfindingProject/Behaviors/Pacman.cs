@@ -126,7 +126,14 @@ namespace Pathfinding
             if (collision.CompareTag("Power Pellet"))               //Checks if Pacman has eaten The Power Pellets
             {
                 numberOfPowerPelletsEaten += 1;
-                StartCoroutine(Frightened());
+                if (FindObjectOfType<Enemy>().isEaten == false)
+                {
+                    StartCoroutine(Frightened());
+                }
+                else
+                {
+                    numberOfPowerPelletsEaten = 0;
+                }
             }
         }
 
@@ -156,6 +163,7 @@ namespace Pathfinding
 
         IEnumerator TwoPelletsEaten()
         {
+
             FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
             frightenedTime *= 2;                                          //frightened time increased
             frightenedTime -= timeElapsed;
