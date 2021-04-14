@@ -9,7 +9,8 @@ namespace Pathfinding
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
 
-        [SerializeField] float blinkySpeed;
+        [SerializeField] float originalEnemySpeed;
+        [SerializeField] float EnemySpeed;
         [SerializeField] float timeTillScatter;
 
         [Header("State")]
@@ -39,7 +40,7 @@ namespace Pathfinding
 
         public void Update()
         {
-            FindObjectOfType<AIPath>().maxSpeed = blinkySpeed;
+            FindObjectOfType<AIPath>().maxSpeed = EnemySpeed;
             if (prevPos != transform.position)
             {
                 moveDirection = (transform.position - prevPos).normalized;
@@ -75,7 +76,7 @@ namespace Pathfinding
             myAnimator.SetBool("isFrightened", false);
             isScattering = true;
             isChasing = false;
-            transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, blinkySpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, EnemySpeed * Time.deltaTime);
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 waypointIndex += 1;
@@ -100,15 +101,15 @@ namespace Pathfinding
         {
             if (FindObjectOfType<Pacman>().enemyFrightened == true)
             {
-                blinkySpeed = 4.5f;
+                EnemySpeed = 4.5f;
             }
             else if (isEaten == true)
             {
-                blinkySpeed = 12f;
+                EnemySpeed = 12f;
             }
             else
             {
-                blinkySpeed = 7f;
+                EnemySpeed = originalEnemySpeed;
             }
         }                               
         
