@@ -729,7 +729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAMArIezRmUQ1aAIAAAsFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoUxwYa4t9YQ0gNJJrSTiy+KtcYaZMkjyQGS4b93JQvsUl8sv/16b3flL8KlaaCwSq81ZxvFgHwfEXcm30a98RGOdKfkln/CxeeNM1s5J+p9XqnlCvGpCzOqBqt58UPuhHOOEGwlL5WuV2wHmTLWIFxSYQBNWlkXLRH6GpEjvsapCznh6W7hTp94SqPRGY8FSAu6d40mSXAdJ5M4dU8IGKeT+1m8mM9X42jhY1tZCFo3wJyQPkW8CBlmiXeTKDF4ODmFEoKbwI/YU+P1Z7QxLapDB8Yp6vWkppMZAhXwXWUd+2H4c1kasKEdmp6WXGPjurzkp+q6WVOz75h9UNG6Ssn0zrPqkm7+s4+n3lxqVT9e6k4jV8NWvNi/0lNBjR20ewgvB9R9gw5U7Om7gLcK5JNaa9VKhkarWxfaGrhb9p9XaVkFxb7HO6o3YNsMhhYafpmt03D26o+Z4PW7n2vcAVuhfMf9SoDG2fxCwn5hTEiBqGPxx8BvuhtuVjA8cG0smoJK6ei9q1Y7V7LyPXNqWpspLcHDgXQDkgp7esE09naEN7ZB2RvLA3V3KBQPtsvVuAnxcO8fRTemF3W4DstU6rABUz23VnAJPWlneMI+ZUrKbsOGPbmEbVtd0mIQtms5+3e1SJxAWiZTBnFMGYvm4zSOC5qkybycx/eLxYz43eMSdVLx0hEN7cGpyT65xD27/FpGa00bv+1M08Oaf9ZqSJDLUm0LDSCfuxRX5qCxCl5MtmIcO7QFa7n0AydfORGq2APLrzVzL3V1tJrmfZacNPxDWYfkJPM/k5ycyfkvUEsDBBQAAAgIAMArIezEcMpCbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSiWmqZZqpYUqqiUliSoqBma6liUlyoqmlqVmamYmFubmxUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAMArIezRmUQ1aAIAAAsFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAMArIezEcMpCbQAAAHgAAAAJACQAAAAAAAAAAAAAALUCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAbQMAAAAA
+    dataString: UEsDBBQAAAgIAMArIewtUnwsWQIAAPoEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVEtz2jAQ/iuMziVjiA2lt9YQ0kMeE9LJxRfFWmMNsuTRI0Ay/PeuZIFdemL59tvdbx/yF+HStFBapdeaswfFgPwYEW+Tb6PeeQ8HulVywz/hzHnjzNaeRAPnhVquEJ/4MKMasJqXP+VWeHKCoJO8UrpZsS3kyliDcEWFAXRpZX20ROhrRA74M174kCNa07m3PtFaJKMTmiVIC7qnJjdZpI6zYHpuR3WyFLRpgXndfUQ6jwG3WaBJ7CgyvPpSCcFNlEPssQ3t5rQ1DptBAuMU2wsaJje3CNTAt7X1YofhT1VlwMbuNT0uucY5dXnJL9UNr6Fm1yn7oML5StlkGlR1SR/+848nwV1p1dyf604SX8PWvNy90GNJjR1MdwgvB9LDgPZU7Oi7gLca5KNaa+UkQ6fVzoc6A9Nl//fSWl5DuevxTuoV6NrBjuLAz6v0PZxC94dc8OY9rDHtgI1QYeLhAkDjbn6j4HAfJqZA1Kv4Y+CVboeHFB13XBuLrtil9PLeldOeSlZhZr4bZ3OlJQQ4im5BUmGPz5jGXq/wyjcoe+W5o/7JxOLRd34JVyEB7vlJcuV6VvvLskyt9g9g6idnBZfQi/aOR5xTrqTsLmw4k3PYxumKloOwrePs39MiaQaLKpswSFPKWDIbL9K0pNkim1Wz9Pt8fkvC7XGJfVLx3AmN48GtyT65xDs7f0lGa03bcO1M0/2afzZqKJDLSm1KDSCfuhQX5aCxCj5MtmIcJ7QBa7kMCydfBRGq3AErLjWL0OrqYDUt+iwFafmHsh4pSB6+HQU5kdNfUEsDBBQAAAgIAMArIezEcMpCbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSiWmqZZqpYUqqiUliSoqBma6liUlyoqmlqVmamYmFubmxUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAMArIewtUnwsWQIAAPoEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAMArIezEcMpCbQAAAHgAAAAJACQAAAAAAAAAAAAAAKYCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAXgMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -793,7 +793,7 @@ MonoBehaviour:
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:
@@ -801,7 +801,7 @@ MonoBehaviour:
     seed: 0
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
-  showGraphs: 1
+  showGraphs: 0
 --- !u!4 &51305849
 Transform:
   m_ObjectHideFlags: 0
@@ -19137,6 +19137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b13872aa4d7e41459ba514c3d86e5c5, type: 3}
+--- !u!212 &1621653172 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3972550260946820342, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+  m_PrefabInstance: {fileID: 3972550260272980844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1622867908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21055,6 +21060,8 @@ MonoBehaviour:
   playerLives: 5
   timeToWait: 1.3
   score: 0
+  spriteRenderer: {fileID: 1621653172}
+  scoreSprite: {fileID: 0}
   scoreText: {fileID: 1059296567}
   life1: {fileID: 278523471}
   life2: {fileID: 308518057}
@@ -52898,9 +52905,9 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[9]
       value: 
       objectReference: {fileID: 1651360621}
-    - target: {fileID: 3972550260946820340, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
+    - target: {fileID: 1994728765, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+      propertyPath: originalEnemySpeed
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3972550260946820343, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52958,6 +52965,10 @@ PrefabInstance:
       propertyPath: newTarget
       value: 
       objectReference: {fileID: 210347420}
+    - target: {fileID: 8555505789545561941, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+      propertyPath: baseTarget
+      value: 
+      objectReference: {fileID: 1506187635}
     - target: {fileID: 8555505789545561941, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -53222,10 +53233,6 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[65]
       value: 
       objectReference: {fileID: 894389842}
-    - target: {fileID: 8555505789545561941, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
-      propertyPath: baseTarget
-      value: 
-      objectReference: {fileID: 1506187635}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
 --- !u!1001 &4879756156094489448
@@ -53434,12 +53441,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8923886312352021435, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
-      propertyPath: pacmanSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8923886312352021437, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
+      propertyPath: frightenedTime
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8923886312352021438, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
       propertyPath: m_Name
