@@ -169,7 +169,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  blinkySpeed: 7
+  enemiesEaten: 0
+  originalEnemySpeed: 7
+  EnemySpeed: 0
   timeTillScatter: 7
   isScattering: 0
   isChasing: 0

@@ -44,10 +44,6 @@ namespace Pathfinding
 
         public void Update()
         {
-            if (FindObjectOfType<AIDestinationSetter>().frightenedEndTime == 0)
-            {
-                enemiesEaten = 0;
-            }
             FindObjectOfType<AIPath>().maxSpeed = EnemySpeed;
             if (prevPos != transform.position)
             {
@@ -147,12 +143,18 @@ namespace Pathfinding
             myAnimator.SetFloat("enemiesEaten", enemiesEaten);
             Time.timeScale = 0;
             yield return new WaitForSecondsRealtime(1);
-            if (enemiesEaten > 1)
             Time.timeScale = 1;
+            if (enemiesEaten > 1)
             {
                 StopCoroutine(FreezeTime());
-                StartCoroutine(FreezeTime());
+                StartCoroutine(FreezeTime()); 
+                enemiesEaten = 0;
             }
+            else
+            {
+                enemiesEaten = 0;
+            }
+
             myAnimator.SetFloat("enemiesEaten", enemiesEaten);
         }
     }

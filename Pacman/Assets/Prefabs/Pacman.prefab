@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pacmanSpeed: 7
   enemyFrightened: 0
-  frightenedTime: 7
+  frightenedTime: 8
   timeElapsed: 0
 --- !u!50 &8923886312352021436
 Rigidbody2D:
