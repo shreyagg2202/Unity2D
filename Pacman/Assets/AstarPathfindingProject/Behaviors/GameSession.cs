@@ -36,6 +36,10 @@ namespace Pathfinding
 
         public void Update()
         {
+            if (FindObjectOfType<AIDestinationSetter>().frightenedEndTime == 0)
+            {
+                FindObjectOfType<Enemy>().enemiesEaten = 0;
+            }
             NumberOfLivesLeft();
         }
 

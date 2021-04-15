@@ -9,7 +9,8 @@ namespace Pathfinding
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
 
-        public int enemiesEaten;
+        public float enemiesEaten;
+        float scoreTime;
 
         [SerializeField] float originalEnemySpeed;
         [SerializeField] float EnemySpeed;
@@ -43,6 +44,10 @@ namespace Pathfinding
 
         public void Update()
         {
+            if (FindObjectOfType<AIDestinationSetter>().frightenedEndTime == 0)
+            {
+                enemiesEaten = 0;
+            }
             FindObjectOfType<AIPath>().maxSpeed = EnemySpeed;
             if (prevPos != transform.position)
             {
@@ -132,9 +137,23 @@ namespace Pathfinding
                     FindObjectOfType<Pacman>().enemyFrightened = false;
                     myAnimator.SetBool("isEaten", true);
                     myAnimator.SetBool("isFrightened", false);
+                    StartCoroutine(FreezeTime());
                     gameObject.layer = 14;                                      //Layer is changed to dead to prevent collisions
                 }
             }
+        }
+        IEnumerator FreezeTime()
+        { 
+            myAnimator.SetFloat("enemiesEaten", enemiesEaten);
+            Time.timeScale = 0;
+            yield return new WaitForSecondsRealtime(1);
+            if (enemiesEaten > 1)
+            Time.timeScale = 1;
+            {
+                StopCoroutine(FreezeTime());
+                StartCoroutine(FreezeTime());
+            }
+            myAnimator.SetFloat("enemiesEaten", enemiesEaten);
         }
     }
 }

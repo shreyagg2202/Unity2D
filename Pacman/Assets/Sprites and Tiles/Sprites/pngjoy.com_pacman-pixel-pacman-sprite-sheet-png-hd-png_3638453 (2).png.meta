@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 95594b7df917e184da8aac9a995dba8a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2573040029380388294
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_0
+  - first:
+      213: -4267198403539666698
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_1
+  - first:
+      213: -5963384867090483078
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_2
+  - first:
+      213: -1512111974067987193
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_3
+  - first:
+      213: -4807151397802168522
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_4
+  - first:
+      213: -5515269325238134530
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_5
+  - first:
+      213: -5685433475766785676
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_6
+  - first:
+      213: -966459618381734585
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_7
+  - first:
+      213: -1009426131535356501
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_8
+  - first:
+      213: 5343941680489053676
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_9
+  - first:
+      213: -4589540038149749306
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_10
+  - first:
+      213: -4939580960347486274
+    second: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c52410364645b320800000000000000
+      internalID: 2573040029380388294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f877ea19add7c4c0800000000000000
+      internalID: -4267198403539666698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78b12a0f0dcd3da0800000000000000
+      internalID: -5963384867090483078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngjoy.com_pacman-pixel-pacman-sprite-sheet-png-hd-png_3638453 (2)_3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d101dcb26e30be0800000000000000
+      internalID: -1512111974067987193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
