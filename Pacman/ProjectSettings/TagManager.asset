@@ -24,7 +24,7 @@ TagManager:
   - Pickups
   - Power Pellet
   - Dead
-  - 
+  - Enemy Score
   - 
   - 
   - 
@@ -65,4 +65,7 @@ TagManager:
     locked: 0
   - name: Dead
     uniqueID: 3863480855
+    locked: 0
+  - name: Enemy Score
+    uniqueID: 4075462475
     locked: 0

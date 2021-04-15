@@ -12,9 +12,6 @@ namespace Pathfinding
         [SerializeField] float timeToWait = 0.5f;
         [SerializeField] int score = 0;
 
-        [SerializeField] SpriteRenderer spriteRenderer;
-        [SerializeField] Sprite scoreSprite;
-
         [SerializeField] Text scoreText;
         [SerializeField] GameObject life1, life2, life3, life4, life5;
 
@@ -40,7 +37,6 @@ namespace Pathfinding
         public void Update()
         {
             NumberOfLivesLeft();
-            EnemyDeathScore();
         }
 
         public void AddScore(int pointsToAdd)
@@ -130,14 +126,6 @@ namespace Pathfinding
                     life4.SetActive(false);
                     life5.SetActive(false);
                     break;
-            }
-        }
-
-        public void EnemyDeathScore()
-        {
-            if (FindObjectOfType<Enemy>().isEaten)
-            {
-                spriteRenderer.sprite = scoreSprite;
             }
         }
     }

@@ -13,7 +13,7 @@ namespace Pathfinding
         {
             myBodyCollider = GetComponent<CircleCollider2D>();
         }
-        private void OnTriggerEnter2D(Collider2D collision)
+        public void OnTriggerEnter2D(Collider2D collision)
         {
             if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
             {

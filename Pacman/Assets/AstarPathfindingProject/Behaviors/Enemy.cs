@@ -9,6 +9,8 @@ namespace Pathfinding
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
 
+        public int enemiesEaten;
+
         [SerializeField] float originalEnemySpeed;
         [SerializeField] float EnemySpeed;
         [SerializeField] float timeTillScatter;
@@ -31,6 +33,7 @@ namespace Pathfinding
         // Start is called before the first frame update
         public void Start()
         {
+            enemiesEaten = 0;
             isScattering = false;
             isChasing = false;
             myBodyCollider = GetComponent<CircleCollider2D>();
@@ -73,6 +76,7 @@ namespace Pathfinding
 
         public void ScatterMode()
         {
+            enemiesEaten = 0;
             myAnimator.SetBool("isFrightened", false);
             isScattering = true;
             isChasing = false;
@@ -89,6 +93,7 @@ namespace Pathfinding
 
         public void ChaseMode()
         {
+            enemiesEaten = 0;
             myAnimator.SetBool("isFrightened", false);
             isScattering = false;
             isChasing = true;
@@ -123,6 +128,7 @@ namespace Pathfinding
                 }
                 else if (isEaten == true)
                 {
+                    enemiesEaten += 1;
                     FindObjectOfType<Pacman>().enemyFrightened = false;
                     myAnimator.SetBool("isEaten", true);
                     myAnimator.SetBool("isFrightened", false);

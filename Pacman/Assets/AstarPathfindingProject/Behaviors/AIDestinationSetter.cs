@@ -63,7 +63,6 @@ namespace Pathfinding {
 		{
 			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Pacman>().enemyFrightened == false && FindObjectOfType<Enemy>().isEaten == false)
 			{
-				Debug.Log("Hello");
 				frightenedEndTime = 0f;
 				myAnimator.SetBool("isFrightened", false);
 				changeTargetTime += Time.deltaTime;
