@@ -15,6 +15,8 @@ namespace Pathfinding
         [SerializeField] Text scoreText;
         [SerializeField] GameObject life1, life2, life3, life4, life5;
 
+        int currentSceneIndex;
+
         public void Awake()
         {
             int numGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -26,16 +28,21 @@ namespace Pathfinding
             {
                 DontDestroyOnLoad(gameObject);
             }
-
         }
+
         // Start is called before the first frame update
         public void Start()
         {
+            currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             scoreText.text = score.ToString();
         }
 
         public void Update()
         {
+            if (FindObjectsOfType<PacDotsPickup>().Length == 0)
+            {
+                LoadNextLevel();
+            }
             Debug.Log(FindObjectOfType<Enemy>().enemiesEaten);
             NumberOfLivesLeft();
         }
@@ -65,7 +72,6 @@ namespace Pathfinding
             yield return new WaitForSecondsRealtime(timeToWait);
             if (playerLives >= 1)
             {
-                var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
                 SceneManager.LoadScene(currentSceneIndex);
             }
 
@@ -75,6 +81,10 @@ namespace Pathfinding
             }
         }
 
+        public void LoadNextLevel()
+        {
+            SceneManager.LoadScene(currentSceneIndex += 1);
+        }
         public void ResetGameSession()
         {
             SceneManager.LoadScene(0);
