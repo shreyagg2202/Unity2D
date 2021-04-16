@@ -8,7 +8,7 @@ public class EnemyAnimation : MonoBehaviour
     Rigidbody2D myRigidBody;
 
     Vector3 previousPosition;
-    Vector3 moveDirection;
+    public Vector3 moveDirection;
 
     // Start is called before the first frame update
     void Start()
