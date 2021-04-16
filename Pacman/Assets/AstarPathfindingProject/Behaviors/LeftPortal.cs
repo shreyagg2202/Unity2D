@@ -7,10 +7,11 @@ public class LeftPortal : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Transform rightPortal;
     public bool teleporting = false;
+    float timeToTeleportation = 0.3f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && teleporting == false)
+        if (teleporting == false)
         {
             StartCoroutine(Teleport());
         }
@@ -20,7 +21,7 @@ public class LeftPortal : MonoBehaviour
     {
         teleporting = true;
         player.transform.position = rightPortal.transform.position;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(timeToTeleportation);
         teleporting = false;
     }
 }

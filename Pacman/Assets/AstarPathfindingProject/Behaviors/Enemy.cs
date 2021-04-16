@@ -12,8 +12,8 @@ namespace Pathfinding
         public float enemiesEaten;
         float scoreTime;
 
-        [SerializeField] float originalEnemySpeed;
-        [SerializeField] float EnemySpeed;
+        public float originalEnemySpeed;
+        public float EnemySpeed;
         [SerializeField] float timeTillScatter;
 
         [Header("State")]

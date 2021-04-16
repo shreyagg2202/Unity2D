@@ -6,10 +6,11 @@ public class RightPortal : MonoBehaviour
 {
     [SerializeField] Transform player;
     [SerializeField] Transform leftPortal;
+    float timeToTeleportation = 0.3f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && FindObjectOfType<LeftPortal>().teleporting == false)
+        if (FindObjectOfType<LeftPortal>().teleporting == false)
         {
             StartCoroutine(Teleport());
         }
@@ -19,7 +20,7 @@ public class RightPortal : MonoBehaviour
     {
         FindObjectOfType<LeftPortal>().teleporting = true;
         player.transform.position = leftPortal.transform.position;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(timeToTeleportation);
         FindObjectOfType<LeftPortal>().teleporting = false;
     }
 }
