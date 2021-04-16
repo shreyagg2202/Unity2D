@@ -8,6 +8,8 @@ TagManager:
   - Power Pellet
   - Pellet
   - Enemy
+  - Left Portal
+  - Right Portal
   layers:
   - Default
   - TransparentFX
