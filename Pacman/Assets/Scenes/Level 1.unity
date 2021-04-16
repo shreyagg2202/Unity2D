@@ -3273,7 +3273,7 @@ GameObject:
   - component: {fileID: 428333247}
   m_Layer: 0
   m_Name: Teleporter RIght
-  m_TagString: Right Portal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3286,14 +3286,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428333245}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.05, y: -4.97, z: 0}
+  m_LocalPosition: {x: 13.82, y: -4.531327, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780934584}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &428333247
-BoxCollider2D:
+--- !u!68 &428333247
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3305,19 +3305,15 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.37338686, y: 0.4642719}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8293085, y: 3.0385292}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.0131082535, y: 1.5483084}
+  - {x: -0.03905964, y: -1.5135155}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &430824677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 755231510684773046, guid: d2b3b3ab08442c643b1a9ecbf915e5e6, type: 3}
@@ -6464,7 +6460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalRight: {fileID: 428333246}
   portalLeft: {fileID: 2139175347}
-  player: {fileID: 0}
+  player: {fileID: 1807786368}
   Enemies:
   - {fileID: 2076650308}
 --- !u!4 &780934584
@@ -52934,7 +52930,7 @@ GameObject:
   - component: {fileID: 2139175348}
   m_Layer: 0
   m_Name: Teleporter Left
-  m_TagString: Left Portal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52947,14 +52943,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139175346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.81, y: -4.97, z: 0}
+  m_LocalPosition: {x: -13.03, y: -4.531327, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780934584}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2139175348
-BoxCollider2D:
+--- !u!68 &2139175348
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -52966,19 +52962,15 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.37338686, y: 0.4642719}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8293085, y: 3.0385292}
+  m_Offset: {x: -1.76, y: 0}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.80523777, y: 1.5524724}
+  - {x: 0.80455494, y: -1.4799271}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &2141151440
 PrefabInstance:
   m_ObjectHideFlags: 0
