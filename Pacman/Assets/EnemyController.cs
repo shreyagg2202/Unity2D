@@ -13,7 +13,6 @@ namespace Pathfinding
         {
             if (other.CompareTag("Enemy"))
             {
-
                 if (FindObjectOfType<LeftPortal>().teleporting == true)
                 {
                     FindObjectOfType<Enemy>().EnemySpeed = 4;
