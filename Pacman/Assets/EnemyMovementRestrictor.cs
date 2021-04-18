@@ -42,22 +42,23 @@ public class EnemyMovementRestrictor : MonoBehaviour
 
     private void EnemyFacing()
     {
+        //Get animation from blend tree with the help pf the float values managing it
         Debug.Log("hello");
-        if (parentBodyAnimator.GetCurrentAnimatorStateInfo(0).IsName("Blinky_Up"))
+        if (FindObjectOfType<EnemyAnimation>().yMov >= 0)
         {
             Debug.Log("Byee");
             faceUp = true;
 
         }
-        else if (parentBodyAnimator.GetCurrentAnimatorStateInfo(0).IsName("Blinky Down"))
+        else if (FindObjectOfType<EnemyAnimation>().yMov <= 0)
         {
             faceDown = true;
         }
-        else if (parentBodyAnimator.GetCurrentAnimatorStateInfo(0).IsName("Blinky Left"))
+        else if (FindObjectOfType<EnemyAnimation>().xMov >= 0)
         {
             faceLeft = true;
         }
-        else if (parentBodyAnimator.GetCurrentAnimatorStateInfo(0).IsName("Blinky Right"))
+        else if (FindObjectOfType<EnemyAnimation>().xMov <= 0)
         {
             faceRight = true;
         }

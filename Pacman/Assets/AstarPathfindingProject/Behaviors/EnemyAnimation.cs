@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
+    public float xMov;
+    public float yMov;
+
     Animator myBodyAnimation;
     Rigidbody2D myRigidBody;
 
@@ -27,8 +30,12 @@ public class EnemyAnimation : MonoBehaviour
         }
 
         myRigidBody.velocity = moveDirection;
+
+        xMov = moveDirection.x;
+        yMov = moveDirection.y;
+        
         myBodyAnimation.SetBool("isWalking", true);
-        myBodyAnimation.SetFloat("xMov", moveDirection.x);
-        myBodyAnimation.SetFloat("yMov", moveDirection.y);
+        myBodyAnimation.SetFloat("xMov", xMov);
+        myBodyAnimation.SetFloat("yMov", yMov);
     }
 }

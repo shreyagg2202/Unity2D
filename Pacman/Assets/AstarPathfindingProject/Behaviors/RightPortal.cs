@@ -5,6 +5,7 @@ using UnityEngine;
 public class RightPortal : MonoBehaviour
 {
     [SerializeField] Transform player;
+    [SerializeField] Transform[] enemies;
     [SerializeField] Transform leftPortal;
     float timeToTeleportation = 0.3f;
 
