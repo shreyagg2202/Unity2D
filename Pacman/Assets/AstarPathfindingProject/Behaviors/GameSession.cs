@@ -43,7 +43,7 @@ namespace Pathfinding
             {
                 LoadNextLevel();
             }
-            Debug.Log(FindObjectOfType<Enemy>().enemiesEaten);
+            //Debug.Log(FindObjectOfType<Enemy>().enemiesEaten);
             NumberOfLivesLeft();
         }
 
