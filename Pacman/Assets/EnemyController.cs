@@ -6,9 +6,6 @@ namespace Pathfinding
 {
     public class EnemyController : MonoBehaviour
     {
-        [SerializeField] Transform leftWaypoint;
-        [SerializeField] Transform rightWaypoint;
-
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Enemy"))

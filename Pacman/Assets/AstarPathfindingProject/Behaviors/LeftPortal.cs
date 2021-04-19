@@ -15,6 +15,7 @@ public class LeftPortal : MonoBehaviour
         //Add Enemy Teleportation
         if (teleporting == false)
         {
+            if (other.gameObject.name = )
             StartCoroutine(PlayerTeleport());
         }
     }

@@ -13,6 +13,7 @@ public class RightPortal : MonoBehaviour
     {
         if (FindObjectOfType<LeftPortal>().teleporting == false)
         {
+            Debug.Log(other);
             StartCoroutine(Teleport());
         }
     }

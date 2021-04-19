@@ -23,6 +23,8 @@ namespace Pathfinding {
 		[SerializeField] Transform tempTarget;
 		[SerializeField] Transform frightenedTarget;
 		[SerializeField] Transform baseTarget;
+		[SerializeField] Transform leftPortalEntry;
+		[SerializeField] Transform rightPortalEntry;
 
 		[Header("Time Controller")]
 		public float changeTargetTime = 0f;
@@ -117,5 +119,19 @@ namespace Pathfinding {
 			frightenedTarget = waypoints[Random.Range(waypointIndex, waypoints.Length)];
 			ai.destination = frightenedTarget.position;
         }
-	}
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Left Portal"))
+            {
+				target = leftPortalEntry;
+				ai.destination = target.transform.position;
+            }
+			else if (other.CompareTag("Right Portal"))
+            {
+				target = rightPortalEntry;
+				ai.destination = target.transform.position;
+			}
+        }
+    }
 }
