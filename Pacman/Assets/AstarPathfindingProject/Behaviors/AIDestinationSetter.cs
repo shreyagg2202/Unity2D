@@ -97,7 +97,6 @@ namespace Pathfinding {
 					Frightened();
 				}
 			}
-
 			else if (FindObjectOfType<Enemy>().isEaten == true && FindObjectOfType<Pacman>().enemyFrightened == false)
             {
 				target = baseTarget;

@@ -11664,7 +11664,7 @@ GameObject:
   - component: {fileID: 1350176314}
   - component: {fileID: 1350176313}
   m_Layer: 0
-  m_Name: Enemy Speed Left
+  m_Name: Enemy Speed Left Teleporter
   m_TagString: Left Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11693,11 +11693,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1350176311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a029f687df792408a3ac2db9250487, type: 3}
+  m_Script: {fileID: 11500000, guid: 8be0e8989470d4c4186f833023f55be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftWaypoint: {fileID: 1539021818}
-  rightWaypoint: {fileID: 1627414585}
 --- !u!61 &1350176314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18566,9 +18564,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1530448471}
   - component: {fileID: 1530448473}
-  - component: {fileID: 1530448472}
   m_Layer: 0
-  m_Name: Enemy Speed Right
+  m_Name: Enemy Speed Right Teleporter
   m_TagString: Right Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18588,20 +18585,6 @@ Transform:
   m_Father: {fileID: 780934584}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1530448472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530448470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a029f687df792408a3ac2db9250487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftWaypoint: {fileID: 1539021818}
-  rightWaypoint: {fileID: 1627414585}
 --- !u!61 &1530448473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53833,11 +53816,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8923886312352021433, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8923886312352021433, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.59
+      value: -7.59
       objectReference: {fileID: 0}
     - target: {fileID: 8923886312352021433, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
       propertyPath: m_LocalPosition.z
