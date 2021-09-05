@@ -121,16 +121,20 @@ namespace Pathfinding {
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Left Portal"))
-            {
+			if (other.CompareTag("Left Portal") && FindObjectOfType<LeftPortal>().enemyTeleporting == false)
+			{
 				target = leftPortalEntry;
 				ai.destination = target.transform.position;
-            }
-			else if (other.CompareTag("Right Portal"))
-            {
+			}
+			else if (other.CompareTag("Right Portal") && FindObjectOfType<LeftPortal>().enemyTeleporting == false)
+			{
 				target = rightPortalEntry;
 				ai.destination = target.transform.position;
 			}
+            else if  (FindObjectOfType<LeftPortal>().enemyTeleporting == true)
+            {
+				target = tempTarget;
+            }
         }
     }
 }
