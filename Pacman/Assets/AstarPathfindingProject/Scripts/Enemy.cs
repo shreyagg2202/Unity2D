@@ -123,11 +123,7 @@ namespace Pathfinding
         {
             if (other.collider.gameObject.layer == LayerMask.NameToLayer("Pacman"))
             {
-                if (isEaten == false)
-                {
-                    Destroy(gameObject);
-                }
-                else if (isEaten == true)
+                if (isEaten == true)
                 {
                     enemiesEaten += 1;
                     FindObjectOfType<Pacman>().enemyFrightened = false;

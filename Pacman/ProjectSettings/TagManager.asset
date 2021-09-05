@@ -21,13 +21,13 @@ TagManager:
   - 
   - Background
   - Foreground
+  - Gate
   - Pacman
   - Enemy
-  - Pickups
   - Power Pellet
   - Dead
   - Enemy Score
-  - 
+  - Pickups
   - 
   - 
   - 

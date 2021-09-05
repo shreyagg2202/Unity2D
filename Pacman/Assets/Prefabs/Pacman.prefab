@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8923886312352021436}
   - component: {fileID: 8923886312352021437}
   - component: {fileID: 8923886312352021432}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Pacman
   m_TagString: Player
   m_Icon: {fileID: 0}

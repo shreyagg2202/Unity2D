@@ -103,7 +103,7 @@ namespace Pathfinding {
 				ai.destination = target.transform.position;
 				if (ai.reachedDestination)
                 {
-					gameObject.layer = 11;                                  //Layer is changed to Enemy
+					gameObject.layer = 12;                                  //Layer is changed to Enemy
 					myAnimator.SetBool("isEaten", false);
 					target = tempTarget;
 					FindObjectOfType<Enemy>().isEaten = false;
