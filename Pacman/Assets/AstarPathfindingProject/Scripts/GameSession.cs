@@ -10,7 +10,9 @@ namespace Pathfinding
     {
         [SerializeField] int playerLives = 5;
         [SerializeField] float timeToWait = 0.5f;
-        [SerializeField] int score = 0;
+        [SerializeField] int score;
+
+        GameObject PacDotsPickup;
 
         [SerializeField] Text scoreText;
         [SerializeField] GameObject life1, life2, life3, life4, life5;
@@ -28,9 +30,10 @@ namespace Pathfinding
             {
                 DontDestroyOnLoad(gameObject);
             }
+            Instantiate(GameObject.Find("Pickups"));
         }
 
-        // Start is called before the first frame update
+        // start is called before the first frame update
         public void Start()
         {
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -84,6 +87,7 @@ namespace Pathfinding
         public void LoadNextLevel()
         {
             SceneManager.LoadScene(currentSceneIndex += 1);
+            Destroy(GameObject.Find("Pickups"));
         }
         public void ResetGameSession()
         {
