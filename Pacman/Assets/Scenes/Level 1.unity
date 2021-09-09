@@ -56103,10 +56103,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8923886312352021435, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
-      propertyPath: pacmanSpeed
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 8923886312352021438, guid: 275ac1a155b5620468f93bdcddc55a34, type: 3}
       propertyPath: m_Name
       value: Pacman
