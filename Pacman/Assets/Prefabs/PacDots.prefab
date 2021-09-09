@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 381954215422379481}
   - component: {fileID: 6554370627804592809}
   - component: {fileID: -8004474713756740095}
-  m_Layer: 12
-  m_Name: PacDots (1)
+  m_Layer: 16
+  m_Name: PacDots
   m_TagString: Pellet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
