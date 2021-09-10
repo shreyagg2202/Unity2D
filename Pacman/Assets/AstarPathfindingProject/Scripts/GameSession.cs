@@ -8,20 +8,18 @@ namespace Pathfinding
 {
     public class GameSession : MonoBehaviour
     {
+        [Header("UI")]
         [SerializeField] int playerLives = 5;
-        [SerializeField] float timeToWait = 0.5f;
         [SerializeField] int score;
-
-        GameObject PacDotsPickup;
-
         [SerializeField] Text scoreText;
         [SerializeField] GameObject life1, life2, life3, life4, life5;
 
+        [SerializeField] float timeToWait = 0.5f;
         int currentSceneIndex;
 
         public void Awake()
         {
-            int numGameSessions = FindObjectsOfType<GameSession>().Length;
+            int numGameSessions = FindObjectsOfType<GameSession>().Length;                      // Making GameSession gameobject a singleton
             if (numGameSessions > 1)
             {
                 Destroy(gameObject);
@@ -30,7 +28,7 @@ namespace Pathfinding
             {
                 DontDestroyOnLoad(gameObject);
             }
-            Instantiate(GameObject.Find("Pickups"));
+            Instantiate(GameObject.Find("Pickups"));                                            // Instatiating the pickups at the start of every Level
         }
 
         // start is called before the first frame update
@@ -42,7 +40,7 @@ namespace Pathfinding
 
         public void Update()
         {
-            if (FindObjectsOfType<PacDotsPickup>().Length == 0)
+            if (FindObjectsOfType<PacDotsPickup>().Length == 0)                                   // When all the pickups are destroyed, load next level
             {
                 LoadNextLevel();
             }
@@ -50,13 +48,13 @@ namespace Pathfinding
             NumberOfLivesLeft();
         }
 
-        public void AddScore(int pointsToAdd)
+        public void AddScore(int pointsToAdd)                                                      // Add Score and update the score
         {
             score += pointsToAdd;
             scoreText.text = score.ToString();
         }
 
-        public void PacmanDeath()
+        public void PacmanDeath()                                                                   // if lives > 1, reduce one life
         {
             if (playerLives >= 1)
             {
@@ -64,13 +62,13 @@ namespace Pathfinding
             }
         }
 
-        private void TakeLife()
+        private void TakeLife()                                                                     // Take one life everytime pacman dies and reload scene
         {
             playerLives -= 1;
             StartCoroutine(ReloadScene());
         }
 
-        IEnumerator ReloadScene()
+        IEnumerator ReloadScene()                                                                   // Reload the current scene
         {
             yield return new WaitForSecondsRealtime(timeToWait);
             if (playerLives >= 1)
@@ -84,18 +82,18 @@ namespace Pathfinding
             }
         }
 
-        public void LoadNextLevel()
+        public void LoadNextLevel()                                                                 // Load Next Level
         {
             SceneManager.LoadScene(currentSceneIndex += 1);
             Destroy(GameObject.Find("Pickups"));
         }
-        public void ResetGameSession()
+        public void ResetGameSession()                                                              // When no lives left, Load the first Scene
         {
             SceneManager.LoadScene(0);
             Destroy(gameObject);
         }
 
-        public void NumberOfLivesLeft()
+        public void NumberOfLivesLeft()                                                             // Handles the number of lives shown in the canvas
         {
             switch (playerLives)
             {

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
+    [Header("Movement and Position")]
     public float xMov;
     public float yMov;
-
-    Animator myBodyAnimation;
-    Rigidbody2D myRigidBody;
-
     Vector3 previousPosition;
     public Vector3 moveDirection;
+
+    [Header("Cache")]
+    Animator myBodyAnimation;
+    Rigidbody2D myRigidBody;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class EnemyAnimation : MonoBehaviour
     {
         if (previousPosition != transform.position)
         {
-            moveDirection = (transform.position - previousPosition).normalized;
+            moveDirection = (transform.position - previousPosition).normalized;                     // Calculating the move direction
             previousPosition = transform.position;
         }
 
