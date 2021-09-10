@@ -17,6 +17,7 @@ namespace Pathfinding
 
         int numberOfPowerPelletsEaten;
 
+        [Header("Cache")]
         Rigidbody2D myRigidBody;
         Animator myAnimator;
         CircleCollider2D myBodyCollider;
@@ -49,7 +50,7 @@ namespace Pathfinding
             LastMovement();
         }
 
-        private void PacmanXPosMove()                               //X moving direction of character
+        private void PacmanXPosMove()                               // X moving direction of character
         {
             float xControlThrow = Input.GetAxis("Horizontal");
             Vector2 playerVelocity = new Vector2(xControlThrow * pacmanSpeed, myRigidBody.velocity.y);
@@ -58,7 +59,7 @@ namespace Pathfinding
             myAnimator.SetFloat("SpeedX", xControlThrow);
         }
 
-        private void PacmanYPosMove()                               //Y moving direction of character
+        private void PacmanYPosMove()                               // Y moving direction of character
         {
             float yControlThrow = Input.GetAxis("Vertical");
             Vector2 playerVelocity = new Vector2(myRigidBody.velocity.x, yControlThrow * pacmanSpeed);
@@ -67,7 +68,7 @@ namespace Pathfinding
             myAnimator.SetFloat("SpeedY", yControlThrow);
         }
         
-        private void LastMovement()                                 //Holds the last moving direction of the character
+        private void LastMovement()                                 // Holds the last moving direction of the character
         {
             float lastInputX = Input.GetAxis("Horizontal");
             float lastInputY = Input.GetAxis("Vertical");
@@ -102,7 +103,7 @@ namespace Pathfinding
             }
         }
 
-        public void OnCollisionEnter2D(Collision2D other)            //Pacman Death
+        public void OnCollisionEnter2D(Collision2D other)            // Pacman Death
         {
             if (other.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))                 
             {
@@ -121,7 +122,7 @@ namespace Pathfinding
             }
         }
 
-        public void OnTriggerEnter2D(Collider2D collision)          //Checks if Pacman has eaten The Power Pellets
+        public void OnTriggerEnter2D(Collider2D collision)          // Checks if Pacman has eaten The Power Pellets
         {
             if (collision.CompareTag("Power Pellet"))               
             {
@@ -140,9 +141,9 @@ namespace Pathfinding
         IEnumerator Frightened()
         {
             enemyFrightened = true;
-            FindObjectOfType<Enemy>().isScattering = false;             //Ememy Script Disabled
-            FindObjectOfType<Enemy>().isChasing = true;                 //AI Script Enabled
-            if (numberOfPowerPelletsEaten > 1)                          //if more than one pellet eaten at a time then frightened time is increased
+            FindObjectOfType<Enemy>().isScattering = false;             // Ememy Script Disabled
+            FindObjectOfType<Enemy>().isChasing = true;                 // AI Script Enabled
+            if (numberOfPowerPelletsEaten > 1)                          // if more than one pellet eaten at a time then frightened time is increased
             {
                 StopCoroutine(Frightened());
                 StartCoroutine(TwoPelletsEaten());
@@ -150,11 +151,11 @@ namespace Pathfinding
 
             yield return new WaitForSeconds(frightenedTime);
 
-            if (numberOfPowerPelletsEaten <= 1)                         //if only one pellet is eaten
+            if (numberOfPowerPelletsEaten <= 1)                         // if only one pellet is eaten
             {
-                numberOfPowerPelletsEaten = 0;                          //reset number of pellets eaten
+                numberOfPowerPelletsEaten = 0;                          // reset number of pellets eaten
                 enemyFrightened = false;
-                FindObjectOfType<Enemy>().isScattering = false;          //starts chasing
+                FindObjectOfType<Enemy>().isScattering = false;          // starts chasing
                 FindObjectOfType<Enemy>().isChasing = true;
                 FindObjectOfType<Enemy>().scatterTime = 0f;
                 FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
@@ -165,16 +166,16 @@ namespace Pathfinding
         {
 
             FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
-            frightenedTime *= 2;                                          //frightened time increased
+            frightenedTime *= 2;                                          // frightened time increased
             frightenedTime -= timeElapsed;
             timeElapsed = 0f;
 
             yield return new WaitForSeconds(frightenedTime);
             
-            frightenedTime = 7f;                                          //frightened time reset for next pellet
+            frightenedTime = 7f;                                          // frightened time reset for next pellet
             numberOfPowerPelletsEaten = 0;
             enemyFrightened = false;
-            FindObjectOfType<Enemy>().isScattering = false;                //starts chasing
+            FindObjectOfType<Enemy>().isScattering = false;                // starts chasing
             FindObjectOfType<Enemy>().isChasing = true;
             FindObjectOfType<Enemy>().scatterTime = 0f;
             FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;

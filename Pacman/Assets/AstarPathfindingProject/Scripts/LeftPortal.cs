@@ -16,7 +16,6 @@ public class LeftPortal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Add Enemy Teleportation
         if (playerTeleporting == false)
         {
             if (other.CompareTag("Player"))
@@ -29,7 +28,7 @@ public class LeftPortal : MonoBehaviour
             }
         }
 
-        IEnumerator PlayerTeleportation()
+        IEnumerator PlayerTeleportation()                                                   // Teleports the Player
         {
             playerTeleporting = true;
             player.transform.position = rightPortal.transform.position;
@@ -37,7 +36,7 @@ public class LeftPortal : MonoBehaviour
             playerTeleporting = false;
         }
 
-        IEnumerator EnemyTeleportation()
+        IEnumerator EnemyTeleportation()                                                    // Teleports the Enemy
         {
             enemyTeleporting = true;
             other.transform.position = rightPortal.transform.position;

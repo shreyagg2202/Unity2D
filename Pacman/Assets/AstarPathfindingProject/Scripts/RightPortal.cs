@@ -21,7 +21,7 @@ public class RightPortal : MonoBehaviour
             }
         }
 
-        IEnumerator PlayerTeleportation()
+        IEnumerator PlayerTeleportation()                                                   // Teleports the player
         {
             FindObjectOfType<LeftPortal>().playerTeleporting = true;
             player.transform.position = leftPortal.transform.position;
@@ -29,7 +29,7 @@ public class RightPortal : MonoBehaviour
             FindObjectOfType<LeftPortal>().playerTeleporting = false;
         }
 
-        IEnumerator EnemyTeleportation()
+        IEnumerator EnemyTeleportation()                                                    // Teleports the enemy
         {
             FindObjectOfType<LeftPortal>().enemyTeleporting = true;
             other.transform.position = leftPortal.transform.position;

@@ -15,7 +15,7 @@ namespace Pathfinding
             myBodyCollider = GetComponent<CircleCollider2D>();
         }
 
-        public void OnTriggerEnter2D(Collider2D collision)
+        public void OnTriggerEnter2D(Collider2D collision)                                          // When interact with player, Add score and Destroy the pacdot
         {
             if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Pacman")))
             {
