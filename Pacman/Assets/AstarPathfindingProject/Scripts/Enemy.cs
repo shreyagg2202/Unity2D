@@ -9,6 +9,7 @@ namespace Pathfinding
         [Header("Wayppints")]
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
+        [SerializeField] int loopWaypointIndex;
 
         public float enemiesEaten;
         float scoreTime;
@@ -87,9 +88,9 @@ namespace Pathfinding
             if (transform.position == waypoints[waypointIndex].transform.position)                      // Follow the given waypoint path
             {
                 waypointIndex += 1;
-                if (waypointIndex >= 10)
+                if (waypointIndex >= waypoints.Length - 1)
                 {
-                    waypointIndex = 6;
+                    waypointIndex = loopWaypointIndex;
                 }
             }
         }
@@ -136,6 +137,7 @@ namespace Pathfinding
                 }
             }
         }
+
         IEnumerator FreezeTime()                                                // Freeze for 1 second before resuming the gamen after enemy is eaten
         { 
             myAnimator.SetFloat("enemiesEaten", enemiesEaten);
