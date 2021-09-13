@@ -128,7 +128,7 @@ namespace Pathfinding
             {
                 if (isEaten == true)                                            // Enemy is eaten
                 {
-                    enemiesEaten += 1;
+                    enemiesEaten++;
                     FindObjectOfType<Pacman>().enemyFrightened = false;
                     myAnimator.SetBool("isEaten", true);
                     myAnimator.SetBool("isFrightened", false);
@@ -138,10 +138,32 @@ namespace Pathfinding
             }
         }
 
-        IEnumerator FreezeTime()                                                // Freeze for 1 second before resuming the gamen after enemy is eaten
-        { 
-            myAnimator.SetFloat("enemiesEaten", enemiesEaten);
+        IEnumerator FreezeTime()                                                // Freeze for 1 second before resuming the game after enemy is eaten
+        {
             Time.timeScale = 0;
+            switch (enemiesEaten)
+            {
+                case 1:
+                    myAnimator.SetFloat("enemiesEaten", enemiesEaten);
+                    FindObjectOfType<GameSession>().AddScore(200);
+                    break;
+                case 2:
+                    myAnimator.SetFloat("enemiesEaten", enemiesEaten);
+                    FindObjectOfType<GameSession>().AddScore(400);
+                    break;
+                case 3:
+                    myAnimator.SetFloat("enemiesEaten", enemiesEaten);
+                    FindObjectOfType<GameSession>().AddScore(800);
+                    break;
+                case 4:
+                    myAnimator.SetFloat("enemiesEaten", enemiesEaten);
+                    FindObjectOfType<GameSession>().AddScore(1600);
+                    break;
+                default:
+                    enemiesEaten = 0;
+                    myAnimator.SetFloat("enemiesEaten", enemiesEaten);
+                    break;
+            }
             yield return new WaitForSecondsRealtime(1);
             Time.timeScale = 1;
             if (enemiesEaten > 1)
