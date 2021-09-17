@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &9065182837194344815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559367094281284030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097ffc1424b75cf46811d369072c990c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  EnemySpeed: 0
 --- !u!1001 &2486736270497117509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11,6 +25,18 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3f6fc09dfda464f4285069ba071c34f7, type: 2}
+    - target: {fileID: 3972550260946820340, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0022677372
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972550260946820340, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+      propertyPath: m_Radius
+      value: 0.8388492
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972550260946820340, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0069780103
+      objectReference: {fileID: 0}
     - target: {fileID: 3972550260946820342, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -65,3 +91,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+--- !u!1 &1559367094281284030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3972550260946820347, guid: 11e0b3fc59cd27b4c8c459ea960e6137, type: 3}
+  m_PrefabInstance: {fileID: 2486736270497117509}
+  m_PrefabAsset: {fileID: 0}
