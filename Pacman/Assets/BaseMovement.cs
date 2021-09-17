@@ -7,9 +7,10 @@ namespace Pathfinding {
     {
         bool isSpawned = false;
         float spawnTimer = 0f;
+        [SerializeField] int timeToSpawn;
         [SerializeField] Transform[] waypoints;
         int waypointIndex = 0;
-        float EnemySpeed = 7f;
+        [SerializeField] float EnemySpeed;
 
         private void Awake()
         {
@@ -20,8 +21,8 @@ namespace Pathfinding {
         void Update()
         {
             spawnTimer += Time.deltaTime;
-            Debug.Log(spawnTimer);
-            if (spawnTimer >= 15f)
+            //Debug.Log(spawnTimer);
+            if (spawnTimer >= timeToSpawn)
             {
                 isSpawned = true;
                 this.enabled = false;
