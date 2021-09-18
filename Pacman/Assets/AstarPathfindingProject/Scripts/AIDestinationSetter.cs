@@ -66,7 +66,7 @@ namespace Pathfinding {
         void Update ()  
 		{
 			// if chasing
-			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Pacman>().enemyFrightened == false && FindObjectOfType<Enemy>().isEaten == false)
+			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Enemy>().isFrightened == false && FindObjectOfType<Enemy>().isEaten == false)
 			{
 				frightenedEndTime = 0f;
 				myAnimator.SetBool("isFrightened", false);
@@ -89,7 +89,7 @@ namespace Pathfinding {
 					}
 				}
 			}
-			else if (FindObjectOfType<Pacman>().enemyFrightened == true)	// when enemy is in frightened mode
+			else if (FindObjectOfType<Enemy>().isFrightened == true)	// when enemy is in frightened mode
 			{
 				myAnimator.SetBool("isFrightened", true);
 				frightenedEndTime += Time.deltaTime;					
@@ -100,7 +100,7 @@ namespace Pathfinding {
 					Frightened();
 				}
 			}
-			else if (FindObjectOfType<Enemy>().isEaten == true && FindObjectOfType<Pacman>().enemyFrightened == false)		// When enemy is eaten
+			else if (FindObjectOfType<Enemy>().isEaten == true && FindObjectOfType<Enemy>().isFrightened == false)		// When enemy is eaten
             {
 				target = baseTarget;										// Eaten enemy goes back to base to get respawned
 				ai.destination = target.transform.position;

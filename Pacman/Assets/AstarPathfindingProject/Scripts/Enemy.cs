@@ -20,6 +20,7 @@ namespace Pathfinding
         [Header("State")]
         public bool isScattering;
         public bool isChasing;
+        public bool isFrightened;
         public bool isEaten;
 
         [Header("Movement")]
@@ -57,7 +58,7 @@ namespace Pathfinding
 
         public void FixedUpdate()
         {
-            if (FindObjectOfType<Pacman>().enemyFrightened == false && isEaten == false)                // Check if scatter or chase
+            if (isFrightened == false && isEaten == false)                // Check if scatter or chase
             {
                 scatterTime += Time.deltaTime;
                 if (scatterTime <= timeTillScatter && isChasing == false)                               // Scatter condition
@@ -108,7 +109,7 @@ namespace Pathfinding
 
         public void SpeedController()                                           // Controls enemy speed in different states
         {
-            if (FindObjectOfType<Pacman>().enemyFrightened == true)             // Frightened speed
+            if (isFrightened == true)             // Frightened speed
             {
                 EnemySpeed = 4.5f;
             }
@@ -129,7 +130,7 @@ namespace Pathfinding
                 if (isEaten == true)                                            // Enemy is eaten
                 {
                     enemiesEaten++;
-                    FindObjectOfType<Pacman>().enemyFrightened = false;
+                    isFrightened = false;
                     myAnimator.SetBool("isEaten", true);
                     myAnimator.SetBool("isFrightened", false);
                     StartCoroutine(FreezeTime());
