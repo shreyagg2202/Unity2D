@@ -66,7 +66,7 @@ namespace Pathfinding {
         void Update ()  
 		{
 			// if chasing
-			if (FindObjectOfType<Enemy>().isScattering == false && FindObjectOfType<Enemy>().isChasing == true && FindObjectOfType<Enemy>().isFrightened == false && FindObjectOfType<Enemy>().isEaten == false)
+			if (GetComponent<Enemy>().isScattering == false && GetComponent<Enemy>().isChasing == true && GetComponent<Enemy>().isFrightened == false && GetComponent<Enemy>().isEaten == false)
 			{
 				frightenedEndTime = 0f;
 				myAnimator.SetBool("isFrightened", false);
@@ -81,15 +81,15 @@ namespace Pathfinding {
 						if (ai.reachedDestination)
 						{
 							changeTargetTime = 0f;
-							FindObjectOfType<Enemy>().scatterTime = 0f;
-							FindObjectOfType<Enemy>().chaseTime = 0f;
-							FindObjectOfType<Enemy>().isChasing = false;
+							GetComponent<Enemy>().scatterTime = 0f;
+							GetComponent<Enemy>().chaseTime = 0f;
+							GetComponent<Enemy>().isChasing = false;
 							target = tempTarget;                            // Target set to Pacman for next chase
 						}
 					}
 				}
 			}
-			else if (FindObjectOfType<Enemy>().isFrightened == true)	// when enemy is in frightened mode
+			else if (GetComponent<Enemy>().isFrightened == true)	// when enemy is in frightened mode
 			{
 				myAnimator.SetBool("isFrightened", true);
 				frightenedEndTime += Time.deltaTime;					
@@ -100,7 +100,7 @@ namespace Pathfinding {
 					Frightened();
 				}
 			}
-			else if (FindObjectOfType<Enemy>().isEaten == true && FindObjectOfType<Enemy>().isFrightened == false)		// When enemy is eaten
+			else if (GetComponent<Enemy>().isEaten == true && GetComponent<Enemy>().isFrightened == false)		// When enemy is eaten
             {
 				target = baseTarget;										// Eaten enemy goes back to base to get respawned
 				ai.destination = target.transform.position;

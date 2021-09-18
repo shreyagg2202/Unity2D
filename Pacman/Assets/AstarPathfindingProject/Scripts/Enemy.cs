@@ -48,7 +48,7 @@ namespace Pathfinding
 
         public void Update()
         {
-            FindObjectOfType<AIPath>().maxSpeed = EnemySpeed;
+            GetComponent<AIPath>().maxSpeed = EnemySpeed;
             if (prevPos != transform.position)
             {
                 moveDirection = (transform.position - prevPos).normalized;                              // Determine the move direction
