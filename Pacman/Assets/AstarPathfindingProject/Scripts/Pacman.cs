@@ -24,7 +24,7 @@ namespace Pathfinding
         // Start is called before the first frame update
         public void Start()
         {
-            GetComponent<Enemy>().isFrightened = false;
+            FindObjectOfType<Enemy>().isFrightened = false;
             myRigidBody = GetComponent<Rigidbody2D>();
             myAnimator = GetComponent<Animator>();
             myBodyCollider = GetComponent<CircleCollider2D>();
@@ -33,7 +33,7 @@ namespace Pathfinding
         // Update is called once per frame
         public void Update()
         {
-            if (GetComponent<Enemy>().isFrightened == true)
+            if (FindObjectOfType<Enemy>().isFrightened == true)
             {
                 timeElapsed += Time.deltaTime;
             }
@@ -106,11 +106,11 @@ namespace Pathfinding
         {
             if (other.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))                 
             {
-                if (GetComponent<Enemy>().isFrightened == true)
+                if (FindObjectOfType<Enemy>().isFrightened == true)
                 {
-                    GetComponent<Enemy>().isEaten = true;
+                    FindObjectOfType<Enemy>().isEaten = true;
                 }
-                else if (GetComponent<Enemy>().isEaten == false)
+                else if (FindObjectOfType<Enemy>().isEaten == false)
                 {
                     isAlive = false;
                     myAnimator.SetTrigger("Dead");                      //Death Animation
@@ -126,7 +126,7 @@ namespace Pathfinding
             if (collision.CompareTag("Power Pellet"))               
             {
                 numberOfPowerPelletsEaten += 1;
-                if (GetComponent<Enemy>().isEaten == false)
+                if (FindObjectOfType<Enemy>().isEaten == false)
                 {
                     StartCoroutine(Frightened());
                 }
@@ -139,10 +139,10 @@ namespace Pathfinding
 
         IEnumerator Frightened()
         {
-            GetComponent<Enemy>().isFrightened = true;
-            GetComponent<Enemy>().isScattering = false;             // Ememy Script Disabled
-            GetComponent<Enemy>().isChasing = true;                 // AI Script Enabled
-            if (numberOfPowerPelletsEaten > 1)                      // if more than one pellet eaten at a time then frightened time is increased
+            FindObjectOfType<Enemy>().isFrightened = true;
+            FindObjectOfType<Enemy>().isScattering = false;             // Ememy Script Disabled
+            FindObjectOfType<Enemy>().isChasing = true;                 // AI Script Enabled
+            if (numberOfPowerPelletsEaten > 1)                          // if more than one pellet eaten at a time then frightened time is increased
             {
                 StopCoroutine(Frightened());
                 StartCoroutine(TwoPelletsEaten());
@@ -153,18 +153,18 @@ namespace Pathfinding
             if (numberOfPowerPelletsEaten <= 1)                         // if only one pellet is eaten
             {
                 numberOfPowerPelletsEaten = 0;                          // reset number of pellets eaten
-                GetComponent<Enemy>().isFrightened = false;
-                GetComponent<Enemy>().isScattering = false;          // starts chasing
-                GetComponent<Enemy>().isChasing = true;
-                GetComponent<Enemy>().scatterTime = 0f;
-                GetComponent<AIDestinationSetter>().frightenedEndTime = 0f;
+                FindObjectOfType<Enemy>().isFrightened = false;
+                FindObjectOfType<Enemy>().isScattering = false;          // starts chasing
+                FindObjectOfType<Enemy>().isChasing = true;
+                FindObjectOfType<Enemy>().scatterTime = 0f;
+                FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
             }
         }
 
         IEnumerator TwoPelletsEaten()
         {
 
-            GetComponent<AIDestinationSetter>().frightenedEndTime = 0f;
+            FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
             frightenedTime *= 2;                                          // frightened time increased
             frightenedTime -= timeElapsed;
             timeElapsed = 0f;
@@ -173,11 +173,11 @@ namespace Pathfinding
             
             frightenedTime = 7f;                                          // frightened time reset for next pellet
             numberOfPowerPelletsEaten = 0;
-            GetComponent<Enemy>().isFrightened = false;
-            GetComponent<Enemy>().isScattering = false;                // starts chasing
-            GetComponent<Enemy>().isChasing = true;
-            GetComponent<Enemy>().scatterTime = 0f;
-            GetComponent<AIDestinationSetter>().frightenedEndTime = 0f;
+            FindObjectOfType<Enemy>().isFrightened = false;
+            FindObjectOfType<Enemy>().isScattering = false;                // starts chasing
+            FindObjectOfType<Enemy>().isChasing = true;
+            FindObjectOfType<Enemy>().scatterTime = 0f;
+            FindObjectOfType<AIDestinationSetter>().frightenedEndTime = 0f;
         }
     }
 }
