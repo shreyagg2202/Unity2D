@@ -28,7 +28,7 @@ namespace Pathfinding {
 
 		[Header("Time Controller")]
 		public float changeTargetTime = 0f;
-		public float frightenedEndTime;
+		static public float frightenedEndTime = 7f;
 
 		[Header("Waypoints")]
 		[SerializeField] Transform[] waypoints;
@@ -66,7 +66,7 @@ namespace Pathfinding {
         void Update ()  
 		{
 			// if chasing
-			if (GetComponent<Enemy>().isScattering == false && GetComponent<Enemy>().isChasing == true && GetComponent<Enemy>().isFrightened == false && GetComponent<Enemy>().isEaten == false)
+			if (GetComponent<Enemy>().isScattering == false && GetComponent<Enemy>().isChasing == true && Enemy.isFrightened == false && GetComponent<Enemy>().isEaten == false)
 			{
 				frightenedEndTime = 0f;
 				myAnimator.SetBool("isFrightened", false);
@@ -89,9 +89,8 @@ namespace Pathfinding {
 					}
 				}
 			}
-			else if (GetComponent<Enemy>().isFrightened == true)	// when enemy is in frightened mode
+			else if (Enemy.isFrightened == true)	// when enemy is in frightened mode
 			{
-				myAnimator.SetBool("isFrightened", true);
 				frightenedEndTime += Time.deltaTime;					
 				myAnimator.SetFloat("frightenedEndTime", frightenedEndTime);
 				ai.destination = frightenedTarget.position;
@@ -100,7 +99,7 @@ namespace Pathfinding {
 					Frightened();
 				}
 			}
-			else if (GetComponent<Enemy>().isEaten == true && GetComponent<Enemy>().isFrightened == false)		// When enemy is eaten
+			else if (GetComponent<Enemy>().isEaten == true && Enemy.isFrightened == false)		// When enemy is eaten
             {
 				target = baseTarget;										// Eaten enemy goes back to base to get respawned
 				ai.destination = target.transform.position;

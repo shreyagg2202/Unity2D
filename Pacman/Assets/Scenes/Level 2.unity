@@ -224,6 +224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pinky
       objectReference: {fileID: 0}
+    - target: {fileID: 1559367094281284030, guid: e26f83004892de74cb3b90df80ca3b9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2486736268598857848, guid: e26f83004892de74cb3b90df80ca3b9b, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 

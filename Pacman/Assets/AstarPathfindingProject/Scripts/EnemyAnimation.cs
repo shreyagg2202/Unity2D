@@ -2,41 +2,53 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAnimation : MonoBehaviour
+namespace Pathfinding
 {
-    [Header("Movement and Position")]
-    public float xMov;
-    public float yMov;
-    Vector3 previousPosition;
-    public Vector3 moveDirection;
-
-    [Header("Cache")]
-    Animator myBodyAnimation;
-    Rigidbody2D myRigidBody;
-
-    // Start is called before the first frame update
-    void Start()
+    public class EnemyAnimation : MonoBehaviour
     {
-        myBodyAnimation = GetComponent<Animator>();
-        myRigidBody = GetComponent<Rigidbody2D>();
-    }
+        [Header("Movement and Position")]
+        public float xMov;
+        public float yMov;
+        Vector3 previousPosition;
+        public Vector3 moveDirection;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (previousPosition != transform.position)
+        [Header("Cache")]
+        Animator myBodyAnimation;
+        Rigidbody2D myRigidBody;
+
+        // Start is called before the first frame update
+        void Start()
         {
-            moveDirection = (transform.position - previousPosition).normalized;                     // Calculating the move direction
-            previousPosition = transform.position;
+            myBodyAnimation = GetComponent<Animator>();
+            myRigidBody = GetComponent<Rigidbody2D>();
         }
 
-        myRigidBody.velocity = moveDirection;
+        // Update is called once per frame
+        void Update()
+        {
+            if(Enemy.isFrightened == true)
+            {
+                myBodyAnimation.SetBool("isFrightened", true);
+            }
+            else
+            {
+                myBodyAnimation.SetBool("isFrightened", false);
+            }
 
-        xMov = moveDirection.x;
-        yMov = moveDirection.y;
-        
-        myBodyAnimation.SetBool("isWalking", true);
-        myBodyAnimation.SetFloat("xMov", xMov);
-        myBodyAnimation.SetFloat("yMov", yMov);
+            if (previousPosition != transform.position)
+            {
+                moveDirection = (transform.position - previousPosition).normalized;                     // Calculating the move direction
+                previousPosition = transform.position;
+            }
+
+            myRigidBody.velocity = moveDirection;
+
+            xMov = moveDirection.x;
+            yMov = moveDirection.y;
+
+            myBodyAnimation.SetBool("isWalking", true);
+            myBodyAnimation.SetFloat("xMov", xMov);
+            myBodyAnimation.SetFloat("yMov", yMov);
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace Pathfinding
         [Header("State")]
         public bool isScattering;
         public bool isChasing;
-        public bool isFrightened;
+        public static bool isFrightened;
         public bool isEaten;
 
         [Header("Movement")]
@@ -82,7 +82,6 @@ namespace Pathfinding
        public void ScatterMode()                                                                        // Controls the scatter state                        
         {
             enemiesEaten = 0;
-            myAnimator.SetBool("isFrightened", false);
             isScattering = true;
             isChasing = false;
             transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, EnemySpeed * Time.deltaTime);
@@ -135,6 +134,10 @@ namespace Pathfinding
                     myAnimator.SetBool("isFrightened", false);
                     StartCoroutine(FreezeTime());
                     gameObject.layer = 14;                                      // Layer is changed to dead to prevent collisions
+                }
+                else
+                {
+
                 }
             }
         }
